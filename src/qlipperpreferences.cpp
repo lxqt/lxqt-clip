@@ -222,21 +222,6 @@ bool QlipperPreferences::confirmOnClear() const
     return value("confirmClear", true).toBool();
 }
 
-bool QlipperPreferences::networkSend() const
-{
-    return value("networkSend", false).toBool();
-}
-
-bool QlipperPreferences::networkReceive() const
-{
-    return value("networkReceive", false).toBool();
-}
-
-int QlipperPreferences::networkPort() const
-{
-    return value("networkPort", 6666).toInt();
-}
-
 bool QlipperPreferences::shouldSynchronizeClipboards() const
 {
     return platformExtensions() && PSE_NO_SYNC != synchronizePSE();

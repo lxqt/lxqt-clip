@@ -24,15 +24,12 @@ with this program; if not, write to the Free Software Foundation, Inc.,
 
 #include "qlippermodel.h"
 #include "qlipperpreferences.h"
-#include "qlippernetwork.h"
 #include "clipboardwrap.h"
 
 
 QlipperModel::QlipperModel(QObject *parent) :
     QAbstractListModel(parent)
 {
-    m_network = new QlipperNetwork(this);
-
     m_boldFont.setBold(true);
 
     m_sticky = QlipperPreferences::Instance()->getStickyItems();
@@ -194,7 +191,6 @@ void QlipperModel::setCurrentDynamic(int ix)
     }
 
     m_currentIndex = index(m_sticky.count());
-    m_network->sendData(m_dynamic.at(0).content());
 
     if (QlipperPreferences::Instance()->synchronizeHistory())
     {

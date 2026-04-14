@@ -27,7 +27,6 @@ with this program; if not, write to the Free Software Foundation, Inc.,
 #include "qlipperitem.h"
 
 class QTimer;
-class QlipperNetwork;
 
 
 class QlipperModel : public QAbstractListModel
@@ -52,7 +51,6 @@ private:
     QList<QlipperItem> m_sticky;
     QList<QlipperItem> m_dynamic;
     QPersistentModelIndex m_currentIndex;
-    QlipperNetwork *m_network;
 
     QFont m_normalFont;
     QFont m_boldFont;

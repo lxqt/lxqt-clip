@@ -127,12 +127,6 @@ void QlipperSystray::showAbout()
     QString globalKeySupport = tr("No");
 #endif
 
-#ifdef ENABLE_NETWORK_CLIPBOARD_SHARING
-    QString enableNetwork = tr("Yes (experimental)");
-#else
-    QString enableNetwork = tr("No");
-#endif
-
     QMessageBox msgBox;
     //msgBox.setMinimumWidth(600);
     msgBox.setWindowIcon(QIcon(":/icons/qlipper.png"));
@@ -143,8 +137,7 @@ void QlipperSystray::showAbout()
                                   "(c)&nbsp;2010-2016&nbsp;Petr&nbsp;Vanek&nbsp;&lt;petr@yarpen.cz&gt;<p>"
                                   "<a href=\"https://github.com/pvanek/qlipper/\">https://github.com/pvanek/qlipper/</a>"
                                   "<p>"
-                                  "Support for global keyboard shortcut: %1<br>"
-                                  "Support for network clipboard sharing: %2").arg(globalKeySupport).arg(enableNetwork));
+                                  "Support for global keyboard shortcut: %1").arg(globalKeySupport));
     msgBox.setStandardButtons(QMessageBox::Ok);
     msgBox.exec();
 }

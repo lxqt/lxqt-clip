@@ -58,10 +58,6 @@ public:
     bool synchronizeHistory() const;
     bool confirmOnClear() const;
 
-    bool networkSend() const;
-    bool networkReceive() const;
-    int networkPort() const;
-
     bool shouldSynchronizeClipboards() const;
     bool shouldSynchronizeClipboardsInstantly() const;
 

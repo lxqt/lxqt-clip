@@ -48,7 +48,6 @@ project(qlipper)
 
 set(QLIPPER_VERSION 6.1.0)
 
-option(ENABLE_NETWORK_CLIPBOARD_SHARING "Enables experimental network support for clipboard sharing" OFF)
 option(ENABLE_LXQT_AUTOSTART "Enables autostart for LXQt" OFF)
 option(USE_SYSTEM_QXT "Use system Qxt Library for global shortcuts; off for Qt6" OFF)
 
@@ -80,10 +79,6 @@ endif (APPLE)
 
 add_definitions(-DIS_CMAKE)
 add_definitions(-DQLIPPER_VERSION="${QLIPPER_VERSION}")
-if (ENABLE_NETWORK_CLIPBOARD_SHARING)
-    add_definitions(-DENABLE_NETWORK_CLIPBOARD_SHARING)
-    find_package(Qt6Network REQUIRED)
-endif (ENABLE_NETWORK_CLIPBOARD_SHARING)
 
 
 # source code and compilation
@@ -95,7 +90,6 @@ set (QLIPPER_HEADERS
     src/qlippermodel.h
     src/qlipperpreferencesdialog.h
     src/qlippersystray.h
-    src/qlippernetwork.h
     src/clipboardwrap.h
     src/qlipperdbusinterface.h
 )
@@ -108,7 +102,6 @@ set (QLIPPER_SOURCES
     src/qlipperpreferences.cpp
     src/qlipperpreferencesdialog.cpp
     src/qlippersystray.cpp
-    src/qlippernetwork.cpp
     src/clipboardwrap.cpp
     src/qlipperdbusinterface.cpp
 )
@@ -215,15 +208,6 @@ target_link_libraries( ${EXE_NAME}
         Qt6::GuiPrivate
 )
 
-if (ENABLE_NETWORK_CLIPBOARD_SHARING)
-    target_link_libraries( ${EXE_NAME}
-        PUBLIC
-            Qt6::Network
-    )
-endif(ENABLE_NETWORK_CLIPBOARD_SHARING)
-
-# single app and optional network features
-#target_link_libraries( ${EXE_NAME} ${QT_QTNETWORK_LIBRARY})
 
 if (APPLE)
     target_link_libraries(${EXE_NAME}

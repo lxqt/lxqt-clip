@@ -52,9 +52,6 @@ QlipperPreferencesDialog::QlipperPreferencesDialog(QWidget *parent) :
     synchronizeHistory->setChecked(s->synchronizeHistory());
     confirmOnClear->setChecked(s->confirmOnClear());
 
-    networkSendCheckBox->setChecked(s->networkSend());
-    networkReceiveCheckBox->setChecked(s->networkReceive());
-    portSpinBox->setValue(s->networkPort());
 #ifndef ENABLE_NETWORK_CLIPBOARD_SHARING
     toolBox->setItemEnabled(2, false);
 #endif
@@ -116,9 +113,6 @@ void QlipperPreferencesDialog::accept()
     s->setValue("synchronizeHistory", synchronizeHistory->isChecked());
     s->setValue("confirmClear", confirmOnClear->isChecked());
 
-    s->setValue("networkReceive", networkReceiveCheckBox->isChecked());
-    s->setValue("networkSend", networkSendCheckBox->isChecked());
-    s->setValue("networkPort", portSpinBox->value());
 
     QList<QlipperItem> list;
     for (int i = 0; i < listWidget->count(); ++i)
