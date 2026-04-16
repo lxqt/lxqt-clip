@@ -4,22 +4,22 @@
 <context>
     <name>QObject</name>
     <message>
-        <location filename="../src/qlipperitem.cpp" line="180"/>
+        <location filename="../src/qlipperitem.cpp" line="182"/>
         <source>Url: %1</source>
         <translation>כתובת: %1</translation>
     </message>
     <message>
-        <location filename="../src/qlipperitem.cpp" line="182"/>
+        <location filename="../src/qlipperitem.cpp" line="184"/>
         <source>Binary: %1</source>
         <translation>בינרי: %1</translation>
     </message>
     <message>
-        <location filename="../src/qlipperitem.cpp" line="234"/>
+        <location filename="../src/qlipperitem.cpp" line="236"/>
         <source>Clipboard</source>
         <translation>לוח גזירים</translation>
     </message>
     <message>
-        <location filename="../src/qlipperitem.cpp" line="237"/>
+        <location filename="../src/qlipperitem.cpp" line="239"/>
         <source>Selection</source>
         <translation>בחירה</translation>
     </message>
@@ -28,32 +28,32 @@
         <translation type="vanished">Memòria intermèdia de Find</translation>
     </message>
     <message>
-        <location filename="../src/qlipperitem.cpp" line="240"/>
+        <location filename="../src/qlipperitem.cpp" line="242"/>
         <source>Find Buffer</source>
         <translation>מכלא חיפוש</translation>
     </message>
     <message>
-        <location filename="../src/qlipperitem.cpp" line="247"/>
+        <location filename="../src/qlipperitem.cpp" line="249"/>
         <source>Plain Text</source>
         <translation>טקסט פשוט</translation>
     </message>
     <message>
-        <location filename="../src/qlipperitem.cpp" line="250"/>
+        <location filename="../src/qlipperitem.cpp" line="252"/>
         <source>Rich Text</source>
         <translation>טקסט עשיר</translation>
     </message>
     <message>
-        <location filename="../src/qlipperitem.cpp" line="253"/>
+        <location filename="../src/qlipperitem.cpp" line="255"/>
         <source>Binary Content</source>
         <translation>תוכן בינרי</translation>
     </message>
     <message>
-        <location filename="../src/qlipperitem.cpp" line="256"/>
+        <location filename="../src/qlipperitem.cpp" line="258"/>
         <source>URL</source>
         <translation>כתובת</translation>
     </message>
     <message>
-        <location filename="../src/qlipperitem.cpp" line="259"/>
+        <location filename="../src/qlipperitem.cpp" line="261"/>
         <source>Sticky Item (Plain Text)</source>
         <translation>פריט נעוץ (טקסט פשוט)</translation>
     </message>
@@ -61,7 +61,7 @@
 <context>
     <name>QlipperModel</name>
     <message>
-        <location filename="../src/qlippermodel.cpp" line="213"/>
+        <location filename="../src/qlippermodel.cpp" line="203"/>
         <source>Welcome to the Qlipper clipboard history applet</source>
         <translation>ברוך בואך ליישומון היסטוריית לוח הגזירים Qlipper</translation>
     </message>
@@ -119,9 +119,8 @@
         <translation> תווים</translation>
     </message>
     <message>
-        <location filename="../src/qlipperpreferencesdialog.ui" line="153"/>
         <source>Use clipboard extensions (X11 Selections, OS X Find Buffer) when it&apos;s supported</source>
-        <translation>להשתמש בהרחבות לוח גזירים (בחירות X11, מכלא חיפוש OS X) אם הן נתמכות</translation>
+        <translation type="vanished">להשתמש בהרחבות לוח גזירים (בחירות X11, מכלא חיפוש OS X) אם הן נתמכות</translation>
     </message>
     <message>
         <location filename="../src/qlipperpreferencesdialog.ui" line="156"/>
@@ -142,6 +141,11 @@
         <location filename="../src/qlipperpreferencesdialog.ui" line="127"/>
         <source>Tray icon image:</source>
         <translation>תמונת סמל מגש מערכת:</translation>
+    </message>
+    <message>
+        <location filename="../src/qlipperpreferencesdialog.ui" line="153"/>
+        <source>Use clipboard extensions (Selection/FindBuffer) when it&apos;s supported</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/qlipperpreferencesdialog.ui" line="164"/>
@@ -224,78 +228,81 @@
         <translation>למ&amp;טה</translation>
     </message>
     <message>
-        <location filename="../src/qlipperpreferencesdialog.ui" line="316"/>
         <source>Network</source>
-        <translation>רשת</translation>
+        <translation type="vanished">רשת</translation>
     </message>
     <message>
-        <location filename="../src/qlipperpreferencesdialog.ui" line="322"/>
         <source>Send Content to Network</source>
-        <translation>שליחת תוכן לרשת</translation>
+        <translation type="vanished">שליחת תוכן לרשת</translation>
     </message>
     <message>
-        <location filename="../src/qlipperpreferencesdialog.ui" line="329"/>
         <source>Receive Content from Network</source>
-        <translation>קבלת תוכן מהרשת</translation>
+        <translation type="vanished">קבלת תוכן מהרשת</translation>
     </message>
     <message>
-        <location filename="../src/qlipperpreferencesdialog.ui" line="336"/>
         <source>Port:</source>
-        <translation>פתחה:</translation>
+        <translation type="vanished">פתחה:</translation>
     </message>
     <message>
-        <location filename="../src/qlipperpreferencesdialog.cpp" line="82"/>
+        <location filename="../src/qlipperpreferencesdialog.cpp" line="43"/>
+        <source>Global shortcuts can&apos;t be handled by app on wayland.
+You can configure shortcut in compositor and use D-Bus invocation, e.g.:
+qdbus6 org.qlipper /org/qlipper show</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/qlipperpreferencesdialog.cpp" line="86"/>
         <source>Icon selection</source>
         <translation>בחירת סמל</translation>
     </message>
     <message>
-        <location filename="../src/qlipperpreferencesdialog.cpp" line="83"/>
+        <location filename="../src/qlipperpreferencesdialog.cpp" line="87"/>
         <source>Load icon from file...</source>
         <translation>טעינת סמל מקובץ…</translation>
     </message>
     <message>
-        <location filename="../src/qlipperpreferencesdialog.cpp" line="84"/>
+        <location filename="../src/qlipperpreferencesdialog.cpp" line="88"/>
         <source>Use default icon</source>
         <translation>להשתמש בסמל בררת המחדל</translation>
     </message>
     <message>
-        <location filename="../src/qlipperpreferencesdialog.cpp" line="132"/>
+        <location filename="../src/qlipperpreferencesdialog.cpp" line="133"/>
         <source>Select icon file</source>
         <translation>בחירת קובץ סמל</translation>
     </message>
     <message>
-        <location filename="../src/qlipperpreferencesdialog.cpp" line="134"/>
+        <location filename="../src/qlipperpreferencesdialog.cpp" line="135"/>
         <source>Images (*.bmp *.jpg *.jpeg *.png *.svg *.tga)</source>
         <translation>תמונות ‎(*.bmp *.jpg *.jpeg *.png *.svg *.tga)</translation>
     </message>
     <message>
-        <location filename="../src/qlipperpreferencesdialog.cpp" line="138"/>
+        <location filename="../src/qlipperpreferencesdialog.cpp" line="139"/>
         <source>Select icon</source>
         <translation>בחירת סמל</translation>
     </message>
     <message>
-        <location filename="../src/qlipperpreferencesdialog.cpp" line="139"/>
+        <location filename="../src/qlipperpreferencesdialog.cpp" line="140"/>
         <source>Cancel</source>
         <translation>ביטול</translation>
     </message>
     <message>
-        <location filename="../src/qlipperpreferencesdialog.cpp" line="141"/>
+        <location filename="../src/qlipperpreferencesdialog.cpp" line="142"/>
         <source>Look in:</source>
         <extracomment>Label to describe the folder for icon file selection dialog.</extracomment>
         <translation>לחפש בתוך:</translation>
     </message>
     <message>
-        <location filename="../src/qlipperpreferencesdialog.cpp" line="142"/>
+        <location filename="../src/qlipperpreferencesdialog.cpp" line="143"/>
         <source>Icon name:</source>
         <translation>שם הסמל:</translation>
     </message>
     <message>
-        <location filename="../src/qlipperpreferencesdialog.cpp" line="143"/>
+        <location filename="../src/qlipperpreferencesdialog.cpp" line="144"/>
         <source>Icon type:</source>
         <translation>סוג הסמל:</translation>
     </message>
     <message>
-        <location filename="../src/qlipperpreferencesdialog.cpp" line="158"/>
+        <location filename="../src/qlipperpreferencesdialog.cpp" line="159"/>
         <source>Add New Sticky Item</source>
         <translation>הוספת פריט נעוץ חדש</translation>
     </message>
@@ -328,38 +335,40 @@
         <translation>Qlipper - יישומון היסטוריית לוח גזירים</translation>
     </message>
     <message>
-        <location filename="../src/qlippersystray.cpp" line="125"/>
+        <location filename="../src/qlippersystray.cpp" line="122"/>
         <source>Yes</source>
         <translation>כן</translation>
     </message>
     <message>
-        <location filename="../src/qlippersystray.cpp" line="127"/>
-        <location filename="../src/qlippersystray.cpp" line="133"/>
+        <location filename="../src/qlippersystray.cpp" line="124"/>
         <source>No</source>
         <translation>לא</translation>
     </message>
     <message>
-        <location filename="../src/qlippersystray.cpp" line="131"/>
-        <source>Yes (experimental)</source>
-        <translation>כן (ניסיוני)</translation>
+        <location filename="../src/qlippersystray.cpp" line="133"/>
+        <source>Lightweight, cross-platform clipboard history applet.&lt;p&gt;(c)&amp;nbsp;2010-2016&amp;nbsp;Petr&amp;nbsp;Vanek&amp;nbsp;&amp;lt;petr@yarpen.cz&amp;gt;&lt;p&gt;&lt;a href=&quot;https://github.com/pvanek/qlipper/&quot;&gt;https://github.com/pvanek/qlipper/&lt;/a&gt;&lt;p&gt;Support for global keyboard shortcut: %1</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/qlippersystray.cpp" line="140"/>
+        <source>Yes (experimental)</source>
+        <translation type="vanished">כן (ניסיוני)</translation>
+    </message>
+    <message>
+        <location filename="../src/qlippersystray.cpp" line="131"/>
         <source>About Qlipper</source>
         <translation>על אודות Qlipper</translation>
     </message>
     <message>
-        <location filename="../src/qlippersystray.cpp" line="142"/>
         <source>Lightweight, cross-platform clipboard history applet.&lt;p&gt;(c)&amp;nbsp;2010-2016&amp;nbsp;Petr&amp;nbsp;Vanek&amp;nbsp;&amp;lt;petr@yarpen.cz&amp;gt;&lt;p&gt;&lt;a href=&quot;https://github.com/pvanek/qlipper/&quot;&gt;https://github.com/pvanek/qlipper/&lt;/a&gt;&lt;p&gt;Support for global keyboard shortcut: %1&lt;br&gt;Support for network clipboard sharing: %2</source>
-        <translation>יישומון היסטוריית לוח גזירים למגוון פלטפורמות.&lt;p&gt;(c)&amp;nbsp;2010‏-2016&amp;nbsp;Petr&amp;nbsp;Vanek&amp;nbsp;&amp;lt;petr@yarpen.cz&amp;gt;&lt;p&gt;&lt;a href=&quot;https://github.com/pvanek/qlipper/&quot;&gt;https://github.com/pvanek/qlipper/&lt;/a&gt;&lt;p&gt;תמיכה בקיצורי מקלדת גלובליית: %1&lt;br&gt;תמיכה בשיתוף לוח הגזירים ברשת: %2</translation>
+        <translation type="vanished">יישומון היסטוריית לוח גזירים למגוון פלטפורמות.&lt;p&gt;(c)&amp;nbsp;2010‏-2016&amp;nbsp;Petr&amp;nbsp;Vanek&amp;nbsp;&amp;lt;petr@yarpen.cz&amp;gt;&lt;p&gt;&lt;a href=&quot;https://github.com/pvanek/qlipper/&quot;&gt;https://github.com/pvanek/qlipper/&lt;/a&gt;&lt;p&gt;תמיכה בקיצורי מקלדת גלובליית: %1&lt;br&gt;תמיכה בשיתוף לוח הגזירים ברשת: %2</translation>
     </message>
     <message>
-        <location filename="../src/qlippersystray.cpp" line="170"/>
+        <location filename="../src/qlippersystray.cpp" line="156"/>
         <source>Confirm</source>
         <translation>אישור</translation>
     </message>
     <message>
-        <location filename="../src/qlippersystray.cpp" line="170"/>
+        <location filename="../src/qlippersystray.cpp" line="156"/>
         <source>Are you sure that you want to clear your clipboard history?</source>
         <translation>לפנות את היסטוריית לוח הגזירים שלך?</translation>
     </message>

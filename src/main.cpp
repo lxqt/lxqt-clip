@@ -83,26 +83,15 @@ int main(int argc, char **argv)
     // potentially load translator
     QString fname(a.applicationName() + "_" +  QLocale::system().name());
 
-#ifdef Q_OS_WIN32
-    QString location = a.applicationDirPath() + "/translations";
-#elif defined Q_OS_MAC
-    QString location = a.applicationDirPath() + "../Resources/translations";
-#elif defined Q_OS_UNIX
-    QString location = TRANSLATION_DIR;
-#else
-    // fallback
-    QString location = a.applicationDirPath();
-#endif
-
     QTranslator translator;
 
-    if (translator.load(fname, location))
+    if (translator.load(fname, TRANSLATION_DIR))
     {
         a.installTranslator(&translator);
     }
     else
     {
-        qDebug() << "Translator is not loaded" << fname << location;
+        qDebug() << "Translator is not loaded" << fname << TRANSLATION_DIR;
     }
     // end of translators
 

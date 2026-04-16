@@ -4,22 +4,22 @@
 <context>
     <name>QObject</name>
     <message>
-        <location filename="../src/qlipperitem.cpp" line="180"/>
+        <location filename="../src/qlipperitem.cpp" line="182"/>
         <source>Url: %1</source>
         <translation type="unfinished">Nettadresse: %1</translation>
     </message>
     <message>
-        <location filename="../src/qlipperitem.cpp" line="182"/>
+        <location filename="../src/qlipperitem.cpp" line="184"/>
         <source>Binary: %1</source>
         <translation type="unfinished">Kjørbar fil: %1</translation>
     </message>
     <message>
-        <location filename="../src/qlipperitem.cpp" line="234"/>
+        <location filename="../src/qlipperitem.cpp" line="236"/>
         <source>Clipboard</source>
         <translation>Utklippstavle</translation>
     </message>
     <message>
-        <location filename="../src/qlipperitem.cpp" line="237"/>
+        <location filename="../src/qlipperitem.cpp" line="239"/>
         <source>Selection</source>
         <translation>Utvalg</translation>
     </message>
@@ -28,32 +28,32 @@
         <translation type="vanished">Memòria intermèdia de Find</translation>
     </message>
     <message>
-        <location filename="../src/qlipperitem.cpp" line="240"/>
+        <location filename="../src/qlipperitem.cpp" line="242"/>
         <source>Find Buffer</source>
         <translation>Finn mellomlager</translation>
     </message>
     <message>
-        <location filename="../src/qlipperitem.cpp" line="247"/>
+        <location filename="../src/qlipperitem.cpp" line="249"/>
         <source>Plain Text</source>
         <translation>Klartekst</translation>
     </message>
     <message>
-        <location filename="../src/qlipperitem.cpp" line="250"/>
+        <location filename="../src/qlipperitem.cpp" line="252"/>
         <source>Rich Text</source>
         <translation>Rik tekst</translation>
     </message>
     <message>
-        <location filename="../src/qlipperitem.cpp" line="253"/>
+        <location filename="../src/qlipperitem.cpp" line="255"/>
         <source>Binary Content</source>
         <translation type="unfinished">Binærfilsinnhold</translation>
     </message>
     <message>
-        <location filename="../src/qlipperitem.cpp" line="256"/>
+        <location filename="../src/qlipperitem.cpp" line="258"/>
         <source>URL</source>
         <translation>Nettadresse</translation>
     </message>
     <message>
-        <location filename="../src/qlipperitem.cpp" line="259"/>
+        <location filename="../src/qlipperitem.cpp" line="261"/>
         <source>Sticky Item (Plain Text)</source>
         <translation>Festet element (klartekst)</translation>
     </message>
@@ -61,7 +61,7 @@
 <context>
     <name>QlipperModel</name>
     <message>
-        <location filename="../src/qlippermodel.cpp" line="213"/>
+        <location filename="../src/qlippermodel.cpp" line="203"/>
         <source>Welcome to the Qlipper clipboard history applet</source>
         <translation>Velkommen til miniprogrammet Qlipper for utklippstavlehistorikk</translation>
     </message>
@@ -119,9 +119,8 @@
         <translation> tegn</translation>
     </message>
     <message>
-        <location filename="../src/qlipperpreferencesdialog.ui" line="153"/>
         <source>Use clipboard extensions (X11 Selections, OS X Find Buffer) when it&apos;s supported</source>
-        <translation type="unfinished">Bruk utklippstavleutvidelser (X11-utvalg, macOS Find-mellomlager) når det støttes</translation>
+        <translation type="obsolete">Bruk utklippstavleutvidelser (X11-utvalg, macOS Find-mellomlager) når det støttes</translation>
     </message>
     <message>
         <location filename="../src/qlipperpreferencesdialog.ui" line="156"/>
@@ -142,6 +141,11 @@
         <location filename="../src/qlipperpreferencesdialog.ui" line="127"/>
         <source>Tray icon image:</source>
         <translation>Bilde for systemkurvsikon:</translation>
+    </message>
+    <message>
+        <location filename="../src/qlipperpreferencesdialog.ui" line="153"/>
+        <source>Use clipboard extensions (Selection/FindBuffer) when it&apos;s supported</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/qlipperpreferencesdialog.ui" line="164"/>
@@ -224,78 +228,81 @@
         <translation>&amp;Nedover</translation>
     </message>
     <message>
-        <location filename="../src/qlipperpreferencesdialog.ui" line="316"/>
         <source>Network</source>
-        <translation>Nettverk</translation>
+        <translation type="vanished">Nettverk</translation>
     </message>
     <message>
-        <location filename="../src/qlipperpreferencesdialog.ui" line="322"/>
         <source>Send Content to Network</source>
-        <translation>Send innhold til nettverk</translation>
+        <translation type="vanished">Send innhold til nettverk</translation>
     </message>
     <message>
-        <location filename="../src/qlipperpreferencesdialog.ui" line="329"/>
         <source>Receive Content from Network</source>
-        <translation>Motta innhold fra nettverket</translation>
+        <translation type="vanished">Motta innhold fra nettverket</translation>
     </message>
     <message>
-        <location filename="../src/qlipperpreferencesdialog.ui" line="336"/>
         <source>Port:</source>
-        <translation>Port:</translation>
+        <translation type="vanished">Port:</translation>
     </message>
     <message>
-        <location filename="../src/qlipperpreferencesdialog.cpp" line="82"/>
+        <location filename="../src/qlipperpreferencesdialog.cpp" line="43"/>
+        <source>Global shortcuts can&apos;t be handled by app on wayland.
+You can configure shortcut in compositor and use D-Bus invocation, e.g.:
+qdbus6 org.qlipper /org/qlipper show</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/qlipperpreferencesdialog.cpp" line="86"/>
         <source>Icon selection</source>
         <translation>Ikonutvalg</translation>
     </message>
     <message>
-        <location filename="../src/qlipperpreferencesdialog.cpp" line="83"/>
+        <location filename="../src/qlipperpreferencesdialog.cpp" line="87"/>
         <source>Load icon from file...</source>
         <translation>Last inn ikon fra fil …</translation>
     </message>
     <message>
-        <location filename="../src/qlipperpreferencesdialog.cpp" line="84"/>
+        <location filename="../src/qlipperpreferencesdialog.cpp" line="88"/>
         <source>Use default icon</source>
         <translation>Bruk forvalgt ikon</translation>
     </message>
     <message>
-        <location filename="../src/qlipperpreferencesdialog.cpp" line="132"/>
+        <location filename="../src/qlipperpreferencesdialog.cpp" line="133"/>
         <source>Select icon file</source>
         <translation>Velg ikonfil</translation>
     </message>
     <message>
-        <location filename="../src/qlipperpreferencesdialog.cpp" line="134"/>
+        <location filename="../src/qlipperpreferencesdialog.cpp" line="135"/>
         <source>Images (*.bmp *.jpg *.jpeg *.png *.svg *.tga)</source>
         <translation>Bilder (*.bmp *.jpg *.jpeg *.png *.svg *.tga)</translation>
     </message>
     <message>
-        <location filename="../src/qlipperpreferencesdialog.cpp" line="138"/>
+        <location filename="../src/qlipperpreferencesdialog.cpp" line="139"/>
         <source>Select icon</source>
         <translation>Velg ikon</translation>
     </message>
     <message>
-        <location filename="../src/qlipperpreferencesdialog.cpp" line="139"/>
+        <location filename="../src/qlipperpreferencesdialog.cpp" line="140"/>
         <source>Cancel</source>
         <translation>Avbryt</translation>
     </message>
     <message>
-        <location filename="../src/qlipperpreferencesdialog.cpp" line="141"/>
+        <location filename="../src/qlipperpreferencesdialog.cpp" line="142"/>
         <source>Look in:</source>
         <extracomment>Label to describe the folder for icon file selection dialog.</extracomment>
         <translation>Let i:</translation>
     </message>
     <message>
-        <location filename="../src/qlipperpreferencesdialog.cpp" line="142"/>
+        <location filename="../src/qlipperpreferencesdialog.cpp" line="143"/>
         <source>Icon name:</source>
         <translation>Ikonnavn:</translation>
     </message>
     <message>
-        <location filename="../src/qlipperpreferencesdialog.cpp" line="143"/>
+        <location filename="../src/qlipperpreferencesdialog.cpp" line="144"/>
         <source>Icon type:</source>
         <translation>Ikontype:</translation>
     </message>
     <message>
-        <location filename="../src/qlipperpreferencesdialog.cpp" line="158"/>
+        <location filename="../src/qlipperpreferencesdialog.cpp" line="159"/>
         <source>Add New Sticky Item</source>
         <translation>Legg til nytt festet element</translation>
     </message>
@@ -328,38 +335,40 @@
         <translation type="unfinished">Qlipper – et miniprogram for utklippstavlehistorikk</translation>
     </message>
     <message>
-        <location filename="../src/qlippersystray.cpp" line="125"/>
+        <location filename="../src/qlippersystray.cpp" line="122"/>
         <source>Yes</source>
         <translation>Ja</translation>
     </message>
     <message>
-        <location filename="../src/qlippersystray.cpp" line="127"/>
-        <location filename="../src/qlippersystray.cpp" line="133"/>
+        <location filename="../src/qlippersystray.cpp" line="124"/>
         <source>No</source>
         <translation>Nei</translation>
     </message>
     <message>
-        <location filename="../src/qlippersystray.cpp" line="131"/>
-        <source>Yes (experimental)</source>
-        <translation>Ja (eksperimentelt)</translation>
+        <location filename="../src/qlippersystray.cpp" line="133"/>
+        <source>Lightweight, cross-platform clipboard history applet.&lt;p&gt;(c)&amp;nbsp;2010-2016&amp;nbsp;Petr&amp;nbsp;Vanek&amp;nbsp;&amp;lt;petr@yarpen.cz&amp;gt;&lt;p&gt;&lt;a href=&quot;https://github.com/pvanek/qlipper/&quot;&gt;https://github.com/pvanek/qlipper/&lt;/a&gt;&lt;p&gt;Support for global keyboard shortcut: %1</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/qlippersystray.cpp" line="140"/>
+        <source>Yes (experimental)</source>
+        <translation type="vanished">Ja (eksperimentelt)</translation>
+    </message>
+    <message>
+        <location filename="../src/qlippersystray.cpp" line="131"/>
         <source>About Qlipper</source>
         <translation>Om Qlipper</translation>
     </message>
     <message>
-        <location filename="../src/qlippersystray.cpp" line="142"/>
         <source>Lightweight, cross-platform clipboard history applet.&lt;p&gt;(c)&amp;nbsp;2010-2016&amp;nbsp;Petr&amp;nbsp;Vanek&amp;nbsp;&amp;lt;petr@yarpen.cz&amp;gt;&lt;p&gt;&lt;a href=&quot;https://github.com/pvanek/qlipper/&quot;&gt;https://github.com/pvanek/qlipper/&lt;/a&gt;&lt;p&gt;Support for global keyboard shortcut: %1&lt;br&gt;Support for network clipboard sharing: %2</source>
-        <translation type="unfinished">Lett miniprogram for utklippstavlehistorikk på flere plattformer.&lt;p&gt;©&amp;nbsp;2010–2016&amp;nbsp;Petr&amp;nbsp;Vanek&amp;nbsp;&amp;lt;petr@yarpen.cz&amp;gt;&lt;p&gt;&lt;a href=&quot;https://github.com/pvanek/qlipper/&quot;&gt;https://github.com/pvanek/qlipper/&lt;/a&gt;&lt;p&gt;Støtte for tastatursnarveier på hele systemet: %1&lt;br&gt;Støtte for nettverksdeling av utklippstavle: %2</translation>
+        <translation type="obsolete">Lett miniprogram for utklippstavlehistorikk på flere plattformer.&lt;p&gt;©&amp;nbsp;2010–2016&amp;nbsp;Petr&amp;nbsp;Vanek&amp;nbsp;&amp;lt;petr@yarpen.cz&amp;gt;&lt;p&gt;&lt;a href=&quot;https://github.com/pvanek/qlipper/&quot;&gt;https://github.com/pvanek/qlipper/&lt;/a&gt;&lt;p&gt;Støtte for tastatursnarveier på hele systemet: %1&lt;br&gt;Støtte for nettverksdeling av utklippstavle: %2</translation>
     </message>
     <message>
-        <location filename="../src/qlippersystray.cpp" line="170"/>
+        <location filename="../src/qlippersystray.cpp" line="156"/>
         <source>Confirm</source>
         <translation>Bekreft</translation>
     </message>
     <message>
-        <location filename="../src/qlippersystray.cpp" line="170"/>
+        <location filename="../src/qlippersystray.cpp" line="156"/>
         <source>Are you sure that you want to clear your clipboard history?</source>
         <translation type="unfinished">Fjern all utklipstavlehistorikk?</translation>
     </message>

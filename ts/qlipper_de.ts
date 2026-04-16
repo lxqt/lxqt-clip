@@ -4,23 +4,23 @@
 <context>
     <name>QObject</name>
     <message>
-        <location filename="../src/qlipperitem.cpp" line="180"/>
+        <location filename="../src/qlipperitem.cpp" line="182"/>
         <source>Url: %1</source>
         <translatorcomment>Shouldn&apos;t this be capitalized in English, too?</translatorcomment>
         <translation>URL: %1</translation>
     </message>
     <message>
-        <location filename="../src/qlipperitem.cpp" line="182"/>
+        <location filename="../src/qlipperitem.cpp" line="184"/>
         <source>Binary: %1</source>
         <translation>Binäres Objekt: %1</translation>
     </message>
     <message>
-        <location filename="../src/qlipperitem.cpp" line="234"/>
+        <location filename="../src/qlipperitem.cpp" line="236"/>
         <source>Clipboard</source>
         <translation>Zwischenablage</translation>
     </message>
     <message>
-        <location filename="../src/qlipperitem.cpp" line="237"/>
+        <location filename="../src/qlipperitem.cpp" line="239"/>
         <source>Selection</source>
         <translation>Auswahl</translation>
     </message>
@@ -30,32 +30,32 @@
         <translation type="vanished">Find Bufer</translation>
     </message>
     <message>
-        <location filename="../src/qlipperitem.cpp" line="240"/>
+        <location filename="../src/qlipperitem.cpp" line="242"/>
         <source>Find Buffer</source>
         <translation>Buffer suchen</translation>
     </message>
     <message>
-        <location filename="../src/qlipperitem.cpp" line="247"/>
+        <location filename="../src/qlipperitem.cpp" line="249"/>
         <source>Plain Text</source>
         <translation>Klartext</translation>
     </message>
     <message>
-        <location filename="../src/qlipperitem.cpp" line="250"/>
+        <location filename="../src/qlipperitem.cpp" line="252"/>
         <source>Rich Text</source>
         <translation>Rich Text</translation>
     </message>
     <message>
-        <location filename="../src/qlipperitem.cpp" line="253"/>
+        <location filename="../src/qlipperitem.cpp" line="255"/>
         <source>Binary Content</source>
         <translation>Binärer Inhalt</translation>
     </message>
     <message>
-        <location filename="../src/qlipperitem.cpp" line="256"/>
+        <location filename="../src/qlipperitem.cpp" line="258"/>
         <source>URL</source>
         <translation>URL</translation>
     </message>
     <message>
-        <location filename="../src/qlipperitem.cpp" line="259"/>
+        <location filename="../src/qlipperitem.cpp" line="261"/>
         <source>Sticky Item (Plain Text)</source>
         <translation>Haftnotiz (einfacher Text)</translation>
     </message>
@@ -63,7 +63,7 @@
 <context>
     <name>QlipperModel</name>
     <message>
-        <location filename="../src/qlippermodel.cpp" line="213"/>
+        <location filename="../src/qlippermodel.cpp" line="203"/>
         <source>Welcome to the Qlipper clipboard history applet</source>
         <translatorcomment>Translation is cropped, but full text doesn&apos;t get displayed in the list most of the time anyway.</translatorcomment>
         <translation>Willkommen beim Qlipper-Zwischenablagenverlauf-Applet</translation>
@@ -122,9 +122,8 @@
         <translation> Zeichen</translation>
     </message>
     <message>
-        <location filename="../src/qlipperpreferencesdialog.ui" line="153"/>
         <source>Use clipboard extensions (X11 Selections, OS X Find Buffer) when it&apos;s supported</source>
-        <translation>Erweiterte Funktionen wie &quot;Selections&quot; des X Window Systems oder &quot;Find Buffer&quot; unter Mac OS X verwenden, falls unterstützt</translation>
+        <translation type="vanished">Erweiterte Funktionen wie &quot;Selections&quot; des X Window Systems oder &quot;Find Buffer&quot; unter Mac OS X verwenden, falls unterstützt</translation>
     </message>
     <message>
         <location filename="../src/qlipperpreferencesdialog.ui" line="156"/>
@@ -145,6 +144,11 @@
         <location filename="../src/qlipperpreferencesdialog.ui" line="127"/>
         <source>Tray icon image:</source>
         <translation>Taskleistensymbol:</translation>
+    </message>
+    <message>
+        <location filename="../src/qlipperpreferencesdialog.ui" line="153"/>
+        <source>Use clipboard extensions (Selection/FindBuffer) when it&apos;s supported</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/qlipperpreferencesdialog.ui" line="164"/>
@@ -227,78 +231,81 @@
         <translation>Nach &amp;unten</translation>
     </message>
     <message>
-        <location filename="../src/qlipperpreferencesdialog.ui" line="316"/>
         <source>Network</source>
-        <translation>Netzwerk</translation>
+        <translation type="vanished">Netzwerk</translation>
     </message>
     <message>
-        <location filename="../src/qlipperpreferencesdialog.ui" line="322"/>
         <source>Send Content to Network</source>
-        <translation>Objekte ins Netzwerk versenden</translation>
+        <translation type="vanished">Objekte ins Netzwerk versenden</translation>
     </message>
     <message>
-        <location filename="../src/qlipperpreferencesdialog.ui" line="329"/>
         <source>Receive Content from Network</source>
-        <translation>Objekte aus dem Netzwerk empfangen</translation>
+        <translation type="vanished">Objekte aus dem Netzwerk empfangen</translation>
     </message>
     <message>
-        <location filename="../src/qlipperpreferencesdialog.ui" line="336"/>
         <source>Port:</source>
-        <translation>Port:</translation>
+        <translation type="vanished">Port:</translation>
     </message>
     <message>
-        <location filename="../src/qlipperpreferencesdialog.cpp" line="82"/>
+        <location filename="../src/qlipperpreferencesdialog.cpp" line="43"/>
+        <source>Global shortcuts can&apos;t be handled by app on wayland.
+You can configure shortcut in compositor and use D-Bus invocation, e.g.:
+qdbus6 org.qlipper /org/qlipper show</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/qlipperpreferencesdialog.cpp" line="86"/>
         <source>Icon selection</source>
         <translation>Symbolauswahl</translation>
     </message>
     <message>
-        <location filename="../src/qlipperpreferencesdialog.cpp" line="83"/>
+        <location filename="../src/qlipperpreferencesdialog.cpp" line="87"/>
         <source>Load icon from file...</source>
         <translation>Symbol aus Datei laden...</translation>
     </message>
     <message>
-        <location filename="../src/qlipperpreferencesdialog.cpp" line="84"/>
+        <location filename="../src/qlipperpreferencesdialog.cpp" line="88"/>
         <source>Use default icon</source>
         <translation>Standardsymbol verwenden</translation>
     </message>
     <message>
-        <location filename="../src/qlipperpreferencesdialog.cpp" line="132"/>
+        <location filename="../src/qlipperpreferencesdialog.cpp" line="133"/>
         <source>Select icon file</source>
         <translation>Symboldatei auswählen</translation>
     </message>
     <message>
-        <location filename="../src/qlipperpreferencesdialog.cpp" line="134"/>
+        <location filename="../src/qlipperpreferencesdialog.cpp" line="135"/>
         <source>Images (*.bmp *.jpg *.jpeg *.png *.svg *.tga)</source>
         <translation>Bilder (*.bmp *.jpg *.jpeg *.png *.svg *.tga)</translation>
     </message>
     <message>
-        <location filename="../src/qlipperpreferencesdialog.cpp" line="138"/>
+        <location filename="../src/qlipperpreferencesdialog.cpp" line="139"/>
         <source>Select icon</source>
         <translation>Symbol auswählen</translation>
     </message>
     <message>
-        <location filename="../src/qlipperpreferencesdialog.cpp" line="139"/>
+        <location filename="../src/qlipperpreferencesdialog.cpp" line="140"/>
         <source>Cancel</source>
         <translation>Abbrechen</translation>
     </message>
     <message>
-        <location filename="../src/qlipperpreferencesdialog.cpp" line="141"/>
+        <location filename="../src/qlipperpreferencesdialog.cpp" line="142"/>
         <source>Look in:</source>
         <extracomment>Label to describe the folder for icon file selection dialog.</extracomment>
         <translation>Nachsehen in:</translation>
     </message>
     <message>
-        <location filename="../src/qlipperpreferencesdialog.cpp" line="142"/>
+        <location filename="../src/qlipperpreferencesdialog.cpp" line="143"/>
         <source>Icon name:</source>
         <translation>Symbolname:</translation>
     </message>
     <message>
-        <location filename="../src/qlipperpreferencesdialog.cpp" line="143"/>
+        <location filename="../src/qlipperpreferencesdialog.cpp" line="144"/>
         <source>Icon type:</source>
         <translation>Symboltyp:</translation>
     </message>
     <message>
-        <location filename="../src/qlipperpreferencesdialog.cpp" line="158"/>
+        <location filename="../src/qlipperpreferencesdialog.cpp" line="159"/>
         <source>Add New Sticky Item</source>
         <translation>Neue Haftnotiz hinzufügen</translation>
     </message>
@@ -331,38 +338,40 @@
         <translation>Qlipper - ein Zwischenablagenverlaufs-Applet</translation>
     </message>
     <message>
-        <location filename="../src/qlippersystray.cpp" line="125"/>
+        <location filename="../src/qlippersystray.cpp" line="122"/>
         <source>Yes</source>
         <translation>Ja</translation>
     </message>
     <message>
-        <location filename="../src/qlippersystray.cpp" line="127"/>
-        <location filename="../src/qlippersystray.cpp" line="133"/>
+        <location filename="../src/qlippersystray.cpp" line="124"/>
         <source>No</source>
         <translation>Nein</translation>
     </message>
     <message>
-        <location filename="../src/qlippersystray.cpp" line="131"/>
-        <source>Yes (experimental)</source>
-        <translation>Ja (experimentell)</translation>
+        <location filename="../src/qlippersystray.cpp" line="133"/>
+        <source>Lightweight, cross-platform clipboard history applet.&lt;p&gt;(c)&amp;nbsp;2010-2016&amp;nbsp;Petr&amp;nbsp;Vanek&amp;nbsp;&amp;lt;petr@yarpen.cz&amp;gt;&lt;p&gt;&lt;a href=&quot;https://github.com/pvanek/qlipper/&quot;&gt;https://github.com/pvanek/qlipper/&lt;/a&gt;&lt;p&gt;Support for global keyboard shortcut: %1</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/qlippersystray.cpp" line="140"/>
+        <source>Yes (experimental)</source>
+        <translation type="vanished">Ja (experimentell)</translation>
+    </message>
+    <message>
+        <location filename="../src/qlippersystray.cpp" line="131"/>
         <source>About Qlipper</source>
         <translation>Über Qlipper</translation>
     </message>
     <message>
-        <location filename="../src/qlippersystray.cpp" line="142"/>
         <source>Lightweight, cross-platform clipboard history applet.&lt;p&gt;(c)&amp;nbsp;2010-2016&amp;nbsp;Petr&amp;nbsp;Vanek&amp;nbsp;&amp;lt;petr@yarpen.cz&amp;gt;&lt;p&gt;&lt;a href=&quot;https://github.com/pvanek/qlipper/&quot;&gt;https://github.com/pvanek/qlipper/&lt;/a&gt;&lt;p&gt;Support for global keyboard shortcut: %1&lt;br&gt;Support for network clipboard sharing: %2</source>
-        <translation>Leichtgewichtiges, plattformübergreifendes Zwischenablagenverlaufs-Applet&lt;p&gt;(c)&amp;nbsp;2010-2016&amp;nbsp;Petr&amp;nbsp;Vanek&amp;nbsp;&amp;lt;petr@yarpen.cz&amp;gt;&lt;p&gt;&lt;a href=&quot;https://github.com/pvanek/qlipper/&quot;&gt;https://github.com/pvanek/qlipper/&lt;/a&gt;&lt;p&gt;Tastenkürzel unterstützt: %1&lt;br&gt;Austausch der Zwischenablage via Netzwerk unterstützt: %2</translation>
+        <translation type="vanished">Leichtgewichtiges, plattformübergreifendes Zwischenablagenverlaufs-Applet&lt;p&gt;(c)&amp;nbsp;2010-2016&amp;nbsp;Petr&amp;nbsp;Vanek&amp;nbsp;&amp;lt;petr@yarpen.cz&amp;gt;&lt;p&gt;&lt;a href=&quot;https://github.com/pvanek/qlipper/&quot;&gt;https://github.com/pvanek/qlipper/&lt;/a&gt;&lt;p&gt;Tastenkürzel unterstützt: %1&lt;br&gt;Austausch der Zwischenablage via Netzwerk unterstützt: %2</translation>
     </message>
     <message>
-        <location filename="../src/qlippersystray.cpp" line="170"/>
+        <location filename="../src/qlippersystray.cpp" line="156"/>
         <source>Confirm</source>
         <translation>Bestätigen</translation>
     </message>
     <message>
-        <location filename="../src/qlippersystray.cpp" line="170"/>
+        <location filename="../src/qlippersystray.cpp" line="156"/>
         <source>Are you sure that you want to clear your clipboard history?</source>
         <translation>Sind Sie sicher, dass Sie Ihren Zwischenablageverlauf löschen möchten?</translation>
     </message>

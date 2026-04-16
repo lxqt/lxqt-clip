@@ -56,13 +56,10 @@ QlipperSystray::QlipperSystray(QObject *parent)
     m_shortcutMenu->setModel(m_model);
     m_shortcutMenu->setWindowTitle(tr("Qlipper - a clipboard history applet"));
 
-    // Windows API does not handle well some combinations of flags in custom widgets.
-#ifndef Q_OS_WIN32
     // This flag is mandatory to get focus when user activates global_key.
     // OK, window gets a decoration but it works. Menu is displayed without the
     // the decoration if is the systray icon clicked.
     m_shortcutMenu->setWindowFlags(Qt::Dialog | Qt::CustomizeWindowHint);
-#endif
 
     connect(m_shortcutMenu, SIGNAL(triggered(QModelIndex)), m_model, SLOT(indexTriggered(QModelIndex)));
     connect(m_shortcutMenu, SIGNAL(triggered(QModelIndex)), m_shortcutMenu, SLOT(close()));
@@ -144,12 +141,8 @@ void QlipperSystray::showAbout()
 
 void QlipperSystray::systray_activated(QSystemTrayIcon::ActivationReason reason)
 {
-#ifndef Q_WS_MAC
     if (reason == QSystemTrayIcon::Trigger)
         shortcut_activated();
-#else
-    Q_UNUSED(reason);
-#endif
 }
 
 void QlipperSystray::clear_history()

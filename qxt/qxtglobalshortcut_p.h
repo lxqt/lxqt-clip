@@ -50,10 +50,8 @@ public:
     bool unsetShortcut();
 
     static bool error;
-#ifndef Q_OS_MAC
     static int ref;
     virtual bool nativeEventFilter(const QByteArray &eventType, void *message, qintptr *result) override;
-#endif // Q_OS_MAC
 
     static void activateShortcut(quint32 nativeKey, quint32 nativeMods);
 

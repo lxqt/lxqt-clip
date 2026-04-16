@@ -44,12 +44,6 @@ QlipperModel::QlipperModel(QObject *parent) :
         }
     }
 
-#ifdef Q_WS_MAC
-    m_timer = new QTimer(this);
-    connect(m_timer, SIGNAL(timeout()), this, SLOT(timer_timeout()));
-    m_timer->start(1000);
-#endif
-
     connect(ClipboardWrap::Instance(), &ClipboardWrap::changed, this, &QlipperModel::clipboard_changed);
 }
 
@@ -229,13 +223,4 @@ void QlipperModel::indexTriggered(const QModelIndex & index)
     {
         setCurrentDynamic(row);
     }
-}
-
-void QlipperModel::timer_timeout()
-{
-#ifdef Q_WS_MAC
-    m_timer->stop();
-    clipboard_changed(QClipboard::Clipboard);
-    m_timer->start();
-#endif
 }
