@@ -68,7 +68,7 @@
     </message>
     <message>
         <location filename="../src/preferencesdialog.ui" line="14"/>
-        <source>lxqt-clip preferences</source>
+        <source>lxqt-clip Preferences</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -168,9 +168,9 @@
     </message>
     <message>
         <location filename="../src/preferencesdialog.cpp" line="46"/>
-        <source>Global shortcuts can&apos;t be handled by app on wayland.
-You can configure shortcut in compositor and use D-Bus invocation, e.g.:
-qdbus6 org.lxqt.lxqt-clip /org/lxqt/clip show</source>
+        <source>On Wayland, apps can&apos;t handle global shortcuts.
+ Set the shortcut in your compositor to call D-Bus instead,
+ e.g.: &apos;qdbus6 org.lxqt.lxqt-clip /org/lxqt/clip show&apos;</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
