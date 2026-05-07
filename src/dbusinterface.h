@@ -1,6 +1,6 @@
 /*
 lxqt-clip - clipboard history manager
-Copyright (C) 2016 Palo Kisa <palo.kisa@gmail.com>
+Copyright (C) 2026 Palo Kisa <palo.kisa@gmail.com>
               2026~ LXQt team
 
 This program is free software; you can redistribute it and/or modify
@@ -22,28 +22,23 @@ with this program; if not, write to the Free Software Foundation, Inc.,
 
 #include <QObject>
 
-class QSocketNotifier;
-
 namespace LXQt {
 
-class SignalHandler : public QObject
+class Systray;
+
+class DbusInterface : public QObject
 {
     Q_OBJECT
-public:
-    static void signalHandler(int signo);
+
+    // Note: avoiding lxqt-clip as dash(-) in inteface name is causing problems in DBus ecosystem
+    Q_CLASSINFO("D-Bus Interface", "org.lxqt.clip")
 
 public:
-    SignalHandler();
-    ~SignalHandler();
-
-    void listenToSignals(QList<int> const & signoList);
-
-private slots:
-    void socketActivated();
-
+    explicit DbusInterface(Systray & tray, QObject * parent = nullptr);
+public slots:
+    void show();
 private:
-    int mSignalSock[2];
-    QScopedPointer<QSocketNotifier> mNotifier;
+    Systray & m_tray;
 };
 
 } // namespace

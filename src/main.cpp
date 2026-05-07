@@ -1,6 +1,7 @@
 /*
-Qlipper - clipboard history manager
+lxqt-clip - clipboard history manager
 Copyright (C) 2012 Petr Vanek <petr@yarpen.cz>
+              2026~ LXQt team
 
 This program is free software; you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
@@ -23,69 +24,33 @@ with this program; if not, write to the Free Software Foundation, Inc.,
 #include <QtDebug>
 #include <QSharedMemory>
 #include <QTimer>
-#include <mutex>
 #include <QDBusConnection>
 #include <QDBusError>
 
-#include "qlippersystray.h"
-#include "qlipperpreferences.h"
-#include "qlipperdbusinterface.h"
+#include "systray.h"
+#include "preferences.h"
+#include "dbusinterface.h"
 
 int main(int argc, char **argv)
 {
     QApplication a(argc, argv);
-    a.setApplicationName("qlipper");
-    a.setDesktopFileName("qlipper");
-
-    // Note1: Allow only one instance of qlipper.
-    // Note2: We can't use QSystemSemaphore as it doesn't provide
-    //        non-blocking API.
-    // Note2: On unix the underlying memory segment can outlive the
-    //        QSharedMemory object(s) if the application crashes.
-    //        So we're refreshing the "alive" timestamp each 5 sec.
-    QSharedMemory single(QStringLiteral("qlipper"));
-    QTimer refresh_timer;
-    refresh_timer.setSingleShot(false);
-    refresh_timer.setInterval(5000);
-    QObject::connect(&refresh_timer, &QTimer::timeout, [&single] { std::lock_guard<QSharedMemory> guard(single); time(static_cast<time_t *>(single.data())); });
-    if (single.create(sizeof(time_t)))
-    {
-        std::lock_guard<QSharedMemory> guard(single);
-        time(static_cast<time_t *>(single.data()));
-        refresh_timer.start();
-    } else if (single.attach())
-    {
-        std::lock_guard<QSharedMemory> guard(single);
-        time_t refresh = *static_cast<const time_t *>(single.data());
-        if (refresh > time(nullptr) - 10)
-        {
-            qWarning("An instance of qlipper is already running!");
-            return 0;
-        }
-        time(static_cast<time_t *>(single.data()));
-        refresh_timer.start();
-    } else
-    {
-        qWarning().noquote() << "Unable to create/attach shared memory(" << single.errorString()
-            << "), singleinstance behaviour will not work";
-    }
-
-    a.setApplicationName("qlipper");
-    a.setApplicationVersion(QLIPPER_VERSION);
-    a.setOrganizationDomain("qlipper.org");
-    a.setOrganizationName("Qlipper");
+    a.setApplicationName(QLatin1String{"lxqt-clip"});
+    a.setDesktopFileName(QLatin1String{"lxqt-clip"});
+    a.setApplicationVersion(QLatin1String{LXQTCLIP_VERSION});
+    a.setOrganizationDomain(QLatin1String{"lxqt.org"});
+    a.setOrganizationName(QLatin1String{"lxqt"});
 
     QSettings::setDefaultFormat(QSettings::IniFormat);
 
     a.setQuitOnLastWindowClosed(false);
-    a.setWindowIcon(QIcon(QlipperPreferences::Instance()->getPathToIcon()));
+    a.setWindowIcon(QIcon{LXQt::Preferences::Instance()->getPathToIcon()});
 
     // potentially load translator
     QString fname(a.applicationName() + "_" +  QLocale::system().name());
 
     QTranslator translator;
 
-    if (translator.load(fname, TRANSLATION_DIR))
+    if (translator.load(fname, QLatin1String{TRANSLATION_DIR}))
     {
         a.installTranslator(&translator);
     }
@@ -96,15 +61,21 @@ int main(int argc, char **argv)
     // end of translators
 
 
-    QlipperSystray s;
-    s.show();
+    LXQt::Systray s;
 
-    QlipperDbusInterface dbus_i{s};
+    // Note: Allow only one instance of lxqt-clip.
+    LXQt::DbusInterface dbus_i{s};
     auto conn = QDBusConnection::sessionBus();
-    if (!conn.registerService("org.qlipper"))
+    if (!conn.registerService(QLatin1String{"org.lxqt.lxqt-clip"}))
+    {
         qWarning() << "Can't register D-Bus service";
-    if (!conn.registerObject("/org/qlipper", &dbus_i, QDBusConnection::ExportAllSlots))
+        qWarning("An instance of lxqt-clip is already running!");
+        return 1;
+    }
+    // Note: avoiding lxqt-clip as dash(-) in object path is causing problems in DBus ecosystem
+    if (!conn.registerObject(QLatin1String{"/org/lxqt/clip"}, &dbus_i, QDBusConnection::ExportAllSlots))
         qWarning() << "Can't register object:" << conn.lastError().message();
 
+    s.show();
     return a.exec();
 }

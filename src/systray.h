@@ -1,6 +1,6 @@
 /*
 lxqt-clip - clipboard history manager
-Copyright (C) 2016 Palo Kisa <palo.kisa@gmail.com>
+Copyright (C) 2012 Petr Vanek <petr@yarpen.cz>
               2026~ LXQt team
 
 This program is free software; you can redistribute it and/or modify
@@ -20,30 +20,38 @@ with this program; if not, write to the Free Software Foundation, Inc.,
 
 #pragma once
 
-#include <QObject>
+#include <QSystemTrayIcon>
 
-class QSocketNotifier;
+class QMenuView;
+#ifndef NO_QXT
+class QxtGlobalShortcut;
+#endif
 
 namespace LXQt {
+class Model;
 
-class SignalHandler : public QObject
+class Systray : public QSystemTrayIcon
 {
     Q_OBJECT
 public:
-    static void signalHandler(int signo);
-
-public:
-    SignalHandler();
-    ~SignalHandler();
-
-    void listenToSignals(QList<int> const & signoList);
-
-private slots:
-    void socketActivated();
+    explicit Systray(QObject *parent = 0);
+    ~Systray();
 
 private:
-    int mSignalSock[2];
-    QScopedPointer<QSocketNotifier> mNotifier;
+    Model *m_model;
+    QMenu *m_contextMenu;
+#ifndef NO_QXT
+    QMenuView *m_shortcutMenu;
+    QxtGlobalShortcut *m_shortcut;
+#endif
+
+public slots:
+    void shortcut_activated();
+private slots:
+    void editPreferences();
+    void showAbout();
+    void systray_activated(QSystemTrayIcon::ActivationReason reason);
+    void clear_history();
 };
 
 } // namespace

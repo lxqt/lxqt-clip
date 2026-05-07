@@ -1,6 +1,7 @@
 /*
-Qlipper - clipboard history manager
+lxqt-clip - clipboard history manager
 Copyright (C) 2015 Palo Kisa <palo.kisa@gmail.com>
+              2026~ LXQt team
 
 This program is free software; you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
@@ -23,8 +24,6 @@ with this program; if not, write to the Free Software Foundation, Inc.,
 #include <QTimer>
 #include <QDebug>
 
-QScopedPointer<ClipboardWrap> ClipboardWrap::m_instance(0);
-
 namespace
 {
     class WorkGuard
@@ -43,6 +42,10 @@ namespace
         bool & mGuard;
     };
 }
+
+namespace LXQt {
+
+QScopedPointer<ClipboardWrap> ClipboardWrap::m_instance(0);
 
 ClipboardWrap * ClipboardWrap::Instance()
 {
@@ -94,3 +97,5 @@ void ClipboardWrap::setMimeData(QMimeData * src, QClipboard::Mode mode)
     WorkGuard g(m_shouldEmit);
     return m_clip->setMimeData(src, mode);
 }
+
+} // namespace

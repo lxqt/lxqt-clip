@@ -1,11 +1,11 @@
 # CMakeLists.txt
 # ------------------------------------
-# An initial version of the cmake build for qlipper.
+# An initial version of the cmake build for lxqt-clip.
 # WORK IN PROGRESS. USE qmake STILL FOR NOW, PLEASE!
 # Currently tested on unix only.
 # --------------------------------
 # usage
-# 1. cd qlipper/root/dir
+# 1. cd lxqt-clip/root/dir
 # 2. mkdir build
 # 3. cd build
 # 4. cmake .. -DCMAKE_INSTALL_PREFIX=/usr -DCMAKE_BUILD_TYPE=debug (or release, by default)
@@ -16,10 +16,10 @@
 CMAKE_MINIMUM_REQUIRED(VERSION 3.11)
 # from 3.1.0 to 3.6 because CMake now don't support backward compatibility for CMake < v3.5
 # and in future support for 3.11 is also getting dropped !
-project(qlipper)
+project(lxqt-clip)
 
 
-set(QLIPPER_VERSION 6.1.0)
+set(LXQTCLIP_VERSION 2.4.0)
 
 option(ENABLE_LXQT_AUTOSTART "Enables autostart for LXQt" OFF)
 option(USE_SYSTEM_QXT "Use system Qxt Library for global shortcuts; off for Qt6" OFF)
@@ -44,53 +44,48 @@ if (USE_SYSTEM_QXT)
 endif()
 
 
-set(EXE_NAME "qlipper")
-
-
 add_definitions(-DIS_CMAKE)
-add_definitions(-DQLIPPER_VERSION="${QLIPPER_VERSION}")
+add_definitions(-DLXQTCLIP_VERSION="${LXQTCLIP_VERSION}")
 
 
 # source code and compilation
-set (QLIPPER_HEADERS
+set (LXQTCLIP_HEADERS
     qkeysequencewidget/qkeysequencewidget.h
     qkeysequencewidget/qkeysequencewidget_p.h
     qmenuview/qmenuview.h
     qmenuview/qmenuview_p.h
-    src/qlippermodel.h
-    src/qlipperpreferencesdialog.h
-    src/qlippersystray.h
+    src/model.h
+    src/preferencesdialog.h
+    src/systray.h
     src/clipboardwrap.h
-    src/qlipperdbusinterface.h
+    src/dbusinterface.h
+    src/signalhandler.h
 )
-set (QLIPPER_SOURCES 
+set (LXQTCLIP_SOURCES 
     qkeysequencewidget/qkeysequencewidget.cpp
     qmenuview/qmenuview.cpp
     src/main.cpp
-    src/qlipperitem.cpp
-    src/qlippermodel.cpp
-    src/qlipperpreferences.cpp
-    src/qlipperpreferencesdialog.cpp
-    src/qlippersystray.cpp
+    src/item.cpp
+    src/model.cpp
+    src/preferences.cpp
+    src/preferencesdialog.cpp
+    src/systray.cpp
     src/clipboardwrap.cpp
-    src/qlipperdbusinterface.cpp
+    src/dbusinterface.cpp
+    src/signalhandler.cpp
 )
-if (UNIX)
-    list(APPEND QLIPPER_HEADERS src/signalhandler.h)
-    list(APPEND QLIPPER_SOURCES src/signalhandler.cpp)
-endif (UNIX)
 
 if (NOT QXT_FOUND)
 
     set (HAVE_QXT 1)
-    set (QLIPPER_SOURCES ${QLIPPER_SOURCES} qxt/qxtglobalshortcut_x11.cpp)
+    set (LXQTCLIP_SOURCES ${LXQTCLIP_SOURCES} qxt/qxtglobalshortcut_x11.cpp)
     include_directories(${Qt6Gui_PRIVATE_INCLUDE_DIRS})
 
     if (HAVE_QXT)
-        set (QLIPPER_SOURCES ${QLIPPER_SOURCES}
+        set (LXQTCLIP_SOURCES ${LXQTCLIP_SOURCES}
             qxt/qxtglobalshortcut.cpp
         )
-        set (QLIPPER_HEADERS ${QLIPPER_HEADERS}
+        set (LXQTCLIP_HEADERS ${LXQTCLIP_HEADERS}
             qxt/qxtglobalshortcut.h
         )
     endif (HAVE_QXT)
@@ -99,33 +94,35 @@ endif (NOT QXT_FOUND)
 FIND_PACKAGE(X11 REQUIRED)
 MESSAGE(STATUS "X11_X11_LIB: ${X11_X11_LIB}")
 
-set (QLIPPER_FORMS
-    src/qlipperpreferencesdialog.ui
+set (LXQTCLIP_FORMS
+    src/preferencesdialog.ui
 )
 
-set (QLIPPER_RESOURCES
-    src/qlipper.qrc
+set (LXQTCLIP_RESOURCES
+    src/lxqt-clip.qrc
 )
 
-set (QLIPPER_TRANSLATIONS
-    ts/qlipper_ca.ts
-    ts/qlipper_cs.ts
-    ts/qlipper_de.ts
-    ts/qlipper_es.ts
-    ts/qlipper_ja.ts
-    ts/qlipper_lt.ts
-    ts/qlipper_pl.ts
-    ts/qlipper_sr.ts
-    ts/qlipper_sv.ts
-    ts/qlipper_it.ts
-    ts/qlipper_zh_CN.ts
-    ts/qlipper_pt.ts
+set (LXQTCLIP_TRANSLATIONS
+    ts/lxqt-clip_ca.ts
+    ts/lxqt-clip_cs.ts
+    ts/lxqt-clip_de.ts
+    ts/lxqt-clip_es.ts
+    ts/lxqt-clip_ja.ts
+    ts/lxqt-clip_lt.ts
+    ts/lxqt-clip_pl.ts
+    ts/lxqt-clip_sr.ts
+    ts/lxqt-clip_sv.ts
+    ts/lxqt-clip_it.ts
+    ts/lxqt-clip_zh_CN.ts
+    ts/lxqt-clip_pt.ts
 )
 
-QT6_WRAP_UI( QLIPPER_UI ${QLIPPER_FORMS} )
-QT6_WRAP_CPP( QLIPPER_MOC ${QLIPPER_HEADERS} )
-QT6_ADD_RESOURCES( QLIPPER_RCC ${QLIPPER_RESOURCES} )
-QT6_ADD_TRANSLATION( QLIPPER_QM ${QLIPPER_TRANSLATIONS} )
+QT6_WRAP_UI( LXQTCLIP_UI ${LXQTCLIP_FORMS} )
+QT6_WRAP_CPP( LXQTCLIP_MOC ${LXQTCLIP_HEADERS} )
+QT6_ADD_RESOURCES( LXQTCLIP_RCC ${LXQTCLIP_RESOURCES} )
+QT6_ADD_TRANSLATION( LXQTCLIP_QM ${LXQTCLIP_TRANSLATIONS} )
+
+message(STATUS "MOCs: " ${LXQTCLIP_MOC})
 
 include_directories (
     ${CMAKE_CURRENT_SOURCE_DIR}/src
@@ -140,17 +137,17 @@ if (NOT QXT_FOUND)
 endif (NOT QXT_FOUND)
 
 
-add_executable( ${EXE_NAME}
-    ${QLIPPER_SOURCES}
-    ${QLIPPER_UI}
-    ${QLIPPER_MOC}
-    ${QLIPPER_RCC}
-    ${QLIPPER_QM}
+add_executable(lxqt-clip
+    ${LXQTCLIP_SOURCES}
+    ${LXQTCLIP_UI}
+    ${LXQTCLIP_MOC}
+    ${LXQTCLIP_RCC}
+    ${LXQTCLIP_QM}
 )
-set_property(TARGET ${EXE_NAME} PROPERTY CXX_STANDARD 11)
-set_property(TARGET ${EXE_NAME} PROPERTY CXX_STANDARD_REQUIRED ON)
+set_property(TARGET ${PROJECT_NAME} PROPERTY CXX_STANDARD 11)
+set_property(TARGET ${PROJECT_NAME} PROPERTY CXX_STANDARD_REQUIRED ON)
 
-target_link_libraries( ${EXE_NAME}
+target_link_libraries( ${PROJECT_NAME}
     PRIVATE
         Qt6::Widgets
         Qt6::DBus
@@ -161,16 +158,16 @@ target_link_libraries( ${EXE_NAME}
 
 
 if (QXT_FOUND)
-    target_link_libraries(${EXE_NAME} ${QXT_CORE_LIB} ${QXT_GUI_LIB})
+    target_link_libraries(${PROJECT_NAME} ${QXT_CORE_LIB} ${QXT_GUI_LIB})
 endif (QXT_FOUND)
 
 
 # installation
-install(TARGETS ${EXE_NAME} RUNTIME DESTINATION bin)
-install(FILES qlipper.desktop DESTINATION share/applications)
-install(FILES src/icons/qlipper.png DESTINATION share/icons/hicolor/128x128/apps)
-install(FILES ${QLIPPER_QM} DESTINATION share/qlipper/translations)
-add_definitions(-DTRANSLATION_DIR="${CMAKE_INSTALL_PREFIX}/share/qlipper/translations")
+install(TARGETS ${PROJECT_NAME} RUNTIME DESTINATION bin)
+install(FILES lxqt-clip.desktop DESTINATION share/applications)
+install(FILES src/icons/lxqt-clip.png DESTINATION share/icons/hicolor/128x128/apps)
+install(FILES ${LXQTCLIP_QM} DESTINATION share/lxqt/lxqt-clip/translations)
+add_definitions(-DTRANSLATION_DIR="${CMAKE_INSTALL_PREFIX}/share/lxqt/lxqt-clip/translations")
 
 # merged from lxqt-common
 if (ENABLE_LXQT_AUTOSTART)

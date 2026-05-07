@@ -1,10 +1,6 @@
-Lightweight and cross-platform clipboard history applet.
+Lightweight clipboard history applet by LXQt.
 
-Petr Vanek <petr@yarpen.cz>
-
-This application is a part of QtDesktop project so you can download prebuilt binary packages from its repository.
-
-It's improved version of original Qlipper which is available only as a download from qt-apps.org.
+Based on original Qlipper <https://github.com/pvanek/qlipper>.
 
 License: GPLv2+
 

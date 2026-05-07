@@ -1,6 +1,6 @@
 /*
 lxqt-clip - clipboard history manager
-Copyright (C) 2016 Palo Kisa <palo.kisa@gmail.com>
+Copyright (C) 2026 Palo Kisa <palo.kisa@gmail.com>
               2026~ LXQt team
 
 This program is free software; you can redistribute it and/or modify
@@ -18,32 +18,20 @@ with this program; if not, write to the Free Software Foundation, Inc.,
 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
 */
 
-#pragma once
-
-#include <QObject>
-
-class QSocketNotifier;
+#include "dbusinterface.h"
+#include "systray.h"
 
 namespace LXQt {
 
-class SignalHandler : public QObject
+DbusInterface::DbusInterface(Systray & tray, QObject * parent/* = nullptr*/)
+    : QObject(parent)
+    , m_tray{tray}
 {
-    Q_OBJECT
-public:
-    static void signalHandler(int signo);
+}
 
-public:
-    SignalHandler();
-    ~SignalHandler();
-
-    void listenToSignals(QList<int> const & signoList);
-
-private slots:
-    void socketActivated();
-
-private:
-    int mSignalSock[2];
-    QScopedPointer<QSocketNotifier> mNotifier;
-};
+void DbusInterface::show()
+{
+    m_tray.shortcut_activated();
+}
 
 } // namespace

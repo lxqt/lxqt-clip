@@ -9,6 +9,8 @@
 #include <cerrno>
 #include <cstring>
 
+namespace LXQt {
+
 Q_GLOBAL_STATIC(SignalHandler, signalHandlerFunc)
 
 void SignalHandler::signalHandler(int signo)
@@ -65,3 +67,5 @@ static void startup()
 }
 
 Q_COREAPP_STARTUP_FUNCTION(startup)
+
+} // namespace

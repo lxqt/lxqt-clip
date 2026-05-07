@@ -1,6 +1,6 @@
 /*
 lxqt-clip - clipboard history manager
-Copyright (C) 2016 Palo Kisa <palo.kisa@gmail.com>
+Copyright (C) 2012 Petr Vanek <petr@yarpen.cz>
               2026~ LXQt team
 
 This program is free software; you can redistribute it and/or modify
@@ -20,30 +20,47 @@ with this program; if not, write to the Free Software Foundation, Inc.,
 
 #pragma once
 
-#include <QObject>
+#include <QAbstractListModel>
+#include <QtGui/QClipboard>
+#include <QtGui/QFont>
 
-class QSocketNotifier;
+#include "item.h"
+
+class QTimer;
 
 namespace LXQt {
 
-class SignalHandler : public QObject
+class Model : public QAbstractListModel
 {
     Q_OBJECT
 public:
-    static void signalHandler(int signo);
+    explicit Model(QObject *parent = 0);
+    ~Model();
 
-public:
-    SignalHandler();
-    ~SignalHandler();
+    void resetPreferences();
 
-    void listenToSignals(QList<int> const & signoList);
+public slots:
+    void clearHistory();
+    void indexTriggered(const QModelIndex &);
 
-private slots:
-    void socketActivated();
+protected:
+    int rowCount(const QModelIndex&) const;
+    QVariant data(const QModelIndex&, int) const;
+    Qt::ItemFlags flags(const QModelIndex & index) const;
 
 private:
-    int mSignalSock[2];
-    QScopedPointer<QSocketNotifier> mNotifier;
+    QList<Item> m_sticky;
+    QList<Item> m_dynamic;
+    QPersistentModelIndex m_currentIndex;
+
+    QFont m_normalFont;
+    QFont m_boldFont;
+
+    QList<Item> getList(int &row) const;
+    void setCurrentDynamic(int ix);
+
+private slots:
+    void clipboard_changed(QClipboard::Mode);
 };
 
 } // namespace

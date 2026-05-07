@@ -1,6 +1,6 @@
 /*
 lxqt-clip - clipboard history manager
-Copyright (C) 2016 Palo Kisa <palo.kisa@gmail.com>
+Copyright (C) 2012 Petr Vanek <petr@yarpen.cz>
               2026~ LXQt team
 
 This program is free software; you can redistribute it and/or modify
@@ -20,30 +20,32 @@ with this program; if not, write to the Free Software Foundation, Inc.,
 
 #pragma once
 
-#include <QObject>
-
-class QSocketNotifier;
+#include "ui_preferencesdialog.h"
 
 namespace LXQt {
 
-class SignalHandler : public QObject
+class PreferencesDialog : public QDialog, private Ui::PreferencesDialog
 {
     Q_OBJECT
-public:
-    static void signalHandler(int signo);
 
 public:
-    SignalHandler();
-    ~SignalHandler();
-
-    void listenToSignals(QList<int> const & signoList);
+    explicit PreferencesDialog(QWidget *parent = 0);
 
 private slots:
-    void socketActivated();
+    void accept();
 
-private:
-    int mSignalSock[2];
-    QScopedPointer<QSocketNotifier> mNotifier;
+    void selectIconFromFile();
+    void useDefaultIcon();
+
+    void stickyAddButton_clicked();
+    void stickyRemoveButton_clicked();
+    void stickyUpButton_clicked();
+    void stickyDownButton_clicked();
+    void listWidget_currentRowChanged(int);
+
+  private:
+    void temporarilyRembemberNewTrayIcon(const QString &path);
+    QString getNewTrayIcon() const;
 };
 
 } // namespace

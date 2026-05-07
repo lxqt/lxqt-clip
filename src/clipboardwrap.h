@@ -1,6 +1,7 @@
 /*
-Qlipper - clipboard history manager
+lxqt-clip - clipboard history manager
 Copyright (C) 2015 Palo Kisa <palo.kisa@gmail.com>
+              2026~ LXQt team
 
 This program is free software; you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
@@ -17,13 +18,14 @@ with this program; if not, write to the Free Software Foundation, Inc.,
 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
 */
 
-#ifndef CLIPBOARDWRAP_H
-#define CLIPBOARDWRAP_H
+#pragma once
 
 #include <ksystemclipboard.h>
 #include <QScopedPointer>
 
 class QTimer;
+
+namespace LXQt {
 
 class ClipboardWrap : public QObject
 {
@@ -57,4 +59,4 @@ private:
     QScopedPointer<QTimer> m_timer;
 };
 
-#endif // CLIPBOARDWRAP_H
+} // namespace
