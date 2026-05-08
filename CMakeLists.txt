@@ -61,7 +61,7 @@ set (LXQTCLIP_HEADERS
     src/dbusinterface.h
     src/signalhandler.h
 )
-set (LXQTCLIP_SOURCES 
+set (LXQTCLIP_SOURCES
     qkeysequencewidget/qkeysequencewidget.cpp
     qmenuview/qmenuview.cpp
     src/main.cpp
@@ -103,18 +103,36 @@ set (LXQTCLIP_RESOURCES
 )
 
 set (LXQTCLIP_TRANSLATIONS
+    ts/lxqt-clip_ar.ts
+    ts/lxqt-clip_bg.ts
     ts/lxqt-clip_ca.ts
     ts/lxqt-clip_cs.ts
+    ts/lxqt-clip_da.ts
     ts/lxqt-clip_de.ts
     ts/lxqt-clip_es.ts
+    ts/lxqt-clip_et.ts
+    ts/lxqt-clip_fa.ts
+    ts/lxqt-clip_fr.ts
+    ts/lxqt-clip_he.ts
+    ts/lxqt-clip_hi.ts
+    ts/lxqt-clip_hr.ts
+    ts/lxqt-clip_hu.ts
+    ts/lxqt-clip_it.ts
     ts/lxqt-clip_ja.ts
+    ts/lxqt-clip_ko.ts
     ts/lxqt-clip_lt.ts
+    ts/lxqt-clip_nb_NO.ts
+    ts/lxqt-clip_nl.ts
+    ts/lxqt-clip_oc.ts
     ts/lxqt-clip_pl.ts
+    ts/lxqt-clip_pt.ts
+    ts/lxqt-clip_ru.ts
+    ts/lxqt-clip_si.ts
+    ts/lxqt-clip_sk.ts
     ts/lxqt-clip_sr.ts
     ts/lxqt-clip_sv.ts
-    ts/lxqt-clip_it.ts
+    ts/lxqt-clip_uk.ts
     ts/lxqt-clip_zh_CN.ts
-    ts/lxqt-clip_pt.ts
 )
 
 QT6_WRAP_UI( LXQTCLIP_UI ${LXQTCLIP_FORMS} )
