@@ -166,7 +166,8 @@ void Item::toClipboard(const Actions & actions) const
     if (actions.testFlag(ToOther))
     {
         auto mime_c = new QMimeData;
-        for (const auto & format : mime->formats())
+        const auto formats = mime->formats();
+        for (const auto &format : formats)
             mime_c->setData(format, mime->data(format));
         clipboard->setMimeData(mime_c, QClipboard::Clipboard == m_mode ? QClipboard::Selection : QClipboard::Clipboard);
     }
