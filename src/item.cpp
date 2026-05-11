@@ -265,7 +265,7 @@ QString Item::tooltipRole() const
         break;
     }
 
-    return QString("%1: %2").arg(m).arg(t);
+    return QString("%1: %2").arg(m, t);
 }
 
 bool Item::operator==(const Item &other) const {
