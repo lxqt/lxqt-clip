@@ -43,7 +43,7 @@ PreferencesDialog::PreferencesDialog(QWidget *parent) :
     shortcutWidget->setKeySequence(QKeySequence(s->shortcut()));
     if (QGuiApplication::platformName() == "wayland")
     {
-        keyboardShortcutLabel->setToolTip(tr("Global shortcuts can't be handled by app on wayland.\nYou can configure shortcut in compositor and use D-Bus invocation, e.g.:\nqdbus6 org.lxqt.lxqt-clip /org/lxqt/clip show"));
+        keyboardShortcutLabel->setToolTip(tr("On Wayland, apps can't handle global shortcuts.\n Set the shortcut in your compositor to call D-Bus instead,\n e.g.: 'qdbus6 org.lxqt.lxqt-clip /org/lxqt/clip show'"));
         keyboardShortcutLabel->setEnabled(false);
         shortcutWidget->setEnabled(false);
     }
