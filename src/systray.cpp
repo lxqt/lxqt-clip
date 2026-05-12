@@ -135,7 +135,7 @@ void Systray::showAbout()
     msgBox.setText(QString("<h1>lxqt-clip</strong> %1</h1>").arg(qApp->applicationVersion()));
     msgBox.setInformativeText(tr("Lightweight, clipboard history applet.<p>"
                                   "(c)<ul><li>2010-2016&nbsp;Petr&nbsp;Vanek&nbsp;&lt;petr@yarpen.cz&gt;</li>"
-                                  "<li>2026- LXQt team <a href=\"https://lxqtproject.org\">lxqtproject.org</a></li></ul>"
+                                  "<li>2026- LXQt team <a href=\"https://lxqt-project.org\">lxqt-project.org</a></li></ul>"
                                   "<a href=\"https://github.com/lxqt/lxqt-clip/\">https://github.com/lxqt/lxqt-clip/</a>"
                                   "<p>"
                                   "Support for global keyboard shortcut: %1").arg(globalKeySupport));
