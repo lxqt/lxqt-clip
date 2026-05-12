@@ -268,14 +268,14 @@
         <translation>いいえ</translation>
     </message>
     <message>
-        <location filename="../src/systray.cpp" line="136"/>
-        <source>Lightweight, clipboard history applet.&lt;p&gt;(c)&lt;ul&gt;&lt;li&gt;2010-2016&amp;nbsp;Petr&amp;nbsp;Vanek&amp;nbsp;&amp;lt;petr@yarpen.cz&amp;gt;&lt;/li&gt;&lt;li&gt;2026- LXQt team &lt;a href=&quot;https://lxqtproject.org&quot;&gt;lxqtproject.org&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;a href=&quot;https://github.com/lxqt/lxqt-clip/&quot;&gt;https://github.com/lxqt/lxqt-clip/&lt;/a&gt;&lt;p&gt;Support for global keyboard shortcut: %1</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="../src/systray.cpp" line="134"/>
         <source>About lxqt-clip</source>
         <translation>lxqt-clip について</translation>
+    </message>
+    <message>
+        <location filename="../src/systray.cpp" line="136"/>
+        <source>Lightweight, clipboard history applet.&lt;p&gt;(c)&lt;ul&gt;&lt;li&gt;2010-2016&amp;nbsp;Petr&amp;nbsp;Vanek&amp;nbsp;&amp;lt;petr@yarpen.cz&amp;gt;&lt;/li&gt;&lt;li&gt;2026- LXQt team &lt;a href=&quot;https://lxqt-project.org&quot;&gt;lxqt-project.org&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;a href=&quot;https://github.com/lxqt/lxqt-clip/&quot;&gt;https://github.com/lxqt/lxqt-clip/&lt;/a&gt;&lt;p&gt;Support for global keyboard shortcut: %1</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/systray.cpp" line="160"/>
