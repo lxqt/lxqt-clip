@@ -1,6 +1,38 @@
-Lightweight clipboard history applet by LXQt.
+# lxqt-clip
+
+Lightweight clipboard history applet by LXQt for X11 and Wayland.
 
 Based on original Qlipper <https://github.com/pvanek/qlipper>.
 
-License: GPLv2+
+## Installation
+
+### Compiling Sources
+
+Runtime dependencies consist of Qt6 (Widgets, DBus, LinguistTools) and KF6GuiAddons.
+Code configuration is handled by CMake. CMake variable `CMAKE_INSTALL_PREFIX` will
+normally have to be set to `/usr`.
+
+To build, run `make`. To install, run `make install` which accepts variable `DESTDIR`
+as usual.
+
+## Usage
+
+
+Add `lxqt-clip` to the "Autostart" and configure it right clicking on its systray icon.
+
+ **Note**: On Wayland to show the applet by keybind a shortcut to `qdbus6 org.lxqt.lxqt-clip /org/lxqt/clip show` (debian, arch) or `qdbus-qt6 org.lxqt.lxqt-clip /org/lxqt/clip show` (Fedora, OpenSuse) has to be added manually in the compositor settings.
+
+## LICENSE
+
+lxqt-clip is licensed under the GPLv2+. See file COPYING in the source directory for more information.
+
+## Translation
+
+Translations can be submitted in [LXQt-Weblate](https://translate.lxqt-project.org/projects/lxqt-desktop/lxqt-clip/)
+
+<a href="https://translate.lxqt-project.org/projects/lxqt-desktop/lxqt-clip/">
+<img src="https://translate.lxqt-project.org/widgets/lxqt-desktop/-/lxqt-clip/multi-auto.svg" alt="Translation status" />
+</a>
+
+
 
