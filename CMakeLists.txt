@@ -44,7 +44,6 @@ if (USE_SYSTEM_QXT)
 endif()
 
 
-add_definitions(-DIS_CMAKE)
 add_definitions(-DLXQTCLIP_VERSION="${LXQTCLIP_VERSION}")
 
 
