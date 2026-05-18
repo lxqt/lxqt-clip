@@ -29,6 +29,7 @@ LIST(APPEND CMAKE_MODULE_PATH ${CMAKE_CURRENT_SOURCE_DIR}/cmake)
 
 find_package(Qt6 REQUIRED COMPONENTS Widgets DBus LinguistTools)
 find_package(KF6GuiAddons REQUIRED)
+find_package(X11 REQUIRED)
 
 # Qt 6.10: Usage of a private Qt module Foo now requires a call to find_package(Qt6 COMPONENTS FooPrivate) to make the Qt6::FooPrivate target available.
 if (Qt6Gui_VERSION VERSION_GREATER_EQUAL "6.10.0")
@@ -90,8 +91,6 @@ if (NOT QXT_FOUND)
     endif (HAVE_QXT)
 
 endif (NOT QXT_FOUND)
-FIND_PACKAGE(X11 REQUIRED)
-MESSAGE(STATUS "X11_X11_LIB: ${X11_X11_LIB}")
 
 set (LXQTCLIP_FORMS
     src/preferencesdialog.ui
