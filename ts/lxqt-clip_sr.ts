@@ -6,7 +6,7 @@
     <message>
         <location filename="../src/model.cpp" line="205"/>
         <source>Welcome to the lxqt-clip clipboard history applet</source>
-        <translation>Добродошли у Кјулипер, алатку за историјат клипборда</translation>
+        <translation>Добро дошли у lxqt-clip, програмчић за историјат оставе</translation>
     </message>
 </context>
 <context>
@@ -14,27 +14,27 @@
     <message>
         <location filename="../src/preferencesdialog.ui" line="42"/>
         <source>Preferences</source>
-        <translation>Подешавања</translation>
+        <translation>Поставке</translation>
     </message>
     <message>
         <location filename="../src/preferencesdialog.ui" line="113"/>
         <source>Keyboard Shortcut:</source>
-        <translation>Пречица тастатуре:</translation>
+        <translation>Пречица на тастатури:</translation>
     </message>
     <message>
         <location filename="../src/preferencesdialog.ui" line="120"/>
         <source>Change global keyboard shortcut to invoke the menu on screen</source>
-        <translation>Промени глобалну пречицу за позивање менија на екрану</translation>
+        <translation>Промени општу пречицу на тастатури за позивање менија на екрану</translation>
     </message>
     <message>
         <location filename="../src/preferencesdialog.ui" line="48"/>
         <source>Clipboard Entries Count:</source>
-        <translation>Број уноса клипборда:</translation>
+        <translation>Број уноса оставе:</translation>
     </message>
     <message>
         <location filename="../src/preferencesdialog.ui" line="55"/>
         <source>The maximum count of dynamic items in the menu</source>
-        <translation>Максималан број промењивих уноса на менију</translation>
+        <translation>Највећи број динамичких уноса у менију</translation>
     </message>
     <message>
         <location filename="../src/preferencesdialog.ui" line="61"/>
@@ -44,12 +44,12 @@
     <message>
         <location filename="../src/preferencesdialog.ui" line="77"/>
         <source>Maximum Display Size:</source>
-        <translation>Максимална величина приказа:</translation>
+        <translation>Највећа величина приказа:</translation>
     </message>
     <message>
         <location filename="../src/preferencesdialog.ui" line="84"/>
         <source>How long is the preview text in the menu</source>
-        <translation>Колико дуг је преглед текста на менију</translation>
+        <translation>Колика је дужина претпрегледа текста у менију</translation>
     </message>
     <message>
         <location filename="../src/preferencesdialog.ui" line="90"/>
@@ -64,17 +64,17 @@
     <message>
         <location filename="../src/preferencesdialog.ui" line="103"/>
         <source>Useful for bigger text blocks copied for example from dummy terminals (minicom, etc.)</source>
-        <translation>Корисно за веће блокове текста копиране са на пример лажних терминала (minicom, итд.)</translation>
+        <translation>Корисно за веће блокове текста копиране, на пример, са лажних терминала (minicom, итд.)</translation>
     </message>
     <message>
         <location filename="../src/preferencesdialog.ui" line="14"/>
         <source>lxqt-clip Preferences</source>
-        <translation type="unfinished"></translation>
+        <translation>Поставке lxqt-clipа</translation>
     </message>
     <message>
         <location filename="../src/preferencesdialog.ui" line="106"/>
         <source>Trim Whitespaces for Every Line</source>
-        <translation>Уклони празан простор за сваку линију</translation>
+        <translation>Уклони вишак размака у свакој линији</translation>
     </message>
     <message>
         <location filename="../src/preferencesdialog.ui" line="127"/>
@@ -84,32 +84,32 @@
     <message>
         <location filename="../src/preferencesdialog.ui" line="153"/>
         <source>Use clipboard extensions (Selection/FindBuffer) when it&apos;s supported</source>
-        <translation type="unfinished"></translation>
+        <translation>Користи проширења оставе (Избор/FindBuffer) када су подржана</translation>
     </message>
     <message>
         <location filename="../src/preferencesdialog.ui" line="164"/>
         <source>No synchronization of clipboard &amp; PSE</source>
-        <translation>Нема синхронизације клипборда и PSE</translation>
+        <translation>Нема усклађивања оставе и PSE</translation>
     </message>
     <message>
         <location filename="../src/preferencesdialog.ui" line="169"/>
         <source>Synchronize clipboard &amp; PSE when item selected</source>
-        <translation>Синхронизуј клипборд и PSE када је предмет изабран</translation>
+        <translation>Усклади оставу и PSE када је ставка изабрана</translation>
     </message>
     <message>
         <location filename="../src/preferencesdialog.ui" line="174"/>
         <source>Synchronize clipboard &amp; PSE instantly</source>
-        <translation>Синхронизуј клипборд и PSE одмах</translation>
+        <translation>Усклади оставу и PSE одмах</translation>
     </message>
     <message>
         <location filename="../src/preferencesdialog.ui" line="182"/>
         <source>Clear Items on Exit</source>
-        <translation>Обриши предмет на излазу</translation>
+        <translation>Очисти ставке при излазку</translation>
     </message>
     <message>
         <location filename="../src/preferencesdialog.ui" line="189"/>
         <source>Synchronize history to storage instantly</source>
-        <translation>Синхрониизуј историју са складиштем одмах</translation>
+        <translation>Усклади историјат са складиштем одмах</translation>
     </message>
     <message>
         <location filename="../src/preferencesdialog.ui" line="209"/>
@@ -124,7 +124,7 @@
     <message>
         <location filename="../src/preferencesdialog.ui" line="231"/>
         <source>Sticky items are unchanged, always on top snippets in the menu</source>
-        <translation>Лепљиве ставке се не мењају, увек су на врху у менију</translation>
+        <translation>Лепљиве ставке остају непромењене, то су исечци који су увек на врху менија</translation>
     </message>
     <message>
         <location filename="../src/preferencesdialog.ui" line="254"/>
@@ -144,12 +144,12 @@
     <message>
         <location filename="../src/preferencesdialog.ui" line="267"/>
         <source>&amp;Remove</source>
-        <translation>&amp;Обнови</translation>
+        <translation>&amp;Уклони</translation>
     </message>
     <message>
         <location filename="../src/preferencesdialog.ui" line="274"/>
         <source>Move item up</source>
-        <translation>Помери ставку горе</translation>
+        <translation>Премести ставку горе</translation>
     </message>
     <message>
         <location filename="../src/preferencesdialog.ui" line="277"/>
@@ -159,7 +159,7 @@
     <message>
         <location filename="../src/preferencesdialog.ui" line="284"/>
         <source>Move item down</source>
-        <translation>Помери ставку доле</translation>
+        <translation>Премести ставку доле</translation>
     </message>
     <message>
         <location filename="../src/preferencesdialog.ui" line="287"/>
@@ -171,27 +171,29 @@
         <source>On Wayland, apps can&apos;t handle global shortcuts.
  Set the shortcut in your compositor to call D-Bus instead,
  e.g.: &apos;qdbus6 org.lxqt.lxqt-clip /org/lxqt/clip show&apos;</source>
-        <translation type="unfinished"></translation>
+        <translation>На Вејленду, програми не могу да рукују општим пречицама.
+ Поставите пречицу у вашем композитору тако да уместо тога позове D-Bus,
+ нпр.: &apos;qdbus6 org.lxqt.lxqt-clip /org/lxqt/clip show&apos;</translation>
     </message>
     <message>
         <location filename="../src/preferencesdialog.cpp" line="89"/>
         <source>Icon selection</source>
-        <translation>Селекција иконе</translation>
+        <translation>Избор иконице</translation>
     </message>
     <message>
         <location filename="../src/preferencesdialog.cpp" line="90"/>
         <source>Load icon from file...</source>
-        <translation>Учитај икону из фајла...</translation>
+        <translation>Учитај иконицу из датотеке...</translation>
     </message>
     <message>
         <location filename="../src/preferencesdialog.cpp" line="91"/>
         <source>Use default icon</source>
-        <translation>Користи подразумевану икону</translation>
+        <translation>Употреби подразумевану иконицу</translation>
     </message>
     <message>
         <location filename="../src/preferencesdialog.cpp" line="136"/>
         <source>Select icon file</source>
-        <translation>Изабери икону фајла</translation>
+        <translation>Изабери датотеку иконице</translation>
     </message>
     <message>
         <location filename="../src/preferencesdialog.cpp" line="138"/>
@@ -201,33 +203,33 @@
     <message>
         <location filename="../src/preferencesdialog.cpp" line="142"/>
         <source>Select icon</source>
-        <translation>Изабери икону</translation>
+        <translation>Изабери иконицу</translation>
     </message>
     <message>
         <location filename="../src/preferencesdialog.cpp" line="143"/>
         <source>Cancel</source>
-        <translation>Прекини</translation>
+        <translation>Откажи</translation>
     </message>
     <message>
         <location filename="../src/preferencesdialog.cpp" line="145"/>
         <source>Look in:</source>
         <extracomment>Label to describe the folder for icon file selection dialog.</extracomment>
-        <translation>Претражи у:</translation>
+        <translation>Погледај у:</translation>
     </message>
     <message>
         <location filename="../src/preferencesdialog.cpp" line="146"/>
         <source>Icon name:</source>
-        <translation>Име иконе:</translation>
+        <translation>Назив иконице:</translation>
     </message>
     <message>
         <location filename="../src/preferencesdialog.cpp" line="147"/>
         <source>Icon type:</source>
-        <translation type="unfinished"></translation>
+        <translation>Врста иконице:</translation>
     </message>
     <message>
         <location filename="../src/preferencesdialog.cpp" line="162"/>
         <source>Add New Sticky Item</source>
-        <translation>Додај нови лепљиви унос</translation>
+        <translation>Додај нову лепљиву ставку</translation>
     </message>
 </context>
 <context>
@@ -235,27 +237,27 @@
     <message>
         <location filename="../src/systray.cpp" line="46"/>
         <source>C&amp;lear clipboard history</source>
-        <translation type="unfinished">Очисти &amp;историјат</translation>
+        <translation>Очисти &amp;историјат оставе</translation>
     </message>
     <message>
         <location filename="../src/systray.cpp" line="48"/>
         <source>&amp;Configure...</source>
-        <translation type="unfinished">&amp;Подеси...</translation>
+        <translation>&amp;Подеси...</translation>
     </message>
     <message>
         <location filename="../src/systray.cpp" line="51"/>
         <source>&amp;About ...</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;О програму ...</translation>
     </message>
     <message>
         <location filename="../src/systray.cpp" line="53"/>
         <source>&amp;Quit</source>
-        <translation type="unfinished">&amp;Напусти</translation>
+        <translation>&amp;Изађи</translation>
     </message>
     <message>
         <location filename="../src/systray.cpp" line="60"/>
         <source>lxqt-clip - a clipboard history applet</source>
-        <translation>Кјулипер - алатка за историјат клипборда</translation>
+        <translation>lxqt-clip - програмчић за историјат оставе</translation>
     </message>
     <message>
         <location filename="../src/systray.cpp" line="125"/>
@@ -270,12 +272,12 @@
     <message>
         <location filename="../src/systray.cpp" line="134"/>
         <source>About lxqt-clip</source>
-        <translation>О Кјулиперу</translation>
+        <translation>О програму lxqt-clip</translation>
     </message>
     <message>
         <location filename="../src/systray.cpp" line="136"/>
         <source>Lightweight, clipboard history applet.&lt;p&gt;(c)&lt;ul&gt;&lt;li&gt;2010-2016&amp;nbsp;Petr&amp;nbsp;Vanek&amp;nbsp;&amp;lt;petr@yarpen.cz&amp;gt;&lt;/li&gt;&lt;li&gt;2026- LXQt team &lt;a href=&quot;https://lxqt-project.org&quot;&gt;lxqt-project.org&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;a href=&quot;https://github.com/lxqt/lxqt-clip/&quot;&gt;https://github.com/lxqt/lxqt-clip/&lt;/a&gt;&lt;p&gt;Support for global keyboard shortcut: %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Лаган програмчић за историју оставе.&lt;p&gt;(c)&lt;ul&gt;&lt;li&gt;2010-2016&amp;nbsp;Petr&amp;nbsp;Vanek&amp;nbsp;&amp;lt;petr@yarpen.cz&amp;gt;&lt;/li&gt;&lt;li&gt;2026- LxQt тим &lt;a href=&quot;https://lxqt-project.org&quot;&gt;lxqt-project.org&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;a href=&quot;https://github.com/lxqt/lxqt-clip/&quot;&gt;https://github.com/lxqt/lxqt-clip/&lt;/a&gt;&lt;p&gt;Подршка за општу пречицу тастатуре: %1</translation>
     </message>
     <message>
         <location filename="../src/systray.cpp" line="160"/>
@@ -285,7 +287,7 @@
     <message>
         <location filename="../src/systray.cpp" line="160"/>
         <source>Are you sure that you want to clear your clipboard history?</source>
-        <translation>Да ли си сигуран да желиш обрисати клипборд историју?</translation>
+        <translation>Да ли сте сигурни да желите да очистите историју оставе?</translation>
     </message>
 </context>
 <context>
@@ -293,7 +295,7 @@
     <message>
         <location filename="../src/item.cpp" line="184"/>
         <source>Url: %1</source>
-        <translation>Url: %1</translation>
+        <translation>Адреса: %1</translation>
     </message>
     <message>
         <location filename="../src/item.cpp" line="186"/>
@@ -303,17 +305,17 @@
     <message>
         <location filename="../src/item.cpp" line="238"/>
         <source>Clipboard</source>
-        <translation>Клипборд</translation>
+        <translation>Остава</translation>
     </message>
     <message>
         <location filename="../src/item.cpp" line="241"/>
         <source>Selection</source>
-        <translation>Одабир</translation>
+        <translation>Избор</translation>
     </message>
     <message>
         <location filename="../src/item.cpp" line="244"/>
         <source>Find Buffer</source>
-        <translation type="unfinished"></translation>
+        <translation>Спремиште за проналажење</translation>
     </message>
     <message>
         <location filename="../src/item.cpp" line="251"/>
@@ -323,7 +325,7 @@
     <message>
         <location filename="../src/item.cpp" line="254"/>
         <source>Rich Text</source>
-        <translation type="unfinished"></translation>
+        <translation>Богат текст</translation>
     </message>
     <message>
         <location filename="../src/item.cpp" line="257"/>
@@ -333,12 +335,12 @@
     <message>
         <location filename="../src/item.cpp" line="260"/>
         <source>URL</source>
-        <translation>URL</translation>
+        <translation>УРЛ</translation>
     </message>
     <message>
         <location filename="../src/item.cpp" line="263"/>
         <source>Sticky Item (Plain Text)</source>
-        <translation>Лепљиви предмет (Обичан текст)</translation>
+        <translation>Лепљива ставка (обичан текст)</translation>
     </message>
 </context>
 </TS>

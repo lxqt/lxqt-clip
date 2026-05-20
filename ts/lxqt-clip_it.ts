@@ -69,7 +69,7 @@
     <message>
         <location filename="../src/preferencesdialog.ui" line="14"/>
         <source>lxqt-clip Preferences</source>
-        <translation type="unfinished"></translation>
+        <translation>Preferenze di lxqt-clip</translation>
     </message>
     <message>
         <location filename="../src/preferencesdialog.ui" line="106"/>
@@ -84,7 +84,7 @@
     <message>
         <location filename="../src/preferencesdialog.ui" line="153"/>
         <source>Use clipboard extensions (Selection/FindBuffer) when it&apos;s supported</source>
-        <translation type="unfinished"></translation>
+        <translation>Utilizza le estensioni degli appunti (Selezione/Trova buffer) se supportate.</translation>
     </message>
     <message>
         <location filename="../src/preferencesdialog.ui" line="164"/>
@@ -171,7 +171,9 @@
         <source>On Wayland, apps can&apos;t handle global shortcuts.
  Set the shortcut in your compositor to call D-Bus instead,
  e.g.: &apos;qdbus6 org.lxqt.lxqt-clip /org/lxqt/clip show&apos;</source>
-        <translation type="unfinished"></translation>
+        <translation>Applicazioni non possono gestire le scorciatoie globali su Wayland.
+Imposta la scorciatoia nel tuo compositore in modo che chiami D-Bus,
+ad esempio: &apos;qdbus6 org.lxqt.lxqt-clip /org/lxqt/clip show&apos;</translation>
     </message>
     <message>
         <location filename="../src/preferencesdialog.cpp" line="89"/>
@@ -245,7 +247,7 @@
     <message>
         <location filename="../src/systray.cpp" line="51"/>
         <source>&amp;About ...</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Informazioni ...</translation>
     </message>
     <message>
         <location filename="../src/systray.cpp" line="53"/>
@@ -275,7 +277,7 @@
     <message>
         <location filename="../src/systray.cpp" line="136"/>
         <source>Lightweight, clipboard history applet.&lt;p&gt;(c)&lt;ul&gt;&lt;li&gt;2010-2016&amp;nbsp;Petr&amp;nbsp;Vanek&amp;nbsp;&amp;lt;petr@yarpen.cz&amp;gt;&lt;/li&gt;&lt;li&gt;2026- LXQt team &lt;a href=&quot;https://lxqt-project.org&quot;&gt;lxqt-project.org&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;a href=&quot;https://github.com/lxqt/lxqt-clip/&quot;&gt;https://github.com/lxqt/lxqt-clip/&lt;/a&gt;&lt;p&gt;Support for global keyboard shortcut: %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Applet leggero per la cronologia degli appunti.&lt;p&gt;(c)&lt;ul&gt;&lt;li&gt;2010-2016&amp;nbsp;Petr&amp;nbsp;Vanek&amp;nbsp;&amp;lt;petr@yarpen.cz&amp;gt;&lt;/li&gt;&lt;li&gt;2026- Team LXQt &lt;a href=&quot;https://lxqt-project.org&quot;&gt;lxqt-project.org&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;a href=&quot;https://github.com/lxqt/lxqt-clip/&quot;&gt;https://github.com/lxqt/lxqt-clip/&lt;/a&gt;&lt;p&gt;Supporto per la scorciatoia da tastiera globale: %1</translation>
     </message>
     <message>
         <location filename="../src/systray.cpp" line="160"/>
