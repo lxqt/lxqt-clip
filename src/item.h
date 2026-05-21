@@ -33,6 +33,7 @@ public:
     enum ContentType {
         PlainText,
         RichText,
+        Image,
         Binary,
         Url,
         Sticky
