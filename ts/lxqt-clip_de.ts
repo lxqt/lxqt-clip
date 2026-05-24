@@ -29,7 +29,7 @@
     </message>
     <message>
         <location filename="../src/preferencesdialog.ui" line="48"/>
-        <source>Clipboard Entries Count:</source>
+        <source>Clipboard entries count:</source>
         <translation>Anzahl der Einträge in der Zwischenablage:</translation>
     </message>
     <message>
@@ -44,7 +44,7 @@
     </message>
     <message>
         <location filename="../src/preferencesdialog.ui" line="77"/>
-        <source>Maximum Display Size:</source>
+        <source>Maximum display size:</source>
         <translation>Maximale Textlänge:</translation>
     </message>
     <message>
@@ -59,7 +59,7 @@
     </message>
     <message>
         <location filename="../src/preferencesdialog.ui" line="156"/>
-        <source>Use Platform Specific Extensions (Advanced)</source>
+        <source>Use platform specific extensions (advanced)</source>
         <translation>Plattformspezifische Erweiterungen verwenden</translation>
     </message>
     <message>
@@ -74,7 +74,7 @@
     </message>
     <message>
         <location filename="../src/preferencesdialog.ui" line="106"/>
-        <source>Trim Whitespaces for Every Line</source>
+        <source>Trim whitespaces for every line</source>
         <translation>Überschüssige Leerstellen in jeder Zeile entfernen</translation>
     </message>
     <message>
@@ -104,7 +104,7 @@
     </message>
     <message>
         <location filename="../src/preferencesdialog.ui" line="182"/>
-        <source>Clear Items on Exit</source>
+        <source>Clear items on exit</source>
         <translation>Elemente beim Beenden löschen</translation>
     </message>
     <message>
