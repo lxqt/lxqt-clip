@@ -70,7 +70,7 @@
     <message>
         <location filename="../src/preferencesdialog.ui" line="14"/>
         <source>lxqt-clip Preferences</source>
-        <translation type="unfinished"></translation>
+        <translation>lxqt-clip Einstellungen</translation>
     </message>
     <message>
         <location filename="../src/preferencesdialog.ui" line="106"/>
@@ -85,7 +85,7 @@
     <message>
         <location filename="../src/preferencesdialog.ui" line="153"/>
         <source>Use clipboard extensions (Selection/FindBuffer) when it&apos;s supported</source>
-        <translation type="unfinished"></translation>
+        <translation>Zwischenablage-Erweiterungen nutzen (Selection/FindBuffer), sofern diese unterstützt werden</translation>
     </message>
     <message>
         <location filename="../src/preferencesdialog.ui" line="164"/>
@@ -95,12 +95,12 @@
     <message>
         <location filename="../src/preferencesdialog.ui" line="169"/>
         <source>Synchronize clipboard &amp; PSE when item selected</source>
-        <translation>Synchronisiere Zwischenablage mit PSE, wenn ein Objekt gewählt wird</translation>
+        <translation>Zwischenablage mit PSE synchronisieren, wenn ein Objekt gewählt wird</translation>
     </message>
     <message>
         <location filename="../src/preferencesdialog.ui" line="174"/>
         <source>Synchronize clipboard &amp; PSE instantly</source>
-        <translation>Zwischenablage &amp; PSE sofort synchronisieren</translation>
+        <translation>Zwischenablage und PSE sofort synchronisieren</translation>
     </message>
     <message>
         <location filename="../src/preferencesdialog.ui" line="182"/>
@@ -172,7 +172,9 @@
         <source>On Wayland, apps can&apos;t handle global shortcuts.
  Set the shortcut in your compositor to call D-Bus instead,
  e.g.: &apos;qdbus6 org.lxqt.lxqt-clip /org/lxqt/clip show&apos;</source>
-        <translation type="unfinished"></translation>
+        <translation>Unter Wayland können Anwendungen keine globalen Tastenkombinationen setzen.
+Fügen Sie in Ihrem Compositor eine Tastenkombination hinzu, die stattdessen D-Bus aufruft,
+z. B.: &apos;qdbus6 org.lxqt.lxqt-clip /org/lxqt/clip show&apos;</translation>
     </message>
     <message>
         <location filename="../src/preferencesdialog.cpp" line="89"/>
@@ -182,7 +184,7 @@
     <message>
         <location filename="../src/preferencesdialog.cpp" line="90"/>
         <source>Load icon from file...</source>
-        <translation>Symbol aus Datei laden...</translation>
+        <translation>Symbol aus Datei laden ...</translation>
     </message>
     <message>
         <location filename="../src/preferencesdialog.cpp" line="91"/>
@@ -241,12 +243,12 @@
     <message>
         <location filename="../src/systray.cpp" line="48"/>
         <source>&amp;Configure...</source>
-        <translation>&amp;Konfigurieren...</translation>
+        <translation>&amp;Konfigurieren ...</translation>
     </message>
     <message>
         <location filename="../src/systray.cpp" line="51"/>
         <source>&amp;About ...</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Informationen ...</translation>
     </message>
     <message>
         <location filename="../src/systray.cpp" line="53"/>
@@ -256,7 +258,7 @@
     <message>
         <location filename="../src/systray.cpp" line="60"/>
         <source>lxqt-clip - a clipboard history applet</source>
-        <translation>lxqt-clip - ein Zwischenablagenverlaufs-Applet</translation>
+        <translation>lxqt-clip – ein Zwischenablagenverlaufs-Applet</translation>
     </message>
     <message>
         <location filename="../src/systray.cpp" line="125"/>
@@ -276,7 +278,7 @@
     <message>
         <location filename="../src/systray.cpp" line="136"/>
         <source>Lightweight, clipboard history applet.&lt;p&gt;(c)&lt;ul&gt;&lt;li&gt;2010-2016&amp;nbsp;Petr&amp;nbsp;Vanek&amp;nbsp;&amp;lt;petr@yarpen.cz&amp;gt;&lt;/li&gt;&lt;li&gt;2026- LXQt team &lt;a href=&quot;https://lxqt-project.org&quot;&gt;lxqt-project.org&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;a href=&quot;https://github.com/lxqt/lxqt-clip/&quot;&gt;https://github.com/lxqt/lxqt-clip/&lt;/a&gt;&lt;p&gt;Support for global keyboard shortcut: %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Leichtgewichtiges Applet zur Speicherung des Zwischenablageverlaufs.&lt;p&gt;(c)&lt;ul&gt;&lt;li&gt;2010–2016 Petr Vanek&lt;petr@yarpen.cz&gt;&lt;/li&gt;&lt;li&gt;2026– LXQt-Team &lt;a href=&quot;https://lxqt-project.org&quot;&gt;lxqt-project.org&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;a href=&quot;https://github.com/lxqt/lxqt-clip/&quot;&gt;https://github.com/lxqt/lxqt-clip/&lt;/a&gt;&lt;p&gt;Unterstützung für globale Tastenkombinationen: %1</translation>
     </message>
     <message>
         <location filename="../src/systray.cpp" line="160"/>

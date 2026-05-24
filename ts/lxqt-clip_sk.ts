@@ -69,7 +69,7 @@
     <message>
         <location filename="../src/preferencesdialog.ui" line="14"/>
         <source>lxqt-clip Preferences</source>
-        <translation type="unfinished"></translation>
+        <translation>Nastavenia správu schránky</translation>
     </message>
     <message>
         <location filename="../src/preferencesdialog.ui" line="106"/>
