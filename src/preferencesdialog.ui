@@ -349,21 +349,5 @@
     </hint>
    </hints>
   </connection>
-  <connection>
-   <sender>platformExtensionsCheckBox</sender>
-   <signal>clicked(bool)</signal>
-   <receiver>synchronizePSE</receiver>
-   <slot>setEnabled(bool)</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>20</x>
-     <y>20</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>20</x>
-     <y>20</y>
-    </hint>
-   </hints>
-  </connection>
  </connections>
 </ui>

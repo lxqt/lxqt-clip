@@ -48,7 +48,6 @@ PreferencesDialog::PreferencesDialog(QWidget *parent) :
         shortcutWidget->setEnabled(false);
     }
     const bool pse = s->platformExtensions();
-    synchronizePSE->setEnabled(pse);
     synchronizePSE->setCurrentIndex(s->synchronizePSE());
     clearItemsOnExit->setChecked(s->clearItemsOnExit());
     synchronizeHistory->setChecked(s->synchronizeHistory());
