@@ -45,7 +45,7 @@
        <item row="0" column="0">
         <widget class="QLabel" name="label">
          <property name="text">
-          <string>Clipboard Entries Count:</string>
+          <string>Clipboard entries count:</string>
          </property>
         </widget>
        </item>
@@ -74,7 +74,7 @@
        <item row="1" column="0">
         <widget class="QLabel" name="label_2">
          <property name="text">
-          <string>Maximum Display Size:</string>
+          <string>Maximum display size:</string>
          </property>
         </widget>
        </item>
@@ -103,14 +103,14 @@
           <string>Useful for bigger text blocks copied for example from dummy terminals (minicom, etc.)</string>
          </property>
          <property name="text">
-          <string>Trim Whitespaces for Every Line</string>
+          <string>Trim whitespaces for every line</string>
          </property>
         </widget>
        </item>
        <item row="3" column="0">
         <widget class="QLabel" name="keyboardShortcutLabel">
          <property name="text">
-          <string>Keyboard Shortcut:</string>
+          <string>Keyboard shortcut:</string>
          </property>
         </widget>
        </item>
@@ -153,7 +153,7 @@
           <string>Use clipboard extensions (Selection/FindBuffer) when it's supported</string>
          </property>
          <property name="text">
-          <string>Use Platform Specific Extensions (Advanced)</string>
+          <string>Use platform specific extensions (advanced)</string>
          </property>
         </widget>
        </item>
@@ -179,7 +179,7 @@
        <item row="7" column="0" colspan="2">
         <widget class="QCheckBox" name="clearItemsOnExit">
          <property name="text">
-          <string>Clear Items on Exit</string>
+          <string>Clear items on exit</string>
          </property>
         </widget>
        </item>
@@ -206,7 +206,7 @@
        <item row="9" column="0">
         <widget class="QCheckBox" name="confirmOnClear">
          <property name="text">
-          <string>Confirm Clear History</string>
+          <string>Confirm clear history</string>
          </property>
         </widget>
        </item>

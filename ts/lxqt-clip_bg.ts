@@ -28,7 +28,7 @@
     </message>
     <message>
         <location filename="../src/preferencesdialog.ui" line="48"/>
-        <source>Clipboard Entries Count:</source>
+        <source>Clipboard entries count:</source>
         <translation>Брой записи в клипборда:</translation>
     </message>
     <message>
@@ -43,7 +43,7 @@
     </message>
     <message>
         <location filename="../src/preferencesdialog.ui" line="77"/>
-        <source>Maximum Display Size:</source>
+        <source>Maximum display size:</source>
         <translation>Максимален размер на показване:</translation>
     </message>
     <message>
@@ -58,7 +58,7 @@
     </message>
     <message>
         <location filename="../src/preferencesdialog.ui" line="156"/>
-        <source>Use Platform Specific Extensions (Advanced)</source>
+        <source>Use platform specific extensions (advanced)</source>
         <translation>Използвайте разширения, специфични за платформата (разширени)</translation>
     </message>
     <message>
@@ -73,7 +73,7 @@
     </message>
     <message>
         <location filename="../src/preferencesdialog.ui" line="106"/>
-        <source>Trim Whitespaces for Every Line</source>
+        <source>Trim whitespaces for every line</source>
         <translation>Изрязване на празните места за всеки ред</translation>
     </message>
     <message>
@@ -103,7 +103,7 @@
     </message>
     <message>
         <location filename="../src/preferencesdialog.ui" line="182"/>
-        <source>Clear Items on Exit</source>
+        <source>Clear items on exit</source>
         <translation>Изчистване на елементите при изход</translation>
     </message>
     <message>
