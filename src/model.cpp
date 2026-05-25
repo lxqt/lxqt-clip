@@ -120,7 +120,7 @@ Qt::ItemFlags Model::flags(const QModelIndex & index) const
 void Model::clipboard_changed(QClipboard::Mode mode)
 {
     if ((mode == QClipboard::Selection || mode == QClipboard::FindBuffer)
-            && !Preferences::Instance()->platformExtensions())
+            && Preferences::Instance()->synchronizePSE() == 0)
     {
         return;
     }

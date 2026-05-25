@@ -200,11 +200,6 @@ int Preferences::historyCount() const
     return value("historyCount", 10).toInt();
 }
 
-bool Preferences::platformExtensions() const
-{
-    return value("platformExtensions", false).toBool();
-}
-
 Preferences::PSESynchronization Preferences::synchronizePSE() const
 {
     return static_cast<PSESynchronization>(value("synchronizePSE", PSE_NO_SYNC).toInt());
@@ -227,12 +222,12 @@ bool Preferences::confirmOnClear() const
 
 bool Preferences::shouldSynchronizeClipboards() const
 {
-    return platformExtensions() && PSE_NO_SYNC != synchronizePSE();
+    return PSE_NO_SYNC != synchronizePSE();
 }
 
 bool Preferences::shouldSynchronizeClipboardsInstantly() const
 {
-    return platformExtensions() && PSE_SYNC_INSTANTLY == synchronizePSE();
+    return PSE_SYNC_INSTANTLY == synchronizePSE();
 }
 
 } // namespace

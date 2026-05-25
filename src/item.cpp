@@ -192,10 +192,7 @@ QString Item::displayRole() const
 
 QIcon Item::decorationRole() const
 {
-    if (!Preferences::Instance()->platformExtensions())
-    {
-        return iconForContentType();
-    }
+    iconForContentType();
 
     QPixmap pm;
     QString cacheKey = QString("%1_%2").arg(m_contentType).arg(m_mode);

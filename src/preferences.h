@@ -54,7 +54,6 @@ public:
     int displaySize() const;
     QString shortcut() const;
     int historyCount() const;
-    bool platformExtensions() const;
     PSESynchronization synchronizePSE() const;
     bool clearItemsOnExit() const;
     bool synchronizeHistory() const;

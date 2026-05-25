@@ -47,7 +47,6 @@ PreferencesDialog::PreferencesDialog(QWidget *parent) :
         keyboardShortcutLabel->setEnabled(false);
         shortcutWidget->setEnabled(false);
     }
-    const bool pse = s->platformExtensions();
     synchronizePSE->setCurrentIndex(s->synchronizePSE());
     clearItemsOnExit->setChecked(s->clearItemsOnExit());
     synchronizeHistory->setChecked(s->synchronizeHistory());
