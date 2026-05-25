@@ -1,5 +1,3 @@
-CMAKE_MINIMUM_REQUIRED(VERSION 3.11 FATAL_ERROR)
-
 file(GLOB DESKTOP_FILES_IN *.desktop.in)
 
 # Translations **********************************

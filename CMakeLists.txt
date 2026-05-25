@@ -13,22 +13,22 @@
 # 6. make install
 # --------------------------------
 
-CMAKE_MINIMUM_REQUIRED(VERSION 3.11)
-# from 3.1.0 to 3.6 because CMake now don't support backward compatibility for CMake < v3.5
-# and in future support for 3.11 is also getting dropped !
+cmake_minimum_required(VERSION 3.18.0 FATAL_ERROR)
 project(lxqt-clip)
 
 
 set(LXQTCLIP_VERSION 2.4.0)
+set(LXQTBT_MINIMUM_VERSION "2.4.0")
 
-option(ENABLE_LXQT_AUTOSTART "Enables autostart for LXQt" OFF)
 option(USE_SYSTEM_QXT "Use system Qxt Library for global shortcuts; off for Qt6" OFF)
 
 
 LIST(APPEND CMAKE_MODULE_PATH ${CMAKE_CURRENT_SOURCE_DIR}/cmake)
 
+find_package(lxqt2-build-tools ${LXQTBT_MINIMUM_VERSION} REQUIRED)
 find_package(Qt6 REQUIRED COMPONENTS Widgets DBus LinguistTools)
 find_package(KF6GuiAddons REQUIRED)
+find_package(X11 REQUIRED)
 
 # Qt 6.10: Usage of a private Qt module Foo now requires a call to find_package(Qt6 COMPONENTS FooPrivate) to make the Qt6::FooPrivate target available.
 if (Qt6Gui_VERSION VERSION_GREATER_EQUAL "6.10.0")
@@ -44,7 +44,9 @@ if (USE_SYSTEM_QXT)
 endif()
 
 
-add_definitions(-DIS_CMAKE)
+include(LXQtConfigVars)
+include(LXQtTranslateDesktop)
+
 add_definitions(-DLXQTCLIP_VERSION="${LXQTCLIP_VERSION}")
 
 
@@ -91,8 +93,6 @@ if (NOT QXT_FOUND)
     endif (HAVE_QXT)
 
 endif (NOT QXT_FOUND)
-FIND_PACKAGE(X11 REQUIRED)
-MESSAGE(STATUS "X11_X11_LIB: ${X11_X11_LIB}")
 
 set (LXQTCLIP_FORMS
     src/preferencesdialog.ui
@@ -140,8 +140,6 @@ QT6_WRAP_CPP( LXQTCLIP_MOC ${LXQTCLIP_HEADERS} )
 QT6_ADD_RESOURCES( LXQTCLIP_RCC ${LXQTCLIP_RESOURCES} )
 QT6_ADD_TRANSLATION( LXQTCLIP_QM ${LXQTCLIP_TRANSLATIONS} )
 
-message(STATUS "MOCs: " ${LXQTCLIP_MOC})
-
 include_directories (
     ${CMAKE_CURRENT_SOURCE_DIR}/src
     ${CMAKE_CURRENT_BINARY_DIR}
@@ -187,11 +185,4 @@ install(FILES src/icons/lxqt-clip.png DESTINATION share/icons/hicolor/128x128/ap
 install(FILES ${LXQTCLIP_QM} DESTINATION share/lxqt/lxqt-clip/translations)
 add_definitions(-DTRANSLATION_DIR="${CMAKE_INSTALL_PREFIX}/share/lxqt/lxqt-clip/translations")
 
-# merged from lxqt-common
-if (ENABLE_LXQT_AUTOSTART)
-    set(LXQTBT_MINIMUM_VERSION "2.0.0")
-    find_package(lxqt2-build-tools ${LXQTBT_MINIMUM_VERSION} REQUIRED)
-    include(LXQtConfigVars)
-    include(LXQtTranslateDesktop)
-    add_subdirectory(lxqt-autostart)
-endif ()
+add_subdirectory(lxqt-autostart)
