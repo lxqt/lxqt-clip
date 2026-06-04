@@ -14,7 +14,7 @@
     <message>
         <location filename="../src/preferencesdialog.ui" line="42"/>
         <source>Preferences</source>
-        <translation>기본 설정</translation>
+        <translation>환경설정</translation>
     </message>
     <message>
         <location filename="../src/preferencesdialog.ui" line="113"/>
@@ -69,7 +69,7 @@
     <message>
         <location filename="../src/preferencesdialog.ui" line="14"/>
         <source>lxqt-clip Preferences</source>
-        <translation type="unfinished"></translation>
+        <translation>lxqt-clip 환경설정</translation>
     </message>
     <message>
         <location filename="../src/preferencesdialog.ui" line="106"/>
@@ -84,7 +84,7 @@
     <message>
         <location filename="../src/preferencesdialog.ui" line="153"/>
         <source>Use clipboard extensions (Selection/FindBuffer) when it&apos;s supported</source>
-        <translation type="unfinished"></translation>
+        <translation>지원되는 경우 클립보드 확장 기능(Selection/FindBuffer)을 사용하세요</translation>
     </message>
     <message>
         <location filename="../src/preferencesdialog.ui" line="164"/>
@@ -171,7 +171,9 @@
         <source>On Wayland, apps can&apos;t handle global shortcuts.
  Set the shortcut in your compositor to call D-Bus instead,
  e.g.: &apos;qdbus6 org.lxqt.lxqt-clip /org/lxqt/clip show&apos;</source>
-        <translation type="unfinished"></translation>
+        <translation>Wayland 환경에서는 앱이 전역 단축키를 처리할 수 없습니다.
+대신 컴포지터에서 D-Bus를 호출하도록 단축키를 설정하세요.
+예: &apos;qdbus6 org.lxqt.lxqt-clip /org/lxqt/clip show&apos;</translation>
     </message>
     <message>
         <location filename="../src/preferencesdialog.cpp" line="89"/>
@@ -245,7 +247,7 @@
     <message>
         <location filename="../src/systray.cpp" line="51"/>
         <source>&amp;About ...</source>
-        <translation type="unfinished"></translation>
+        <translation>소개(&amp;A) ...</translation>
     </message>
     <message>
         <location filename="../src/systray.cpp" line="53"/>
@@ -275,7 +277,7 @@
     <message>
         <location filename="../src/systray.cpp" line="136"/>
         <source>Lightweight, clipboard history applet.&lt;p&gt;(c)&lt;ul&gt;&lt;li&gt;2010-2016&amp;nbsp;Petr&amp;nbsp;Vanek&amp;nbsp;&amp;lt;petr@yarpen.cz&amp;gt;&lt;/li&gt;&lt;li&gt;2026- LXQt team &lt;a href=&quot;https://lxqt-project.org&quot;&gt;lxqt-project.org&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;a href=&quot;https://github.com/lxqt/lxqt-clip/&quot;&gt;https://github.com/lxqt/lxqt-clip/&lt;/a&gt;&lt;p&gt;Support for global keyboard shortcut: %1</source>
-        <translation type="unfinished"></translation>
+        <translation>가벼운 클립보드 히스토리 애플릿..&lt;p&gt;(c)&lt;ul&gt;&lt;li&gt;2010-2016&amp;nbsp;Petr&amp;nbsp;Vanek&amp;nbsp;&amp;lt;petr@yarpen.cz&amp;gt;&lt;/li&gt;&lt;li&gt;2026- LXQt 팀 &lt;a href=&quot;https://lxqt-project.org&quot;&gt;lxqt-project.org&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;a href=&quot;https://github.com/lxqt/lxqt-clip/&quot;&gt;https://github.com/lxqt/lxqt-clip/&lt;/a&gt;&lt;p&gt;전역 키보드 단축키 지원: %1</translation>
     </message>
     <message>
         <location filename="../src/systray.cpp" line="160"/>
