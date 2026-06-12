@@ -169,7 +169,7 @@ target_link_libraries( ${PROJECT_NAME}
         Qt6::DBus
         KF6::GuiAddons
         Qt6::GuiPrivate
-        ${X11_X11_LIB}
+        X11::X11
 )
 
 
