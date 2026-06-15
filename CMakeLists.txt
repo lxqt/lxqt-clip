@@ -46,6 +46,16 @@ endif()
 
 include(LXQtConfigVars)
 include(LXQtTranslateDesktop)
+include(LXQtCompilerSettings NO_POLICY_SCOPE)
+
+remove_definitions(
+    -DQT_USE_QSTRINGBUILDER
+    -DQT_NO_CAST_FROM_ASCII
+    -DQT_NO_CAST_TO_ASCII
+    -DQT_NO_URL_CAST_FROM_STRING
+    -DQT_NO_CAST_FROM_BYTEARRAY
+    -DQT_NO_FOREACH
+)
 
 add_definitions(-DLXQTCLIP_VERSION="${LXQTCLIP_VERSION}")
 
@@ -160,8 +170,6 @@ add_executable(lxqt-clip
     ${LXQTCLIP_RCC}
     ${LXQTCLIP_QM}
 )
-set_property(TARGET ${PROJECT_NAME} PROPERTY CXX_STANDARD 11)
-set_property(TARGET ${PROJECT_NAME} PROPERTY CXX_STANDARD_REQUIRED ON)
 
 target_link_libraries( ${PROJECT_NAME}
     PRIVATE
