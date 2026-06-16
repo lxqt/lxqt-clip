@@ -18,14 +18,14 @@ project(lxqt-clip)
 
 
 set(LXQTCLIP_VERSION 2.4.0)
-set(LXQTBT_MINIMUM_VERSION "2.4.0")
+set(LXQT_MINIMUM_VERSION "2.4.0")
 
 option(USE_SYSTEM_QXT "Use system Qxt Library for global shortcuts; off for Qt6" OFF)
 
 
 LIST(APPEND CMAKE_MODULE_PATH ${CMAKE_CURRENT_SOURCE_DIR}/cmake)
 
-find_package(lxqt2-build-tools ${LXQTBT_MINIMUM_VERSION} REQUIRED)
+find_package(lxqt ${LXQT_MINIMUM_VERSION} REQUIRED)
 find_package(Qt6 REQUIRED COMPONENTS Widgets DBus LinguistTools)
 find_package(KF6GuiAddons REQUIRED)
 find_package(X11 REQUIRED)
@@ -47,6 +47,7 @@ endif()
 include(LXQtConfigVars)
 include(LXQtTranslateDesktop)
 include(LXQtCompilerSettings NO_POLICY_SCOPE)
+include(LXQtTranslate)
 
 remove_definitions(
     -DQT_USE_QSTRINGBUILDER
@@ -112,43 +113,45 @@ set (LXQTCLIP_RESOURCES
     src/lxqt-clip.qrc
 )
 
-set (LXQTCLIP_TRANSLATIONS
-    ts/lxqt-clip_ar.ts
-    ts/lxqt-clip_bg.ts
-    ts/lxqt-clip_ca.ts
-    ts/lxqt-clip_cs.ts
-    ts/lxqt-clip_da.ts
-    ts/lxqt-clip_de.ts
-    ts/lxqt-clip_es.ts
-    ts/lxqt-clip_et.ts
-    ts/lxqt-clip_fa.ts
-    ts/lxqt-clip_fr.ts
-    ts/lxqt-clip_he.ts
-    ts/lxqt-clip_hi.ts
-    ts/lxqt-clip_hr.ts
-    ts/lxqt-clip_hu.ts
-    ts/lxqt-clip_it.ts
-    ts/lxqt-clip_ja.ts
-    ts/lxqt-clip_ko.ts
-    ts/lxqt-clip_lt.ts
-    ts/lxqt-clip_nb_NO.ts
-    ts/lxqt-clip_nl.ts
-    ts/lxqt-clip_oc.ts
-    ts/lxqt-clip_pl.ts
-    ts/lxqt-clip_pt.ts
-    ts/lxqt-clip_ru.ts
-    ts/lxqt-clip_si.ts
-    ts/lxqt-clip_sk.ts
-    ts/lxqt-clip_sr.ts
-    ts/lxqt-clip_sv.ts
-    ts/lxqt-clip_uk.ts
-    ts/lxqt-clip_zh_CN.ts
+# Translations **********************************
+lxqt_translate_ts(LXQTCLIP_QM
+    UPDATE_TRANSLATIONS
+        ${UPDATE_TRANSLATIONS}
+    SOURCES
+        ${LXQTCLIP_HEADERS}
+        ${LXQTCLIP_SOURCES}
+        ${LXQTCLIP_FORMS}
+    INSTALL_DIR
+        "${LXQT_TRANSLATIONS_DIR}/${PROJECT_NAME}"
 )
+lxqt_app_translation_loader(LXQTCLIP_QM_LOADER ${PROJECT_NAME})
+
+lxqt_translate_desktop(LXQTCLIP_DESKTOP_FILE
+    SOURCES
+        lxqt-clip.desktop.in
+    INSTALL_DIR
+        share/applications
+    COMPONENT
+        Runtime
+    USE_YAML
+)
+add_custom_target(lxqtclip_desktop_file_target ALL DEPENDS ${LXQTCLIP_DESKTOP_FILE})
+
+lxqt_translate_desktop(DESKTOP_FILES
+    SOURCES
+        lxqt-clip-autostart.desktop.in
+    INSTALL_DIR
+        "${LXQT_ETC_XDG_DIR}/autostart"
+    COMPONENT
+        Runtime
+    USE_YAML
+)
+add_custom_target(autostart_desktop_files ALL DEPENDS ${DESKTOP_FILES})
+#************************************************
 
 QT6_WRAP_UI( LXQTCLIP_UI ${LXQTCLIP_FORMS} )
 QT6_WRAP_CPP( LXQTCLIP_MOC ${LXQTCLIP_HEADERS} )
 QT6_ADD_RESOURCES( LXQTCLIP_RCC ${LXQTCLIP_RESOURCES} )
-QT6_ADD_TRANSLATION( LXQTCLIP_QM ${LXQTCLIP_TRANSLATIONS} )
 
 include_directories (
     ${CMAKE_CURRENT_SOURCE_DIR}/src
@@ -169,6 +172,7 @@ add_executable(lxqt-clip
     ${LXQTCLIP_MOC}
     ${LXQTCLIP_RCC}
     ${LXQTCLIP_QM}
+    ${LXQTCLIP_QM_LOADER}
 )
 
 target_link_libraries( ${PROJECT_NAME}
@@ -178,6 +182,7 @@ target_link_libraries( ${PROJECT_NAME}
         KF6::GuiAddons
         Qt6::GuiPrivate
         X11::X11
+        lxqt
 )
 
 
@@ -188,9 +193,4 @@ endif (QXT_FOUND)
 
 # installation
 install(TARGETS ${PROJECT_NAME} RUNTIME DESTINATION bin)
-install(FILES lxqt-clip.desktop DESTINATION share/applications)
 install(FILES src/icons/lxqt-clip.png DESTINATION share/icons/hicolor/128x128/apps)
-install(FILES ${LXQTCLIP_QM} DESTINATION share/lxqt/lxqt-clip/translations)
-add_definitions(-DTRANSLATION_DIR="${CMAKE_INSTALL_PREFIX}/share/lxqt/lxqt-clip/translations")
-
-add_subdirectory(lxqt-autostart)

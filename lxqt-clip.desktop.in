@@ -1,0 +1,10 @@
+[Desktop Entry]
+Terminal=false
+TryExec=lxqt-clip
+Exec=lxqt-clip
+Icon=lxqt-clip
+Type=Application
+Categories=Qt;Utility;
+StartupNotify=false
+
+#TRANSLATIONS_DIR=translations

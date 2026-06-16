@@ -18,7 +18,8 @@ with this program; if not, write to the Free Software Foundation, Inc.,
 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
 */
 
-#include <QApplication>
+#include <LXQt/SingleApplication>
+
 #include <QSettings>
 #include <QTranslator>
 #include <QtDebug>
@@ -33,7 +34,8 @@ with this program; if not, write to the Free Software Foundation, Inc.,
 
 int main(int argc, char **argv)
 {
-    QApplication a(argc, argv);
+    LXQt::SingleApplication a(argc, argv);
+
     a.setApplicationName(QLatin1String{"lxqt-clip"});
     a.setDesktopFileName(QLatin1String{"lxqt-clip"});
     a.setApplicationVersion(QLatin1String{LXQTCLIP_VERSION});
@@ -44,22 +46,6 @@ int main(int argc, char **argv)
 
     a.setQuitOnLastWindowClosed(false);
     a.setWindowIcon(QIcon{LXQt::Preferences::Instance()->getPathToIcon()});
-
-    // potentially load translator
-    QString fname(a.applicationName() + "_" +  QLocale::system().name());
-
-    QTranslator translator;
-
-    if (translator.load(fname, QLatin1String{TRANSLATION_DIR}))
-    {
-        a.installTranslator(&translator);
-    }
-    else
-    {
-        qDebug() << "Translator is not loaded" << fname << TRANSLATION_DIR;
-    }
-    // end of translators
-
 
     LXQt::Systray s;
 

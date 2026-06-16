@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+TryExec=lxqt-clip
+Exec=lxqt-clip
+OnlyShowIn=LXQt;
+X-LXQt-Need-Tray=true
+
+#TRANSLATIONS_DIR=translations
