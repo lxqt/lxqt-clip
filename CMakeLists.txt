@@ -16,12 +16,10 @@
 cmake_minimum_required(VERSION 3.18.0 FATAL_ERROR)
 project(lxqt-clip)
 
-
 set(LXQTCLIP_VERSION 2.4.0)
 set(LXQT_MINIMUM_VERSION "2.4.0")
 
 option(USE_SYSTEM_QXT "Use system Qxt Library for global shortcuts; off for Qt6" OFF)
-
 
 LIST(APPEND CMAKE_MODULE_PATH ${CMAKE_CURRENT_SOURCE_DIR}/cmake)
 
@@ -43,7 +41,6 @@ if (USE_SYSTEM_QXT)
     endif ()
 endif()
 
-
 include(LXQtConfigVars)
 include(LXQtTranslateDesktop)
 include(LXQtCompilerSettings NO_POLICY_SCOPE)
@@ -59,7 +56,6 @@ remove_definitions(
 )
 
 add_definitions(-DLXQTCLIP_VERSION="${LXQTCLIP_VERSION}")
-
 
 # source code and compilation
 set (LXQTCLIP_HEADERS
@@ -165,7 +161,6 @@ if (NOT QXT_FOUND)
     include_directories(${CMAKE_CURRENT_SOURCE_DIR}/qxt)
 endif (NOT QXT_FOUND)
 
-
 add_executable(lxqt-clip
     ${LXQTCLIP_SOURCES}
     ${LXQTCLIP_UI}
@@ -185,11 +180,9 @@ target_link_libraries( ${PROJECT_NAME}
         lxqt
 )
 
-
 if (QXT_FOUND)
     target_link_libraries(${PROJECT_NAME} ${QXT_CORE_LIB} ${QXT_GUI_LIB})
 endif (QXT_FOUND)
-
 
 # installation
 install(TARGETS ${PROJECT_NAME} RUNTIME DESTINATION bin)
