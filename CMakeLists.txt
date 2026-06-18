@@ -41,6 +41,10 @@ if (USE_SYSTEM_QXT)
     endif ()
 endif()
 
+set(CMAKE_AUTOMOC ON)
+set(CMAKE_AUTOUIC ON)
+set(CMAKE_AUTORCC ON)
+
 include(LXQtConfigVars)
 include(LXQtTranslateDesktop)
 include(LXQtCompilerSettings NO_POLICY_SCOPE)
@@ -82,6 +86,7 @@ set (LXQTCLIP_SOURCES
     src/clipboardwrap.cpp
     src/dbusinterface.cpp
     src/signalhandler.cpp
+    src/lxqt-clip.qrc
 )
 
 if (NOT QXT_FOUND)
