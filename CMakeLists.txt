@@ -49,8 +49,6 @@ remove_definitions(
     -DQT_NO_FOREACH
 )
 
-add_definitions(-DLXQTCLIP_VERSION="${LXQTCLIP_VERSION}")
-
 # source code and compilation
 set (LXQTCLIP_HEADERS
     qkeysequencewidget/qkeysequencewidget.h
@@ -166,6 +164,11 @@ target_link_libraries( ${PROJECT_NAME}
         Qt6::GuiPrivate
         X11::X11
         lxqt
+)
+
+target_compile_definitions(${PROJECT_NAME}
+    PRIVATE
+        "-DLXQTCLIP_VERSION=\"${LXQTCLIP_VERSION}\""
 )
 
 # installation
