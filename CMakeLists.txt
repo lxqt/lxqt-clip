@@ -19,8 +19,6 @@ project(lxqt-clip)
 set(LXQTCLIP_VERSION 2.4.0)
 set(LXQT_MINIMUM_VERSION "2.4.0")
 
-option(USE_SYSTEM_QXT "Use system Qxt Library for global shortcuts; off for Qt6" OFF)
-
 LIST(APPEND CMAKE_MODULE_PATH ${CMAKE_CURRENT_SOURCE_DIR}/cmake)
 
 find_package(lxqt ${LXQT_MINIMUM_VERSION} REQUIRED)
@@ -31,14 +29,6 @@ find_package(X11 REQUIRED)
 # Qt 6.10: Usage of a private Qt module Foo now requires a call to find_package(Qt6 COMPONENTS FooPrivate) to make the Qt6::FooPrivate target available.
 if (Qt6Gui_VERSION VERSION_GREATER_EQUAL "6.10.0")
     find_package(Qt6 REQUIRED COMPONENTS GuiPrivate)
-endif()
-
-if (USE_SYSTEM_QXT)
-    find_package(Qxt)
-    message(STATUS "Use system Qxt Library: " ${USE_SYSTEM_QXT})
-    if (USE_SYSTEM_QXT AND NOT QXT_FOUND)
-        message(FATAL_ERROR "System Qxt not found")
-    endif ()
 endif()
 
 set(CMAKE_AUTOMOC ON)
@@ -73,6 +63,7 @@ set (LXQTCLIP_HEADERS
     src/clipboardwrap.h
     src/dbusinterface.h
     src/signalhandler.h
+    qxt/qxtglobalshortcut.h
 )
 set (LXQTCLIP_SOURCES
     qkeysequencewidget/qkeysequencewidget.cpp
@@ -87,24 +78,9 @@ set (LXQTCLIP_SOURCES
     src/dbusinterface.cpp
     src/signalhandler.cpp
     src/lxqt-clip.qrc
+    qxt/qxtglobalshortcut.cpp
+    qxt/qxtglobalshortcut_x11.cpp
 )
-
-if (NOT QXT_FOUND)
-
-    set (HAVE_QXT 1)
-    set (LXQTCLIP_SOURCES ${LXQTCLIP_SOURCES} qxt/qxtglobalshortcut_x11.cpp)
-    include_directories(${Qt6Gui_PRIVATE_INCLUDE_DIRS})
-
-    if (HAVE_QXT)
-        set (LXQTCLIP_SOURCES ${LXQTCLIP_SOURCES}
-            qxt/qxtglobalshortcut.cpp
-        )
-        set (LXQTCLIP_HEADERS ${LXQTCLIP_HEADERS}
-            qxt/qxtglobalshortcut.h
-        )
-    endif (HAVE_QXT)
-
-endif (NOT QXT_FOUND)
 
 set (LXQTCLIP_FORMS
     src/preferencesdialog.ui
@@ -175,6 +151,13 @@ add_executable(lxqt-clip
     ${LXQTCLIP_QM_LOADER}
 )
 
+target_include_directories(${PROJECT_NAME}
+    PRIVATE
+        ${CMAKE_CURRENT_SOURCE_DIR}/qkeysequencewidget
+        ${CMAKE_CURRENT_SOURCE_DIR}/qxt
+        ${CMAKE_CURRENT_SOURCE_DIR}/qmenuview
+)
+
 target_link_libraries( ${PROJECT_NAME}
     PRIVATE
         Qt6::Widgets
@@ -184,10 +167,6 @@ target_link_libraries( ${PROJECT_NAME}
         X11::X11
         lxqt
 )
-
-if (QXT_FOUND)
-    target_link_libraries(${PROJECT_NAME} ${QXT_CORE_LIB} ${QXT_GUI_LIB})
-endif (QXT_FOUND)
 
 # installation
 install(TARGETS ${PROJECT_NAME} RUNTIME DESTINATION bin)
