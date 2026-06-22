@@ -106,7 +106,7 @@ void Preferences::saveStickyItems(QList<Item> list)
     int i = 0;
     remove("items");
     beginWriteArray("items");
-    foreach (Item item, list)
+    for (const Item &item : std::as_const(list))
     {
         setArrayIndex(i);
         i++;
@@ -155,7 +155,7 @@ void Preferences::saveDynamicItems(QList<Item> list)
     if (!clearOnExit)
     {
         beginWriteArray("items");
-        foreach (Item item, list)
+        for (const Item &item : std::as_const(list))
         {
             setArrayIndex(i);
             i++;

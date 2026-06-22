@@ -65,7 +65,8 @@ Item::Item(QClipboard::Mode mode)
     //  and don't care about other bmps
     const bool has_bmp = mimeData->hasFormat(QStringLiteral("image/bmp"));
     const QRegularExpression re_bmp(QStringLiteral("^image/.+-bmp$"));
-    foreach (QString format, mimeData->formats())
+    const auto formats = mimeData->formats();
+    for (const QString &format : formats)
     {
         //qDebug() << format << mimeData->data(format);
 
@@ -96,7 +97,8 @@ Item::Item(QClipboard::Mode mode)
     else if (mimeData->hasUrls())
     {
         QString s;
-        foreach (QUrl i, mimeData->urls())
+        const auto urls = mimeData->urls();
+        for (const QUrl &i : urls)
             s += i.toString() + '\n';
         m_display = s;
         m_contentType = Item::Url;
