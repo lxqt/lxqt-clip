@@ -59,7 +59,8 @@ PreferencesDialog::PreferencesDialog(QWidget *parent) :
     toolBox->setItemEnabled(2, false);
 #endif
 
-    foreach(Item item, Preferences::Instance()->getStickyItems())
+    const auto items = Preferences::Instance()->getStickyItems();
+    for (const Item &item : items)
     {
         listWidget->addItem(item.display());
     }
