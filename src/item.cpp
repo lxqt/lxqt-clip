@@ -31,6 +31,8 @@ with this program; if not, write to the Free Software Foundation, Inc.,
 #include "item.h"
 #include "clipboardwrap.h"
 
+using namespace Qt::Literals::StringLiterals;
+
 namespace LXQt {
 
 Item::Item()
@@ -99,7 +101,7 @@ Item::Item(QClipboard::Mode mode)
         QString s;
         const auto urls = mimeData->urls();
         for (const QUrl &i : urls)
-            s += i.toString() + '\n';
+            s += i.toString() + u'\n';
         m_display = s;
         m_contentType = Item::Url;
     }
@@ -120,7 +122,7 @@ Item::Item(QClipboard::Mode mode, Item::ContentType contentType, const Clipboard
       m_valid(true),
       m_content(content)
 {
-    m_display = m_content["text/plain"];
+    m_display = QString::fromUtf8(m_content["text/plain"_L1]);
 }
 
 Item::Item(const QString &sticky)
@@ -134,7 +136,7 @@ Item::Item(const QString &sticky)
     else
     {
         m_display = sticky;
-        m_content["text/plain"] = sticky.toUtf8();
+        m_content["text/plain"_L1] = sticky.toUtf8();
         m_contentType = Item::Sticky;
     }
 }
@@ -189,7 +191,7 @@ QString Item::displayRole() const
         return QObject::tr("Binary: %1").arg(m_display).left(Preferences::Instance()->displaySize());
     }
 
-    return "";
+    return QString();
 }
 
 QIcon Item::decorationRole() const
@@ -200,7 +202,7 @@ QIcon Item::decorationRole() const
     }
 
     QPixmap pm;
-    QString cacheKey = QString("%1_%2").arg(m_contentType).arg(m_mode);
+    QString cacheKey = u"%1_%2"_s.arg(m_contentType).arg(m_mode);
     if (QPixmapCache::find(cacheKey, &pm))
         return pm;
 
@@ -212,13 +214,13 @@ QIcon Item::decorationRole() const
     switch (m_mode)
     {
     case QClipboard::Clipboard:
-        theme = "#004400";
+        theme = u"#004400"_s;
         break;
     case QClipboard::Selection:
-        theme = "#000044";
+        theme = u"#000044"_s;
         break;
     case QClipboard::FindBuffer:
-        theme = "#440000";
+        theme = u"#440000"_s;
         break;
     }
     pm.fill(QColor(theme));
@@ -267,7 +269,7 @@ QString Item::tooltipRole() const
         break;
     }
 
-    return QString("%1: %2").arg(m, t);
+    return u"%1: %2"_s.arg(m, t);
 }
 
 bool Item::operator==(const Item &other) const {
@@ -286,23 +288,23 @@ QIcon Item::iconForContentType() const
     switch (m_contentType)
     {
     case Item::PlainText:
-        theme = "text-plain";
+        theme = u"text-plain"_s;
         break;
     case Item::RichText:
-        theme = "text-enriched";
+        theme = u"text-enriched"_s;
         break;
     case Item::Binary:
-        theme = "image-x-generic";
+        theme = u"image-x-generic"_s;
         break;
     case Item::Url:
-        theme = "quickopen-file";
+        theme = u"quickopen-file"_s;
         break;
     case Item::Sticky:
-        theme = "knotes";
+        theme = u"knotes"_s;
         break;
     }
 
-    return QIcon::fromTheme(theme, QIcon(QString(":/icons/%1.png").arg(theme)));
+    return QIcon::fromTheme(theme, QIcon(u":/icons/%1.png"_s.arg(theme)));
 }
 
 
