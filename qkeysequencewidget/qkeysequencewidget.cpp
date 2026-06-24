@@ -34,6 +34,8 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #include "qkeysequencewidget_p.h"
 #include "qkeysequencewidget.h"
 
+using namespace Qt::Literals::StringLiterals;
+
 /*!
   Creates a QKeySequenceWidget object wuth \a parent and empty \a keySequence
 */
@@ -254,7 +256,7 @@ void QKeySequenceWidgetPrivate::init(const QKeySequence keySeq, const QString no
     layout->setSpacing(1);
 
     clearButton = new QToolButton(q_func());
-    clearButton->setText("x");
+    clearButton->setText("x"_L1);
 
     layout->addWidget(clearButton);
 
@@ -262,7 +264,7 @@ void QKeySequenceWidgetPrivate::init(const QKeySequence keySeq, const QString no
 
     if (noneStr.isNull() == true)
     {
-        noneSequenceText = "...";
+        noneSequenceText = "..."_L1;
     }
     else
     {
@@ -278,7 +280,7 @@ void QKeySequenceWidgetPrivate::init(const QKeySequence keySeq, const QString no
 
     showClearButton = QKeySequenceWidget::ShowRight;
 
-    clearButton->setIcon(QIcon::fromTheme("dialog-cancel", QIcon(":/icons/dialog-cancel.png")));
+    clearButton->setIcon(QIcon::fromTheme("dialog-cancel"_L1, QIcon(":/icons/dialog-cancel.png"_L1)));
 
     // unfocused clear button  afyer created (small hack)
     clearButton->setFocusPolicy(Qt::NoFocus);
@@ -292,7 +294,7 @@ void QKeySequenceWidgetPrivate::init(const QKeySequence keySeq, const QString no
 void QKeySequenceWidgetPrivate::setToolTip(const QString &tip)
 {
     shortcutButton->setToolTip(tip);
-    clearButton->setToolTip("");
+    clearButton->setToolTip(QString());
 }
 
 // update the location of widgets
@@ -391,30 +393,30 @@ void QKeySequenceWidgetPrivate::updateDisplayShortcut()
 {
     // empty string if no non-modifier was pressed
     QString str = currentSequence.toString(QKeySequence::NativeText);
-    str.replace('&', QLatin1String("&&"));  // TODO -- check it
+    str.replace(u'&', QLatin1String("&&"));  // TODO -- check it
 
     if (isRecording == true)
     {
         if (modifierKeys)
         {
             if (str.isEmpty() == false)
-                str.append(",");
+                str.append(u',');
 
             if ((modifierKeys & Qt::META) )
-                str += "Meta + ";
+                str += u"Meta + "_s;
 
             if ((modifierKeys & Qt::CTRL) )
-                str += "Ctrl + ";
+                str += u"Ctrl + "_s;
 
             if ((modifierKeys & Qt::ALT) )
-                str += "Alt + ";
+                str += u"Alt + "_s;
 
             if ((modifierKeys & Qt::SHIFT) )
-                str += "Shift + ";
+                str += u"Shift + "_s;
         }
 
         // make it clear that input is still going on
-        str.append("...");
+        str.append(u"..."_s);
     }
 
     // if is noting

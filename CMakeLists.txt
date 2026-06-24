@@ -40,10 +40,6 @@ include(LXQtTranslateDesktop)
 include(LXQtCompilerSettings NO_POLICY_SCOPE)
 include(LXQtTranslate)
 
-remove_definitions(
-    -DQT_NO_CAST_FROM_ASCII
-)
-
 # source code and compilation
 set (LXQTCLIP_HEADERS
     qkeysequencewidget/qkeysequencewidget.h

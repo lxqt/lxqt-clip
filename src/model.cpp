@@ -27,6 +27,8 @@ with this program; if not, write to the Free Software Foundation, Inc.,
 #include "preferences.h"
 #include "clipboardwrap.h"
 
+using namespace Qt::Literals::StringLiterals;
+
 namespace LXQt {
 
 Model::Model(QObject *parent) :
@@ -90,7 +92,7 @@ QList<Item> Model::getList(int & row) const
 QVariant Model::data(const QModelIndex& index, int role) const
 {
     if (!index.isValid())
-        return "";
+        return QString();
 
     int row = index.row();
 
@@ -108,7 +110,7 @@ QVariant Model::data(const QModelIndex& index, int role) const
         return m_currentIndex == index ? m_boldFont : m_normalFont;
     }
 
-    return "";
+    return QString();
 }
 
 Qt::ItemFlags Model::flags(const QModelIndex & index) const
@@ -202,7 +204,7 @@ void Model::clearHistory()
     m_dynamic.clear();
     endRemoveRows();
     ClipboardContent tmp;
-    tmp["text/plain"] = tr("Welcome to the lxqt-clip clipboard history applet").toUtf8();
+    tmp["text/plain"_L1] = tr("Welcome to the lxqt-clip clipboard history applet").toUtf8();
     Item item(QClipboard::Clipboard, Item::PlainText, tmp);
     beginInsertRows(QModelIndex(), sticky_count, sticky_count);
     m_dynamic.append(item);

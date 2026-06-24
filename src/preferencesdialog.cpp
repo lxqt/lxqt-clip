@@ -28,6 +28,7 @@ with this program; if not, write to the Free Software Foundation, Inc.,
 #include "preferences.h"
 #include "preferencesdialog.h"
 
+using namespace Qt::Literals::StringLiterals;
 
 namespace LXQt {
 
@@ -41,7 +42,7 @@ PreferencesDialog::PreferencesDialog(QWidget *parent) :
     displaySizeComboBox->setValue(s->displaySize());
     trimCheckBox->setChecked(s->trim());
     shortcutWidget->setKeySequence(QKeySequence(s->shortcut()));
-    if (QGuiApplication::platformName() == "wayland")
+    if (QGuiApplication::platformName() == "wayland"_L1)
     {
         keyboardShortcutLabel->setToolTip(tr("On Wayland, apps can't handle global shortcuts.\n Set the shortcut in your compositor to call D-Bus instead,\n e.g.: 'qdbus6 org.lxqt.lxqt-clip /org/lxqt/clip show'"));
         keyboardShortcutLabel->setEnabled(false);
@@ -107,15 +108,15 @@ PreferencesDialog::PreferencesDialog(QWidget *parent) :
 void PreferencesDialog::accept()
 {
     Preferences *s = Preferences::Instance();
-    s->setValue("historyCount", historyComboBox->value());
-    s->setValue("displaySize", displaySizeComboBox->value());
-    s->setValue("trim", trimCheckBox->isChecked());
-    s->setValue("platformExtensions", platformExtensionsCheckBox->isChecked());
-    s->setValue("synchronizePSE", synchronizePSE->currentIndex());
-    s->setValue("shortcut", shortcutWidget->keySequence().toString());
-    s->setValue("clearItemsOnExit", clearItemsOnExit->isChecked());
-    s->setValue("synchronizeHistory", synchronizeHistory->isChecked());
-    s->setValue("confirmClear", confirmOnClear->isChecked());
+    s->setValue("historyCount"_L1, historyComboBox->value());
+    s->setValue("displaySize"_L1, displaySizeComboBox->value());
+    s->setValue("trim"_L1, trimCheckBox->isChecked());
+    s->setValue("platformExtensions"_L1, platformExtensionsCheckBox->isChecked());
+    s->setValue("synchronizePSE"_L1, synchronizePSE->currentIndex());
+    s->setValue("shortcut"_L1, shortcutWidget->keySequence().toString());
+    s->setValue("clearItemsOnExit"_L1, clearItemsOnExit->isChecked());
+    s->setValue("synchronizeHistory"_L1, synchronizeHistory->isChecked());
+    s->setValue("confirmClear"_L1, confirmOnClear->isChecked());
 
 
     QList<Item> list;
@@ -160,7 +161,7 @@ void PreferencesDialog::useDefaultIcon()
 void PreferencesDialog::stickyAddButton_clicked()
 {
     bool ok;
-    QString s = QInputDialog::getText(this, tr("Add New Sticky Item"), tr("Add New Sticky Item"), QLineEdit::Normal, "", &ok);
+    QString s = QInputDialog::getText(this, tr("Add New Sticky Item"), tr("Add New Sticky Item"), QLineEdit::Normal, QString(), &ok);
     if (ok && !s.isEmpty())
     {
         listWidget->addItem(s);

@@ -20,6 +20,8 @@ with this program; if not, write to the Free Software Foundation, Inc.,
 
 #include "preferences.h"
 
+using namespace Qt::Literals::StringLiterals;
+
 namespace LXQt {
 
 const QString Preferences::DEFAULT_ICON_PATH = QStringLiteral(":/icons/lxqt-clip.png");
@@ -85,12 +87,12 @@ QList<Item> Preferences::getStickyItems()
     //  - value, QString
     //
 
-    beginGroup("sticky");
-    int count = beginReadArray("items");
+    beginGroup("sticky"_L1);
+    int count = beginReadArray("items"_L1);
     for (int i = 0; i < count; ++i)
     {
         setArrayIndex(i);
-        Item item(value("text").toString());
+        Item item(value("text"_L1).toString());
         if (item.isValid())
             l.append(item);
     }
@@ -102,15 +104,15 @@ QList<Item> Preferences::getStickyItems()
 
 void Preferences::saveStickyItems(QList<Item> list)
 {
-    beginGroup("sticky");
+    beginGroup("sticky"_L1);
     int i = 0;
-    remove("items");
-    beginWriteArray("items");
+    remove("items"_L1);
+    beginWriteArray("items"_L1);
     for (const Item &item : std::as_const(list))
     {
         setArrayIndex(i);
         i++;
-        setValue("text", item.display());
+        setValue("text"_L1, item.display());
     }
     endArray();
     endGroup();
@@ -126,15 +128,15 @@ QList<Item> Preferences::getDynamicItems()
     //  - content, QVariant
     //
 
-    beginGroup("dynamic");
-    int count = beginReadArray("items");
+    beginGroup("dynamic"_L1);
+    int count = beginReadArray("items"_L1);
     for (int i = 0; i < count; ++i)
     {
         setArrayIndex(i);
 //        qDebug() << "R" << qVariantValue<ClipboardContent>(value("content"));
-        Item item(static_cast<QClipboard::Mode>(value("mode").toUInt()),//value("mode").value<QClipboard::Mode>(),
-                         static_cast<Item::ContentType>(value("contentType").toUInt()), // value("contentType").value<Item::ContentType>(),
-                         value("content").value<ClipboardContent>()
+        Item item(static_cast<QClipboard::Mode>(value("mode"_L1).toUInt()),//value("mode").value<QClipboard::Mode>(),
+                         static_cast<Item::ContentType>(value("contentType"_L1).toUInt()), // value("contentType").value<Item::ContentType>(),
+                         value("content"_L1).value<ClipboardContent>()
                         );
         if (item.isValid())
             l.append(item);
@@ -149,19 +151,19 @@ void Preferences::saveDynamicItems(QList<Item> list)
 {
     bool clearOnExit = clearItemsOnExit();
 
-    beginGroup("dynamic");
+    beginGroup("dynamic"_L1);
     int i = 0;
-    remove("items");
+    remove("items"_L1);
     if (!clearOnExit)
     {
-        beginWriteArray("items");
+        beginWriteArray("items"_L1);
         for (const Item &item : std::as_const(list))
         {
             setArrayIndex(i);
             i++;
-            setValue("mode", item.clipBoardMode());
-            setValue("contentType", item.contentType());
-            setValue("content", QVariant::fromValue(item.content()));
+            setValue("mode"_L1, item.clipBoardMode());
+            setValue("contentType"_L1, item.contentType());
+            setValue("content"_L1, QVariant::fromValue(item.content()));
         }
         endArray();
     }
@@ -182,47 +184,47 @@ void Preferences::savePathToIcon(const QString &path)
 
 bool Preferences::trim()
 {
-    return value("trim", true).toBool();
+    return value("trim"_L1, true).toBool();
 }
 
 int Preferences::displaySize() const
 {
-    return value("displaySize", 30).toInt();
+    return value("displaySize"_L1, 30).toInt();
 }
 
 QString Preferences::shortcut() const
 {
-    return value("shortcut", "CTRL+ALT+V").toString();
+    return value("shortcut"_L1, "CTRL+ALT+V"_L1).toString();
 }
 
 int Preferences::historyCount() const
 {
-    return value("historyCount", 10).toInt();
+    return value("historyCount"_L1, 10).toInt();
 }
 
 bool Preferences::platformExtensions() const
 {
-    return value("platformExtensions", false).toBool();
+    return value("platformExtensions"_L1, false).toBool();
 }
 
 Preferences::PSESynchronization Preferences::synchronizePSE() const
 {
-    return static_cast<PSESynchronization>(value("synchronizePSE", PSE_NO_SYNC).toInt());
+    return static_cast<PSESynchronization>(value("synchronizePSE"_L1, PSE_NO_SYNC).toInt());
 }
 
 bool Preferences::clearItemsOnExit() const
 {
-    return value("clearItemsOnExit", false).toBool();
+    return value("clearItemsOnExit"_L1, false).toBool();
 }
 
 bool Preferences::synchronizeHistory() const
 {
-    return value("synchronizeHistory", true).toBool();
+    return value("synchronizeHistory"_L1, true).toBool();
 }
 
 bool Preferences::confirmOnClear() const
 {
-    return value("confirmClear", true).toBool();
+    return value("confirmClear"_L1, true).toBool();
 }
 
 bool Preferences::shouldSynchronizeClipboards() const

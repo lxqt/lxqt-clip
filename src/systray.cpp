@@ -29,6 +29,7 @@ with this program; if not, write to the Free Software Foundation, Inc.,
 #include "preferencesdialog.h"
 #include "systray.h"
 
+using namespace Qt::Literals::StringLiterals;
 
 namespace LXQt {
 
@@ -43,14 +44,14 @@ Systray::Systray(QObject *parent)
     m_model = new Model(this);
 
     m_contextMenu = new QMenu();
-    m_contextMenu->addAction(QIcon::fromTheme("edit-clear-hstory", QIcon(":/icons/edit-clear-history.png")), tr("C&lear clipboard history")
+    m_contextMenu->addAction(QIcon::fromTheme("edit-clear-hstory"_L1, QIcon(":/icons/edit-clear-history.png"_L1)), tr("C&lear clipboard history")
             , this, &Systray::clear_history);
-    m_contextMenu->addAction(QIcon::fromTheme("configure", QIcon(":/icons/configure.png")), tr("&Configure...")
+    m_contextMenu->addAction(QIcon::fromTheme("configure"_L1, QIcon(":/icons/configure.png"_L1)), tr("&Configure...")
             , this, &Systray::editPreferences);
     m_contextMenu->addSeparator();
-    m_contextMenu->addAction(QIcon::fromTheme("help-about", QIcon(":/icons/help-about.png")), tr("&About ...")
+    m_contextMenu->addAction(QIcon::fromTheme("help-about"_L1, QIcon(":/icons/help-about.png"_L1)), tr("&About ...")
             , this, &Systray::showAbout);
-    m_contextMenu->addAction(QIcon::fromTheme("application-exit", QIcon(":/icons/application-exit.png")), tr("&Quit")
+    m_contextMenu->addAction(QIcon::fromTheme("application-exit"_L1, QIcon(":/icons/application-exit.png"_L1)), tr("&Quit")
             , qApp, &QCoreApplication::quit);
     setContextMenu(m_contextMenu);
 
@@ -129,10 +130,10 @@ void Systray::showAbout()
 
     QMessageBox msgBox;
     //msgBox.setMinimumWidth(600);
-    msgBox.setWindowIcon(QIcon(":/icons/lxqt-clip.png"));
-    msgBox.setIconPixmap (QPixmap(":/icons/lxqt-clip.png"));
+    msgBox.setWindowIcon(QIcon(":/icons/lxqt-clip.png"_L1));
+    msgBox.setIconPixmap (QPixmap(":/icons/lxqt-clip.png"_L1));
     msgBox.setWindowTitle(tr("About lxqt-clip"));
-    msgBox.setText(QString("<h1>lxqt-clip</strong> %1</h1>").arg(qApp->applicationVersion()));
+    msgBox.setText(u"<h1>lxqt-clip</strong> %1</h1>"_s.arg(qApp->applicationVersion()));
     msgBox.setInformativeText(tr("Lightweight, clipboard history applet.<p>"
                                   "(c)<ul><li>2010-2016&nbsp;Petr&nbsp;Vanek&nbsp;&lt;petr@yarpen.cz&gt;</li>"
                                   "<li>2026- LXQt team <a href=\"https://lxqt-project.org\">lxqt-project.org</a></li></ul>"
