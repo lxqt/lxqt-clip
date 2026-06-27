@@ -105,6 +105,33 @@ Item::Item(QClipboard::Mode mode)
     {
         m_contentType = Item::PlainText;
     }
+    else if (mimeData->hasImage())
+    {
+        QImage img = qvariant_cast<QImage>(mimeData->imageData());
+        if (!img.isNull())
+        {
+            // Try to get the actual MIME type from the original data
+            QString format = "unknown";
+            QByteArray imageData; // get raw data if available
+            // Some MIME data provides the image in a known format via `data()`
+            if (mimeData->hasFormat("image/png"))
+                format = "png";
+            else if (mimeData->hasFormat("image/jpeg"))
+                format = "jpg";
+            else if (mimeData->hasFormat("image/bmp"))
+                format = "bmp";
+            else if (mimeData->hasFormat("image/gif"))
+                format = "gif";
+            // Add other common image types as needed
+            m_contentType = Item::Image;
+            m_display = QString("%1px x %2px (png)").arg(img.width()).arg(img.height()).arg(format);
+       }
+       else
+       {
+            m_display = QObject::tr("Invalid image");
+        }
+    }
+
     else
     {
         // any binary stuff
@@ -183,10 +210,11 @@ QString Item::displayRole() const
         return m_display.left(Preferences::Instance()->displaySize());
     case Item::Url:
         return QObject::tr("Url: %1").arg(m_display).left(Preferences::Instance()->displaySize());
+    case Item::Image:
+        return QObject::tr("Image: %1").arg(m_display).left(Preferences::Instance()->displaySize());
     case Item::Binary:
         return QObject::tr("Binary: %1").arg(m_display).left(Preferences::Instance()->displaySize());
     }
-
     return "";
 }
 
@@ -257,6 +285,9 @@ QString Item::tooltipRole() const
     case Item::Binary:
         t = QObject::tr("Binary Content");
         break;
+    case Item::Image:
+        t = QObject::tr("Image");
+        break;
     case Item::Url:
         t = QObject::tr("URL");
         break;
@@ -290,6 +321,9 @@ QIcon Item::iconForContentType() const
         theme = "text-enriched";
         break;
     case Item::Binary:
+        theme = "unknown";
+        break;
+    case Item::Image:
         theme = "image-x-generic";
         break;
     case Item::Url:
