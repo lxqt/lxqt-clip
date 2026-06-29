@@ -192,8 +192,6 @@ QString Item::displayRole() const
 
 QIcon Item::decorationRole() const
 {
-    iconForContentType();
-
     QPixmap pm;
     QString cacheKey = QString("%1_%2").arg(m_contentType).arg(m_mode);
     if (QPixmapCache::find(cacheKey, &pm))
