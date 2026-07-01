@@ -18,7 +18,7 @@
     </message>
     <message>
         <location filename="../src/preferencesdialog.ui" line="113"/>
-        <source>Keyboard Shortcut:</source>
+        <source>Keyboard shortcut:</source>
         <translation>Drecera de teclat:</translation>
     </message>
     <message>
@@ -113,7 +113,7 @@
     </message>
     <message>
         <location filename="../src/preferencesdialog.ui" line="209"/>
-        <source>Confirm Clear History</source>
+        <source>Confirm clear history</source>
         <translation>Confirma la neteja de l&apos;historial</translation>
     </message>
     <message>

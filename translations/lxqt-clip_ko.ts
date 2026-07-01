@@ -18,7 +18,7 @@
     </message>
     <message>
         <location filename="../src/preferencesdialog.ui" line="113"/>
-        <source>Keyboard Shortcut:</source>
+        <source>Keyboard shortcut:</source>
         <translation>키보드 단축키:</translation>
     </message>
     <message>
@@ -113,7 +113,7 @@
     </message>
     <message>
         <location filename="../src/preferencesdialog.ui" line="209"/>
-        <source>Confirm Clear History</source>
+        <source>Confirm clear history</source>
         <translation>내역 비우기 확인하기</translation>
     </message>
     <message>
