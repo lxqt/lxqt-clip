@@ -19,7 +19,7 @@
     </message>
     <message>
         <location filename="../src/preferencesdialog.ui" line="113"/>
-        <source>Keyboard Shortcut:</source>
+        <source>Keyboard shortcut:</source>
         <translation>Tastenkürzel:</translation>
     </message>
     <message>
@@ -114,7 +114,7 @@
     </message>
     <message>
         <location filename="../src/preferencesdialog.ui" line="209"/>
-        <source>Confirm Clear History</source>
+        <source>Confirm clear history</source>
         <translation>Löschen des Verlaufs bestätigen</translation>
     </message>
     <message>

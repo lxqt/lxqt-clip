@@ -58,7 +58,7 @@
     </message>
     <message>
         <location filename="../src/preferencesdialog.ui" line="113"/>
-        <source>Keyboard Shortcut:</source>
+        <source>Keyboard shortcut:</source>
         <translation>ショートカットキー:</translation>
     </message>
     <message>
@@ -113,7 +113,7 @@
     </message>
     <message>
         <location filename="../src/preferencesdialog.ui" line="209"/>
-        <source>Confirm Clear History</source>
+        <source>Confirm clear history</source>
         <translation>履歴の消去時に確認する</translation>
     </message>
     <message>
