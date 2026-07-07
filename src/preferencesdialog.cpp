@@ -47,9 +47,6 @@ PreferencesDialog::PreferencesDialog(QWidget *parent) :
         keyboardShortcutLabel->setEnabled(false);
         shortcutWidget->setEnabled(false);
     }
-    const bool pse = s->platformExtensions();
-    platformExtensionsCheckBox->setChecked(pse);
-    synchronizePSE->setEnabled(pse);
     synchronizePSE->setCurrentIndex(s->synchronizePSE());
     clearItemsOnExit->setChecked(s->clearItemsOnExit());
     synchronizeHistory->setChecked(s->synchronizeHistory());
@@ -109,7 +106,6 @@ void PreferencesDialog::accept()
     s->setValue("historyCount", historyComboBox->value());
     s->setValue("displaySize", displaySizeComboBox->value());
     s->setValue("trim", trimCheckBox->isChecked());
-    s->setValue("platformExtensions", platformExtensionsCheckBox->isChecked());
     s->setValue("synchronizePSE", synchronizePSE->currentIndex());
     s->setValue("shortcut", shortcutWidget->keySequence().toString());
     s->setValue("clearItemsOnExit", clearItemsOnExit->isChecked());

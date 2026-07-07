@@ -148,12 +148,12 @@
         </widget>
        </item>
        <item row="5" column="0" colspan="2">
-        <widget class="QCheckBox" name="platformExtensionsCheckBox">
+        <widget class="QLabel" name="platformExtensionsLabel">
          <property name="toolTip">
-          <string>Use clipboard extensions (Selection/FindBuffer) when it's supported</string>
+          <string>Use clipboard extensions (Text selection/FindBuffer)</string>
          </property>
          <property name="text">
-          <string>Use platform specific extensions (advanced)</string>
+          <string>Clipboard synchronization:</string>
          </property>
         </widget>
        </item>
@@ -161,17 +161,17 @@
         <widget class="QComboBox" name="synchronizePSE">
          <item>
           <property name="text">
-           <string>No synchronization of clipboard &amp; PSE</string>
+           <string>No synchronization</string>
           </property>
          </item>
          <item>
           <property name="text">
-           <string>Synchronize clipboard &amp; PSE when item selected</string>
+           <string>Synchronize clipboard when item selected</string>
           </property>
          </item>
          <item>
           <property name="text">
-           <string>Synchronize clipboard &amp; PSE instantly</string>
+           <string>Synchronize clipboard always</string>
           </property>
          </item>
         </widget>
@@ -346,22 +346,6 @@
     <hint type="destinationlabel">
      <x>286</x>
      <y>274</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>platformExtensionsCheckBox</sender>
-   <signal>clicked(bool)</signal>
-   <receiver>synchronizePSE</receiver>
-   <slot>setEnabled(bool)</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>20</x>
-     <y>20</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>20</x>
-     <y>20</y>
     </hint>
    </hints>
   </connection>
