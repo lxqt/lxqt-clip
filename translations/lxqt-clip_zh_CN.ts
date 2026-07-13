@@ -75,7 +75,7 @@
     <message>
         <location filename="../src/preferencesdialog.ui" line="14"/>
         <source>lxqt-clip Preferences</source>
-        <translation type="unfinished"></translation>
+        <translation>lxqt-clip首选项</translation>
     </message>
     <message>
         <location filename="../src/preferencesdialog.ui" line="106"/>
@@ -85,7 +85,7 @@
     <message>
         <location filename="../src/preferencesdialog.ui" line="153"/>
         <source>Use clipboard extensions (Selection/FindBuffer) when it&apos;s supported</source>
-        <translation type="unfinished"></translation>
+        <translation>如果支持，使用剪贴板扩展（选择/查找）</translation>
     </message>
     <message>
         <location filename="../src/preferencesdialog.ui" line="164"/>
@@ -172,7 +172,9 @@
         <source>On Wayland, apps can&apos;t handle global shortcuts.
  Set the shortcut in your compositor to call D-Bus instead,
  e.g.: &apos;qdbus6 org.lxqt.lxqt-clip /org/lxqt/clip show&apos;</source>
-        <translation type="unfinished"></translation>
+        <translation>Wayland上应用不能处理全局快捷键。
+请在合成器中设置快捷键调用D-Bus，
+如“qdbus6 org.lxqt.lxqt-clip /org/lxqt/clip show”</translation>
     </message>
     <message>
         <location filename="../src/preferencesdialog.cpp" line="89"/>
@@ -246,7 +248,7 @@
     <message>
         <location filename="../src/systray.cpp" line="51"/>
         <source>&amp;About ...</source>
-        <translation type="unfinished"></translation>
+        <translation>关于(&amp;A)…</translation>
     </message>
     <message>
         <location filename="../src/systray.cpp" line="53"/>
@@ -276,7 +278,7 @@
     <message>
         <location filename="../src/systray.cpp" line="136"/>
         <source>Lightweight, clipboard history applet.&lt;p&gt;(c)&lt;ul&gt;&lt;li&gt;2010-2016&amp;nbsp;Petr&amp;nbsp;Vanek&amp;nbsp;&amp;lt;petr@yarpen.cz&amp;gt;&lt;/li&gt;&lt;li&gt;2026- LXQt team &lt;a href=&quot;https://lxqt-project.org&quot;&gt;lxqt-project.org&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;a href=&quot;https://github.com/lxqt/lxqt-clip/&quot;&gt;https://github.com/lxqt/lxqt-clip/&lt;/a&gt;&lt;p&gt;Support for global keyboard shortcut: %1</source>
-        <translation type="unfinished"></translation>
+        <translation>轻量剪贴板历史小程序。&lt;p&gt;(c)&lt;ul&gt;&lt;li&gt;2010-2016&amp;nbsp;Petr&amp;nbsp;Vanek&amp;nbsp;&amp;lt;petr@yarpen.cz&amp;gt;&lt;/li&gt;&lt;li&gt;2026- LXQt team &lt;a href=&quot;https://lxqt-project.org&quot;&gt;lxqt-project.org&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;a href=&quot;https://github.com/lxqt/lxqt-clip/&quot;&gt;https://github.com/lxqt/lxqt-clip/&lt;/a&gt;&lt;p&gt;支持全局快捷键：%1</translation>
     </message>
     <message>
         <location filename="../src/systray.cpp" line="160"/>
