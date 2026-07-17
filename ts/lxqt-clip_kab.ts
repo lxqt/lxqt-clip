@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1" language="lt">
+<TS version="2.1" language="kab">
 <context>
     <name>LXQt::Model</name>
     <message>
         <location filename="../src/model.cpp" line="205"/>
         <source>Welcome to the lxqt-clip clipboard history applet</source>
-        <translation>Sveiki atvykę į lxqt-clip iškarpinės istorijos programėlę</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -14,72 +14,72 @@
     <message>
         <location filename="../src/preferencesdialog.ui" line="42"/>
         <source>Preferences</source>
-        <translation>Nuostatos</translation>
+        <translation>Ismenyafen</translation>
     </message>
     <message>
         <location filename="../src/preferencesdialog.ui" line="113"/>
-        <source>Keyboard shortcut:</source>
-        <translation>Spartusis klavišas:</translation>
+        <source>Keyboard Shortcut:</source>
+        <translation>Anegzum n unasiw:</translation>
     </message>
     <message>
         <location filename="../src/preferencesdialog.ui" line="120"/>
         <source>Change global keyboard shortcut to invoke the menu on screen</source>
-        <translation>Keisti visuotinį spartųjį klavišą, kuris ekrane aktyvins meniu</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/preferencesdialog.ui" line="48"/>
         <source>Clipboard entries count:</source>
-        <translation>Iškarpinės elementų skaičius:</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/preferencesdialog.ui" line="55"/>
         <source>The maximum count of dynamic items in the menu</source>
-        <translation>Didžiausias meniu esančių dinaminių elementų skaičius</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/preferencesdialog.ui" line="61"/>
         <source> entries</source>
-        <translation> elementų</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/preferencesdialog.ui" line="77"/>
         <source>Maximum display size:</source>
-        <translation>Didžiausias rodomas dydis:</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/preferencesdialog.ui" line="84"/>
         <source>How long is the preview text in the menu</source>
-        <translation>Kokio ilgio bus meniu esantis peržiūros tekstas</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/preferencesdialog.ui" line="90"/>
         <source> characters</source>
-        <translation> simbolių</translation>
+        <translation> isekkilen</translation>
     </message>
     <message>
         <location filename="../src/preferencesdialog.ui" line="156"/>
         <source>Use platform specific extensions (advanced)</source>
-        <translation>Naudoti platformai specifinius plėtinius (Išplėstinis)</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/preferencesdialog.ui" line="103"/>
         <source>Useful for bigger text blocks copied for example from dummy terminals (minicom, etc.)</source>
-        <translation>Naudinga didesniems tekstų blokams nukopijuotiems, pvz., iš fiktyvių terminalų (minicom ir t.t.)</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/preferencesdialog.ui" line="14"/>
         <source>lxqt-clip Preferences</source>
-        <translation>lxqt-clip nuostatos</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/preferencesdialog.ui" line="106"/>
         <source>Trim whitespaces for every line</source>
-        <translation>Kiekvienoje eilutėje šalinti tarpus</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/preferencesdialog.ui" line="127"/>
         <source>Tray icon image:</source>
-        <translation>Dėklo piktogramos paveikslas:</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/preferencesdialog.ui" line="153"/>
@@ -89,82 +89,82 @@
     <message>
         <location filename="../src/preferencesdialog.ui" line="164"/>
         <source>No synchronization of clipboard &amp; PSE</source>
-        <translation>Jokio iškarpinės ir PSP sinchronizavimo</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/preferencesdialog.ui" line="169"/>
         <source>Synchronize clipboard &amp; PSE when item selected</source>
-        <translation>Sinchronizuoti iškarpinę ir PSP, pažymėjus elementą</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/preferencesdialog.ui" line="174"/>
         <source>Synchronize clipboard &amp; PSE instantly</source>
-        <translation>Sinchronizuoti iškarpinę ir PSP nedelsiant</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/preferencesdialog.ui" line="182"/>
         <source>Clear items on exit</source>
-        <translation>Išeinant, išvalyti elementus</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/preferencesdialog.ui" line="189"/>
         <source>Synchronize history to storage instantly</source>
-        <translation>Sinchronizuoti istoriją į kaupiklį nedelsiant</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/preferencesdialog.ui" line="209"/>
-        <source>Confirm clear history</source>
-        <translation>Klausti patvirtinimo išvalant istoriją</translation>
+        <source>Confirm Clear History</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/preferencesdialog.ui" line="225"/>
         <source>Sticky Items</source>
-        <translation>Lipnūs elementai</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/preferencesdialog.ui" line="231"/>
         <source>Sticky items are unchanged, always on top snippets in the menu</source>
-        <translation>Lipnūs elementai yra nekeičiami, meniu jie yra visada fragmentų viršuje</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/preferencesdialog.ui" line="254"/>
         <source>Add new item to the end of the list</source>
-        <translation>Pridėti naują elementą į sąrašo galą</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/preferencesdialog.ui" line="257"/>
         <source>&amp;Add</source>
-        <translation>&amp;Pridėti</translation>
+        <translation>&amp;Rnu</translation>
     </message>
     <message>
         <location filename="../src/preferencesdialog.ui" line="264"/>
         <source>Remove current item</source>
-        <translation>Šalinti esamą elementą</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/preferencesdialog.ui" line="267"/>
         <source>&amp;Remove</source>
-        <translation>Š&amp;alinti</translation>
+        <translation>&amp;Kkes</translation>
     </message>
     <message>
         <location filename="../src/preferencesdialog.ui" line="274"/>
         <source>Move item up</source>
-        <translation>Pakelti elementą</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/preferencesdialog.ui" line="277"/>
         <source>&amp;Up</source>
-        <translation>A&amp;ukštyn</translation>
+        <translation>D a&amp;sawen</translation>
     </message>
     <message>
         <location filename="../src/preferencesdialog.ui" line="284"/>
         <source>Move item down</source>
-        <translation>Nuleisti elementą</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/preferencesdialog.ui" line="287"/>
         <source>&amp;Down</source>
-        <translation>Ž&amp;emyn</translation>
+        <translation>D a&amp;kessar</translation>
     </message>
     <message>
         <location filename="../src/preferencesdialog.cpp" line="46"/>
@@ -176,58 +176,58 @@
     <message>
         <location filename="../src/preferencesdialog.cpp" line="89"/>
         <source>Icon selection</source>
-        <translation>Piktogramos pasirinkimas</translation>
+        <translation>Fren tignit</translation>
     </message>
     <message>
         <location filename="../src/preferencesdialog.cpp" line="90"/>
         <source>Load icon from file...</source>
-        <translation>Įkelti piktogramą iš failo...</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/preferencesdialog.cpp" line="91"/>
         <source>Use default icon</source>
-        <translation>Naudoti numatytąją piktogramą</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/preferencesdialog.cpp" line="136"/>
         <source>Select icon file</source>
-        <translation>Pasirinkti piktogramos failą</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/preferencesdialog.cpp" line="138"/>
         <source>Images (*.bmp *.jpg *.jpeg *.png *.svg *.tga)</source>
-        <translation>Paveikslai (*.bmp *.jpg *.jpeg *.png *.svg *.tga)</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/preferencesdialog.cpp" line="142"/>
         <source>Select icon</source>
-        <translation>Pasirinkti piktogramą</translation>
+        <translation>Fren tignit</translation>
     </message>
     <message>
         <location filename="../src/preferencesdialog.cpp" line="143"/>
         <source>Cancel</source>
-        <translation>Atsisakyti</translation>
+        <translation>Sefsex</translation>
     </message>
     <message>
         <location filename="../src/preferencesdialog.cpp" line="145"/>
         <source>Look in:</source>
         <extracomment>Label to describe the folder for icon file selection dialog.</extracomment>
-        <translation>Ieškoti:</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/preferencesdialog.cpp" line="146"/>
         <source>Icon name:</source>
-        <translation>Piktogramos pavadinimas:</translation>
+        <translation>Isem n tignit:</translation>
     </message>
     <message>
         <location filename="../src/preferencesdialog.cpp" line="147"/>
         <source>Icon type:</source>
-        <translation>Piktogramos tipas:</translation>
+        <translation>Anaw n tignit:</translation>
     </message>
     <message>
         <location filename="../src/preferencesdialog.cpp" line="162"/>
         <source>Add New Sticky Item</source>
-        <translation>Pridėti naują lipnų elementą</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -235,42 +235,42 @@
     <message>
         <location filename="../src/systray.cpp" line="46"/>
         <source>C&amp;lear clipboard history</source>
-        <translation>Išva&amp;lyti iškarpinės istoriją</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/systray.cpp" line="48"/>
         <source>&amp;Configure...</source>
-        <translation>&amp;Konfigūruoti...</translation>
+        <translation>&amp;Swel...</translation>
     </message>
     <message>
         <location filename="../src/systray.cpp" line="51"/>
         <source>&amp;About ...</source>
-        <translation>&amp;Apie...</translation>
+        <translation>Ɣe&amp;f...</translation>
     </message>
     <message>
         <location filename="../src/systray.cpp" line="53"/>
         <source>&amp;Quit</source>
-        <translation>&amp;Išeiti</translation>
+        <translation>&amp;Ffeɣ</translation>
     </message>
     <message>
         <location filename="../src/systray.cpp" line="60"/>
         <source>lxqt-clip - a clipboard history applet</source>
-        <translation>lxqt-clip – iškarpinės istorijos programėlė</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/systray.cpp" line="125"/>
         <source>Yes</source>
-        <translation>Taip</translation>
+        <translation>Ih</translation>
     </message>
     <message>
         <location filename="../src/systray.cpp" line="127"/>
         <source>No</source>
-        <translation>Ne</translation>
+        <translation>Uhu</translation>
     </message>
     <message>
         <location filename="../src/systray.cpp" line="134"/>
         <source>About lxqt-clip</source>
-        <translation>Apie lxqt-clip</translation>
+        <translation>Ɣef lxqt-clip</translation>
     </message>
     <message>
         <location filename="../src/systray.cpp" line="136"/>
@@ -280,12 +280,12 @@
     <message>
         <location filename="../src/systray.cpp" line="160"/>
         <source>Confirm</source>
-        <translation>Patvirtinti</translation>
+        <translation>Sentem</translation>
     </message>
     <message>
         <location filename="../src/systray.cpp" line="160"/>
         <source>Are you sure that you want to clear your clipboard history?</source>
-        <translation>Ar tikrai norite išvalyti iškarpinės istoriją?</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -293,42 +293,42 @@
     <message>
         <location filename="../src/item.cpp" line="184"/>
         <source>Url: %1</source>
-        <translation>URL: %1</translation>
+        <translation>Url: %1</translation>
     </message>
     <message>
         <location filename="../src/item.cpp" line="186"/>
         <source>Binary: %1</source>
-        <translation>Dvejetainė: %1</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/item.cpp" line="238"/>
         <source>Clipboard</source>
-        <translation>Iškarpinė</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/item.cpp" line="241"/>
         <source>Selection</source>
-        <translation>Žymėjimas</translation>
+        <translation>Tafrayt</translation>
     </message>
     <message>
         <location filename="../src/item.cpp" line="244"/>
         <source>Find Buffer</source>
-        <translation>Paieškos buferis</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/item.cpp" line="251"/>
         <source>Plain Text</source>
-        <translation>Grynasis tekstas</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/item.cpp" line="254"/>
         <source>Rich Text</source>
-        <translation>Raiškusis tekstas</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/item.cpp" line="257"/>
         <source>Binary Content</source>
-        <translation>Dvejetainės turinys</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/item.cpp" line="260"/>
@@ -338,7 +338,7 @@
     <message>
         <location filename="../src/item.cpp" line="263"/>
         <source>Sticky Item (Plain Text)</source>
-        <translation>Lipnus elementas (Grynasis tekstas)</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 </TS>
