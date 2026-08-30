@@ -69,7 +69,7 @@
     <message>
         <location filename="../src/preferencesdialog.ui" line="14"/>
         <source>lxqt-clip Preferences</source>
-        <translation type="unfinished"></translation>
+        <translation>Параметри lxqt-clip</translation>
     </message>
     <message>
         <location filename="../src/preferencesdialog.ui" line="106"/>
