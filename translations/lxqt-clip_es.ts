@@ -171,7 +171,7 @@
         <source>On Wayland, apps can&apos;t handle global shortcuts.
  Set the shortcut in your compositor to call D-Bus instead,
  e.g.: &apos;qdbus6 org.lxqt.lxqt-clip /org/lxqt/clip show&apos;</source>
-        <translation type="unfinished"></translation>
+        <translation>En Wayland, las aplicaciones no pueden manejar atajos globales. Configura el atajo en tu compositor para que llame a D-Bus en su lugar, por ejemplo: &apos;qdbus6 org.lxqt.lxqt-clip /org/lxqt/clip show&apos;</translation>
     </message>
     <message>
         <location filename="../src/preferencesdialog.cpp" line="89"/>
@@ -245,7 +245,7 @@
     <message>
         <location filename="../src/systray.cpp" line="51"/>
         <source>&amp;About ...</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Acerca de ...</translation>
     </message>
     <message>
         <location filename="../src/systray.cpp" line="53"/>
