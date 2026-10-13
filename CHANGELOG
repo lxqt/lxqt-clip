@@ -1,7 +1,10 @@
+2.5.0 / 2026-11-05
+==================
+ * The first release, with a minimal Wayland support.
+
 2.4.0 / 2026-05-07
 ==================
-
-  * Initial revision/import from Qlipper v6.1.0
-  * Remove all network sharing functionality
-  * Remove all MacOS/Windows specific code/build
-  * Rebrand to lxqt-clip
+ * Initial revision/import from Qlipper v6.1.0
+ * Remove all network sharing functionality
+ * Remove all MacOS/Windows specific code/build
+ * Rebrand to lxqt-clip
