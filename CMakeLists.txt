@@ -19,8 +19,6 @@ project(lxqt-clip)
 set(LXQTCLIP_VERSION 2.4.0)
 set(LXQT_MINIMUM_VERSION "2.4.0")
 
-LIST(APPEND CMAKE_MODULE_PATH ${CMAKE_CURRENT_SOURCE_DIR}/cmake)
-
 find_package(lxqt ${LXQT_MINIMUM_VERSION} REQUIRED)
 find_package(Qt6 REQUIRED COMPONENTS Widgets DBus LinguistTools)
 find_package(KF6GuiAddons REQUIRED)
@@ -127,9 +125,7 @@ include_directories (
     ${CMAKE_CURRENT_SOURCE_DIR}/qxt
     ${CMAKE_CURRENT_SOURCE_DIR}/qmenuview
 )
-if (NOT QXT_FOUND)
-    include_directories(${CMAKE_CURRENT_SOURCE_DIR}/qxt)
-endif (NOT QXT_FOUND)
+include_directories(${CMAKE_CURRENT_SOURCE_DIR}/qxt)
 
 add_executable(lxqt-clip
     ${LXQTCLIP_SOURCES}
