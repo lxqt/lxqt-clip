@@ -4,7 +4,7 @@ project(lxqt-clip)
 set(LXQTCLIP_VERSION 2.5.0)
 set(LXQT_MINIMUM_VERSION "2.5.0")
 set(KF6_MINIMUM_VERSION "6.0.0")
-set(QT_MINIMUM_VERSION "6.6.0")
+set(QT_MINIMUM_VERSION "6.10.0")
 
 find_package(lxqt ${LXQT_MINIMUM_VERSION} REQUIRED)
 find_package(Qt6 ${QT_MINIMUM_VERSION} REQUIRED COMPONENTS Widgets DBus LinguistTools)
@@ -12,9 +12,7 @@ find_package(KF6GuiAddons ${KF6_MINIMUM_VERSION} REQUIRED)
 find_package(X11 REQUIRED)
 
 # Qt 6.10: Usage of a private Qt module Foo now requires a call to find_package(Qt6 COMPONENTS FooPrivate) to make the Qt6::FooPrivate target available.
-if (Qt6Gui_VERSION VERSION_GREATER_EQUAL "6.10.0")
-    find_package(Qt6 REQUIRED COMPONENTS GuiPrivate)
-endif()
+find_package(Qt6 REQUIRED COMPONENTS GuiPrivate)
 
 set(CMAKE_AUTOMOC ON)
 set(CMAKE_AUTOUIC ON)
