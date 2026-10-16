@@ -1,29 +1,14 @@
-# CMakeLists.txt
-# ------------------------------------
-# An initial version of the cmake build for lxqt-clip.
-# WORK IN PROGRESS. USE qmake STILL FOR NOW, PLEASE!
-# Currently tested on unix only.
-# --------------------------------
-# usage
-# 1. cd lxqt-clip/root/dir
-# 2. mkdir build
-# 3. cd build
-# 4. cmake .. -DCMAKE_INSTALL_PREFIX=/usr -DCMAKE_BUILD_TYPE=debug (or release, by default)
-# 5. make
-# 6. make install
-# --------------------------------
-
 cmake_minimum_required(VERSION 3.18.0 FATAL_ERROR)
 project(lxqt-clip)
 
 set(LXQTCLIP_VERSION 2.5.0)
 set(LXQT_MINIMUM_VERSION "2.5.0")
-
-LIST(APPEND CMAKE_MODULE_PATH ${CMAKE_CURRENT_SOURCE_DIR}/cmake)
+set(KF6_MINIMUM_VERSION "6.0.0")
+set(QT_MINIMUM_VERSION "6.6.0")
 
 find_package(lxqt ${LXQT_MINIMUM_VERSION} REQUIRED)
-find_package(Qt6 REQUIRED COMPONENTS Widgets DBus LinguistTools)
-find_package(KF6GuiAddons REQUIRED)
+find_package(Qt6 ${QT_MINIMUM_VERSION} REQUIRED COMPONENTS Widgets DBus LinguistTools)
+find_package(KF6GuiAddons ${KF6_MINIMUM_VERSION} REQUIRED)
 find_package(X11 REQUIRED)
 
 # Qt 6.10: Usage of a private Qt module Foo now requires a call to find_package(Qt6 COMPONENTS FooPrivate) to make the Qt6::FooPrivate target available.
@@ -127,9 +112,7 @@ include_directories (
     ${CMAKE_CURRENT_SOURCE_DIR}/qxt
     ${CMAKE_CURRENT_SOURCE_DIR}/qmenuview
 )
-if (NOT QXT_FOUND)
-    include_directories(${CMAKE_CURRENT_SOURCE_DIR}/qxt)
-endif (NOT QXT_FOUND)
+include_directories(${CMAKE_CURRENT_SOURCE_DIR}/qxt)
 
 add_executable(lxqt-clip
     ${LXQTCLIP_SOURCES}
