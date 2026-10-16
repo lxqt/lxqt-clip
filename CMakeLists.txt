@@ -1,18 +1,3 @@
-# CMakeLists.txt
-# ------------------------------------
-# An initial version of the cmake build for lxqt-clip.
-# WORK IN PROGRESS. USE qmake STILL FOR NOW, PLEASE!
-# Currently tested on unix only.
-# --------------------------------
-# usage
-# 1. cd lxqt-clip/root/dir
-# 2. mkdir build
-# 3. cd build
-# 4. cmake .. -DCMAKE_INSTALL_PREFIX=/usr -DCMAKE_BUILD_TYPE=debug (or release, by default)
-# 5. make
-# 6. make install
-# --------------------------------
-
 cmake_minimum_required(VERSION 3.18.0 FATAL_ERROR)
 project(lxqt-clip)
 
