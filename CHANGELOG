@@ -1,6 +1,7 @@
 2.5.0 / 2026-11-05
 ==================
  * The first release, with a minimal Wayland support.
+ * CMake maintenance (dropped Qxt, set Qt6 and KF6 minimum versions, removed unneeded build documentation).
 
 2.4.0 / 2026-05-07
 ==================
