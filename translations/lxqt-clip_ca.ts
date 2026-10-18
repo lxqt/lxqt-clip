@@ -4,7 +4,7 @@
 <context>
     <name>LXQt::Model</name>
     <message>
-        <location filename="../src/model.cpp" line="205"/>
+        <location filename="../src/model.cpp" line="207"/>
         <source>Welcome to the lxqt-clip clipboard history applet</source>
         <translation>Benvingut a la miniaplicació de l&apos;historial del porta-retalls lxqt-clip</translation>
     </message>
@@ -167,65 +167,66 @@
         <translation>A&amp;vall</translation>
     </message>
     <message>
-        <location filename="../src/preferencesdialog.cpp" line="46"/>
+        <location filename="../src/preferencesdialog.cpp" line="47"/>
         <source>On Wayland, apps can&apos;t handle global shortcuts.
  Set the shortcut in your compositor to call D-Bus instead,
  e.g.: &apos;qdbus6 org.lxqt.lxqt-clip /org/lxqt/clip show&apos;</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/preferencesdialog.cpp" line="89"/>
+        <location filename="../src/preferencesdialog.cpp" line="91"/>
         <source>Icon selection</source>
         <translation>Selecció de la icona</translation>
     </message>
     <message>
-        <location filename="../src/preferencesdialog.cpp" line="90"/>
+        <location filename="../src/preferencesdialog.cpp" line="92"/>
         <source>Load icon from file...</source>
         <translation>Carrega la icona del fitxer...</translation>
     </message>
     <message>
-        <location filename="../src/preferencesdialog.cpp" line="91"/>
+        <location filename="../src/preferencesdialog.cpp" line="93"/>
         <source>Use default icon</source>
         <translation>Utilitza la icona predeterminada</translation>
     </message>
     <message>
-        <location filename="../src/preferencesdialog.cpp" line="136"/>
+        <location filename="../src/preferencesdialog.cpp" line="138"/>
         <source>Select icon file</source>
         <translation>Selecciona el fitxer de la icona</translation>
     </message>
     <message>
-        <location filename="../src/preferencesdialog.cpp" line="138"/>
+        <location filename="../src/preferencesdialog.cpp" line="140"/>
         <source>Images (*.bmp *.jpg *.jpeg *.png *.svg *.tga)</source>
         <translation>Imatges (*.bmp *.jpg *.jpeg *.png *.svg *.tga)</translation>
     </message>
     <message>
-        <location filename="../src/preferencesdialog.cpp" line="142"/>
+        <location filename="../src/preferencesdialog.cpp" line="144"/>
         <source>Select icon</source>
         <translation>Selecciona la icona</translation>
     </message>
     <message>
-        <location filename="../src/preferencesdialog.cpp" line="143"/>
+        <location filename="../src/preferencesdialog.cpp" line="145"/>
         <source>Cancel</source>
         <translation>Cancel·la</translation>
     </message>
     <message>
-        <location filename="../src/preferencesdialog.cpp" line="145"/>
+        <location filename="../src/preferencesdialog.cpp" line="147"/>
         <source>Look in:</source>
         <extracomment>Label to describe the folder for icon file selection dialog.</extracomment>
         <translation>Mira a:</translation>
     </message>
     <message>
-        <location filename="../src/preferencesdialog.cpp" line="146"/>
+        <location filename="../src/preferencesdialog.cpp" line="148"/>
         <source>Icon name:</source>
         <translation>Nom de la icona:</translation>
     </message>
     <message>
-        <location filename="../src/preferencesdialog.cpp" line="147"/>
+        <location filename="../src/preferencesdialog.cpp" line="149"/>
         <source>Icon type:</source>
         <translation>Tipus d&apos;icona:</translation>
     </message>
     <message>
-        <location filename="../src/preferencesdialog.cpp" line="162"/>
+        <location filename="../src/preferencesdialog.cpp" line="164"/>
+        <location filename="../src/preferencesdialog.cpp" line="164"/>
         <source>Add New Sticky Item</source>
         <translation>Afegeix un element enganxós nou</translation>
     </message>
@@ -233,57 +234,57 @@
 <context>
     <name>LXQt::Systray</name>
     <message>
-        <location filename="../src/systray.cpp" line="46"/>
+        <location filename="../src/systray.cpp" line="47"/>
         <source>C&amp;lear clipboard history</source>
         <translation>Neteja l&apos;historial del porta-reta&amp;lls</translation>
     </message>
     <message>
-        <location filename="../src/systray.cpp" line="48"/>
+        <location filename="../src/systray.cpp" line="49"/>
         <source>&amp;Configure...</source>
         <translation>&amp;Configura...</translation>
     </message>
     <message>
-        <location filename="../src/systray.cpp" line="51"/>
+        <location filename="../src/systray.cpp" line="52"/>
         <source>&amp;About ...</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/systray.cpp" line="53"/>
+        <location filename="../src/systray.cpp" line="54"/>
         <source>&amp;Quit</source>
         <translation>&amp;Surt</translation>
     </message>
     <message>
-        <location filename="../src/systray.cpp" line="60"/>
+        <location filename="../src/systray.cpp" line="61"/>
         <source>lxqt-clip - a clipboard history applet</source>
         <translation>lxqt-clip - una miniaplicació de l&apos;historial del porta-retalls</translation>
     </message>
     <message>
-        <location filename="../src/systray.cpp" line="125"/>
+        <location filename="../src/systray.cpp" line="126"/>
         <source>Yes</source>
         <translation>Sí</translation>
     </message>
     <message>
-        <location filename="../src/systray.cpp" line="127"/>
+        <location filename="../src/systray.cpp" line="128"/>
         <source>No</source>
         <translation>No</translation>
     </message>
     <message>
-        <location filename="../src/systray.cpp" line="134"/>
+        <location filename="../src/systray.cpp" line="135"/>
         <source>About lxqt-clip</source>
         <translation>Quant a lxqt-clip</translation>
     </message>
     <message>
-        <location filename="../src/systray.cpp" line="136"/>
+        <location filename="../src/systray.cpp" line="137"/>
         <source>Lightweight, clipboard history applet.&lt;p&gt;(c)&lt;ul&gt;&lt;li&gt;2010-2016&amp;nbsp;Petr&amp;nbsp;Vanek&amp;nbsp;&amp;lt;petr@yarpen.cz&amp;gt;&lt;/li&gt;&lt;li&gt;2026- LXQt team &lt;a href=&quot;https://lxqt-project.org&quot;&gt;lxqt-project.org&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;a href=&quot;https://github.com/lxqt/lxqt-clip/&quot;&gt;https://github.com/lxqt/lxqt-clip/&lt;/a&gt;&lt;p&gt;Support for global keyboard shortcut: %1</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/systray.cpp" line="160"/>
+        <location filename="../src/systray.cpp" line="161"/>
         <source>Confirm</source>
         <translation>Confirma</translation>
     </message>
     <message>
-        <location filename="../src/systray.cpp" line="160"/>
+        <location filename="../src/systray.cpp" line="161"/>
         <source>Are you sure that you want to clear your clipboard history?</source>
         <translation>Segur que voleu esborrar l&apos;historial del porta-retalls?</translation>
     </message>
@@ -291,52 +292,52 @@
 <context>
     <name>QObject</name>
     <message>
-        <location filename="../src/item.cpp" line="184"/>
+        <location filename="../src/item.cpp" line="189"/>
         <source>Url: %1</source>
         <translation>URL: %1</translation>
     </message>
     <message>
-        <location filename="../src/item.cpp" line="186"/>
+        <location filename="../src/item.cpp" line="191"/>
         <source>Binary: %1</source>
         <translation>Binari: %1</translation>
     </message>
     <message>
-        <location filename="../src/item.cpp" line="238"/>
+        <location filename="../src/item.cpp" line="243"/>
         <source>Clipboard</source>
         <translation>Porta-retalls</translation>
     </message>
     <message>
-        <location filename="../src/item.cpp" line="241"/>
+        <location filename="../src/item.cpp" line="246"/>
         <source>Selection</source>
         <translation>Selecció</translation>
     </message>
     <message>
-        <location filename="../src/item.cpp" line="244"/>
+        <location filename="../src/item.cpp" line="249"/>
         <source>Find Buffer</source>
         <translation>Cerca la memòria intermèdia</translation>
     </message>
     <message>
-        <location filename="../src/item.cpp" line="251"/>
+        <location filename="../src/item.cpp" line="256"/>
         <source>Plain Text</source>
         <translation>Text pla</translation>
     </message>
     <message>
-        <location filename="../src/item.cpp" line="254"/>
+        <location filename="../src/item.cpp" line="259"/>
         <source>Rich Text</source>
         <translation>Text ric</translation>
     </message>
     <message>
-        <location filename="../src/item.cpp" line="257"/>
+        <location filename="../src/item.cpp" line="262"/>
         <source>Binary Content</source>
         <translation>Contingut en binari</translation>
     </message>
     <message>
-        <location filename="../src/item.cpp" line="260"/>
+        <location filename="../src/item.cpp" line="265"/>
         <source>URL</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../src/item.cpp" line="263"/>
+        <location filename="../src/item.cpp" line="268"/>
         <source>Sticky Item (Plain Text)</source>
         <translation>Element exganxós (text pla)</translation>
     </message>

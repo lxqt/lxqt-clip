@@ -4,7 +4,7 @@
 <context>
     <name>LXQt::Model</name>
     <message>
-        <location filename="../src/model.cpp" line="205"/>
+        <location filename="../src/model.cpp" line="207"/>
         <source>Welcome to the lxqt-clip clipboard history applet</source>
         <translatorcomment>Translation is cropped, but full text doesn&apos;t get displayed in the list most of the time anyway.</translatorcomment>
         <translation>Willkommen beim lxqt-clip-Zwischenablagenverlauf-Applet</translation>
@@ -168,67 +168,68 @@
         <translation>Nach &amp;unten</translation>
     </message>
     <message>
-        <location filename="../src/preferencesdialog.cpp" line="46"/>
+        <location filename="../src/preferencesdialog.cpp" line="47"/>
         <source>On Wayland, apps can&apos;t handle global shortcuts.
  Set the shortcut in your compositor to call D-Bus instead,
  e.g.: &apos;qdbus6 org.lxqt.lxqt-clip /org/lxqt/clip show&apos;</source>
         <translation>Unter Wayland können Anwendungen keine globalen Tastenkombinationen setzen.
 Fügen Sie in Ihrem Compositor eine Tastenkombination hinzu, die stattdessen D-Bus aufruft,
-z. B.: &apos;qdbus6 org.lxqt.lxqt-clip /org/lxqt/clip show&apos;</translation>
+z.&#xa0;B.: &apos;qdbus6 org.lxqt.lxqt-clip /org/lxqt/clip show&apos;</translation>
     </message>
     <message>
-        <location filename="../src/preferencesdialog.cpp" line="89"/>
+        <location filename="../src/preferencesdialog.cpp" line="91"/>
         <source>Icon selection</source>
         <translation>Symbolauswahl</translation>
     </message>
     <message>
-        <location filename="../src/preferencesdialog.cpp" line="90"/>
+        <location filename="../src/preferencesdialog.cpp" line="92"/>
         <source>Load icon from file...</source>
         <translation>Symbol aus Datei laden ...</translation>
     </message>
     <message>
-        <location filename="../src/preferencesdialog.cpp" line="91"/>
+        <location filename="../src/preferencesdialog.cpp" line="93"/>
         <source>Use default icon</source>
         <translation>Standardsymbol verwenden</translation>
     </message>
     <message>
-        <location filename="../src/preferencesdialog.cpp" line="136"/>
+        <location filename="../src/preferencesdialog.cpp" line="138"/>
         <source>Select icon file</source>
         <translation>Symboldatei auswählen</translation>
     </message>
     <message>
-        <location filename="../src/preferencesdialog.cpp" line="138"/>
+        <location filename="../src/preferencesdialog.cpp" line="140"/>
         <source>Images (*.bmp *.jpg *.jpeg *.png *.svg *.tga)</source>
         <translation>Bilder (*.bmp *.jpg *.jpeg *.png *.svg *.tga)</translation>
     </message>
     <message>
-        <location filename="../src/preferencesdialog.cpp" line="142"/>
+        <location filename="../src/preferencesdialog.cpp" line="144"/>
         <source>Select icon</source>
         <translation>Symbol auswählen</translation>
     </message>
     <message>
-        <location filename="../src/preferencesdialog.cpp" line="143"/>
+        <location filename="../src/preferencesdialog.cpp" line="145"/>
         <source>Cancel</source>
         <translation>Abbrechen</translation>
     </message>
     <message>
-        <location filename="../src/preferencesdialog.cpp" line="145"/>
+        <location filename="../src/preferencesdialog.cpp" line="147"/>
         <source>Look in:</source>
         <extracomment>Label to describe the folder for icon file selection dialog.</extracomment>
         <translation>Nachsehen in:</translation>
     </message>
     <message>
-        <location filename="../src/preferencesdialog.cpp" line="146"/>
+        <location filename="../src/preferencesdialog.cpp" line="148"/>
         <source>Icon name:</source>
         <translation>Symbolname:</translation>
     </message>
     <message>
-        <location filename="../src/preferencesdialog.cpp" line="147"/>
+        <location filename="../src/preferencesdialog.cpp" line="149"/>
         <source>Icon type:</source>
         <translation>Symboltyp:</translation>
     </message>
     <message>
-        <location filename="../src/preferencesdialog.cpp" line="162"/>
+        <location filename="../src/preferencesdialog.cpp" line="164"/>
+        <location filename="../src/preferencesdialog.cpp" line="164"/>
         <source>Add New Sticky Item</source>
         <translation>Neue Haftnotiz hinzufügen</translation>
     </message>
@@ -236,57 +237,57 @@ z. B.: &apos;qdbus6 org.lxqt.lxqt-clip /org/lxqt/clip show&apos;</translation>
 <context>
     <name>LXQt::Systray</name>
     <message>
-        <location filename="../src/systray.cpp" line="46"/>
+        <location filename="../src/systray.cpp" line="47"/>
         <source>C&amp;lear clipboard history</source>
         <translation>Zwischenablagenverlauf &amp;löschen</translation>
     </message>
     <message>
-        <location filename="../src/systray.cpp" line="48"/>
+        <location filename="../src/systray.cpp" line="49"/>
         <source>&amp;Configure...</source>
         <translation>&amp;Konfigurieren ...</translation>
     </message>
     <message>
-        <location filename="../src/systray.cpp" line="51"/>
+        <location filename="../src/systray.cpp" line="52"/>
         <source>&amp;About ...</source>
         <translation>&amp;Informationen ...</translation>
     </message>
     <message>
-        <location filename="../src/systray.cpp" line="53"/>
+        <location filename="../src/systray.cpp" line="54"/>
         <source>&amp;Quit</source>
         <translation>&amp;Beenden</translation>
     </message>
     <message>
-        <location filename="../src/systray.cpp" line="60"/>
+        <location filename="../src/systray.cpp" line="61"/>
         <source>lxqt-clip - a clipboard history applet</source>
         <translation>lxqt-clip – ein Zwischenablagenverlaufs-Applet</translation>
     </message>
     <message>
-        <location filename="../src/systray.cpp" line="125"/>
+        <location filename="../src/systray.cpp" line="126"/>
         <source>Yes</source>
         <translation>Ja</translation>
     </message>
     <message>
-        <location filename="../src/systray.cpp" line="127"/>
+        <location filename="../src/systray.cpp" line="128"/>
         <source>No</source>
         <translation>Nein</translation>
     </message>
     <message>
-        <location filename="../src/systray.cpp" line="134"/>
+        <location filename="../src/systray.cpp" line="135"/>
         <source>About lxqt-clip</source>
         <translation>Über lxqt-clip</translation>
     </message>
     <message>
-        <location filename="../src/systray.cpp" line="136"/>
+        <location filename="../src/systray.cpp" line="137"/>
         <source>Lightweight, clipboard history applet.&lt;p&gt;(c)&lt;ul&gt;&lt;li&gt;2010-2016&amp;nbsp;Petr&amp;nbsp;Vanek&amp;nbsp;&amp;lt;petr@yarpen.cz&amp;gt;&lt;/li&gt;&lt;li&gt;2026- LXQt team &lt;a href=&quot;https://lxqt-project.org&quot;&gt;lxqt-project.org&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;a href=&quot;https://github.com/lxqt/lxqt-clip/&quot;&gt;https://github.com/lxqt/lxqt-clip/&lt;/a&gt;&lt;p&gt;Support for global keyboard shortcut: %1</source>
         <translation>Leichtgewichtiges Applet zur Speicherung des Zwischenablageverlaufs.&lt;p&gt;(c)&lt;ul&gt;&lt;li&gt;2010–2016 Petr Vanek&lt;petr@yarpen.cz&gt;&lt;/li&gt;&lt;li&gt;2026– LXQt-Team &lt;a href=&quot;https://lxqt-project.org&quot;&gt;lxqt-project.org&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;a href=&quot;https://github.com/lxqt/lxqt-clip/&quot;&gt;https://github.com/lxqt/lxqt-clip/&lt;/a&gt;&lt;p&gt;Unterstützung für globale Tastenkombinationen: %1</translation>
     </message>
     <message>
-        <location filename="../src/systray.cpp" line="160"/>
+        <location filename="../src/systray.cpp" line="161"/>
         <source>Confirm</source>
         <translation>Bestätigen</translation>
     </message>
     <message>
-        <location filename="../src/systray.cpp" line="160"/>
+        <location filename="../src/systray.cpp" line="161"/>
         <source>Are you sure that you want to clear your clipboard history?</source>
         <translation>Sind Sie sicher, dass Sie Ihren Zwischenablageverlauf löschen möchten?</translation>
     </message>
@@ -294,53 +295,53 @@ z. B.: &apos;qdbus6 org.lxqt.lxqt-clip /org/lxqt/clip show&apos;</translation>
 <context>
     <name>QObject</name>
     <message>
-        <location filename="../src/item.cpp" line="184"/>
+        <location filename="../src/item.cpp" line="189"/>
         <source>Url: %1</source>
         <translatorcomment>Shouldn&apos;t this be capitalized in English, too?</translatorcomment>
         <translation>URL: %1</translation>
     </message>
     <message>
-        <location filename="../src/item.cpp" line="186"/>
+        <location filename="../src/item.cpp" line="191"/>
         <source>Binary: %1</source>
         <translation>Binäres Objekt: %1</translation>
     </message>
     <message>
-        <location filename="../src/item.cpp" line="238"/>
+        <location filename="../src/item.cpp" line="243"/>
         <source>Clipboard</source>
         <translation>Zwischenablage</translation>
     </message>
     <message>
-        <location filename="../src/item.cpp" line="241"/>
+        <location filename="../src/item.cpp" line="246"/>
         <source>Selection</source>
         <translation>Auswahl</translation>
     </message>
     <message>
-        <location filename="../src/item.cpp" line="244"/>
+        <location filename="../src/item.cpp" line="249"/>
         <source>Find Buffer</source>
         <translation>Buffer suchen</translation>
     </message>
     <message>
-        <location filename="../src/item.cpp" line="251"/>
+        <location filename="../src/item.cpp" line="256"/>
         <source>Plain Text</source>
         <translation>Klartext</translation>
     </message>
     <message>
-        <location filename="../src/item.cpp" line="254"/>
+        <location filename="../src/item.cpp" line="259"/>
         <source>Rich Text</source>
         <translation>Rich Text</translation>
     </message>
     <message>
-        <location filename="../src/item.cpp" line="257"/>
+        <location filename="../src/item.cpp" line="262"/>
         <source>Binary Content</source>
         <translation>Binärer Inhalt</translation>
     </message>
     <message>
-        <location filename="../src/item.cpp" line="260"/>
+        <location filename="../src/item.cpp" line="265"/>
         <source>URL</source>
         <translation>URL</translation>
     </message>
     <message>
-        <location filename="../src/item.cpp" line="263"/>
+        <location filename="../src/item.cpp" line="268"/>
         <source>Sticky Item (Plain Text)</source>
         <translation>Haftnotiz (einfacher Text)</translation>
     </message>

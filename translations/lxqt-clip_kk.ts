@@ -4,7 +4,7 @@
 <context>
     <name>LXQt::Model</name>
     <message>
-        <location filename="../src/model.cpp" line="205"/>
+        <location filename="../src/model.cpp" line="207"/>
         <source>Welcome to the lxqt-clip clipboard history applet</source>
         <translation>lxqt-clip алмасу буфері тарихы апплетіне қош келдіңіз</translation>
     </message>
@@ -167,7 +167,7 @@
         <translation>&amp;Төмен</translation>
     </message>
     <message>
-        <location filename="../src/preferencesdialog.cpp" line="46"/>
+        <location filename="../src/preferencesdialog.cpp" line="47"/>
         <source>On Wayland, apps can&apos;t handle global shortcuts.
  Set the shortcut in your compositor to call D-Bus instead,
  e.g.: &apos;qdbus6 org.lxqt.lxqt-clip /org/lxqt/clip show&apos;</source>
@@ -176,59 +176,59 @@
  мысалы: &apos;qdbus6 org.lxqt.lxqt-clip /org/lxqt/clip show&apos;</translation>
     </message>
     <message>
-        <location filename="../src/preferencesdialog.cpp" line="89"/>
+        <location filename="../src/preferencesdialog.cpp" line="91"/>
         <source>Icon selection</source>
         <translation>Таңбашаны таңдау</translation>
     </message>
     <message>
-        <location filename="../src/preferencesdialog.cpp" line="90"/>
+        <location filename="../src/preferencesdialog.cpp" line="92"/>
         <source>Load icon from file...</source>
         <translation>Таңбашаны файлдан жүктеу...</translation>
     </message>
     <message>
-        <location filename="../src/preferencesdialog.cpp" line="91"/>
+        <location filename="../src/preferencesdialog.cpp" line="93"/>
         <source>Use default icon</source>
         <translation>Үнсіз келісім бойынша таңбашаны пайдалану</translation>
     </message>
     <message>
-        <location filename="../src/preferencesdialog.cpp" line="136"/>
+        <location filename="../src/preferencesdialog.cpp" line="138"/>
         <source>Select icon file</source>
         <translation>Таңбаша файлын таңдау</translation>
     </message>
     <message>
-        <location filename="../src/preferencesdialog.cpp" line="138"/>
+        <location filename="../src/preferencesdialog.cpp" line="140"/>
         <source>Images (*.bmp *.jpg *.jpeg *.png *.svg *.tga)</source>
         <translation>Суреттер (*.bmp *.jpg *.jpeg *.png *.svg *.tga)</translation>
     </message>
     <message>
-        <location filename="../src/preferencesdialog.cpp" line="142"/>
+        <location filename="../src/preferencesdialog.cpp" line="144"/>
         <source>Select icon</source>
         <translation>Таңбашаны таңдау</translation>
     </message>
     <message>
-        <location filename="../src/preferencesdialog.cpp" line="143"/>
+        <location filename="../src/preferencesdialog.cpp" line="145"/>
         <source>Cancel</source>
         <translation>Бас тарту</translation>
     </message>
     <message>
-        <location filename="../src/preferencesdialog.cpp" line="145"/>
+        <location filename="../src/preferencesdialog.cpp" line="147"/>
         <source>Look in:</source>
         <extracomment>Label to describe the folder for icon file selection dialog.</extracomment>
         <translation>Қарау орны:</translation>
     </message>
     <message>
-        <location filename="../src/preferencesdialog.cpp" line="146"/>
+        <location filename="../src/preferencesdialog.cpp" line="148"/>
         <source>Icon name:</source>
         <translation>Таңбаша аты:</translation>
     </message>
     <message>
-        <location filename="../src/preferencesdialog.cpp" line="147"/>
+        <location filename="../src/preferencesdialog.cpp" line="149"/>
         <source>Icon type:</source>
         <translation>Таңбаша түрі:</translation>
     </message>
     <message>
-        <location filename="../src/preferencesdialog.cpp" line="162"/>
-        <location filename="../src/preferencesdialog.cpp" line="162"/>
+        <location filename="../src/preferencesdialog.cpp" line="164"/>
+        <location filename="../src/preferencesdialog.cpp" line="164"/>
         <source>Add New Sticky Item</source>
         <translation>Жаңа жабысқақ элементті қосу</translation>
     </message>
@@ -236,57 +236,57 @@
 <context>
     <name>LXQt::Systray</name>
     <message>
-        <location filename="../src/systray.cpp" line="46"/>
+        <location filename="../src/systray.cpp" line="47"/>
         <source>C&amp;lear clipboard history</source>
         <translation>Алмасу буферінің тарихын та&amp;зарту</translation>
     </message>
     <message>
-        <location filename="../src/systray.cpp" line="48"/>
+        <location filename="../src/systray.cpp" line="49"/>
         <source>&amp;Configure...</source>
         <translation>&amp;Баптау...</translation>
     </message>
     <message>
-        <location filename="../src/systray.cpp" line="51"/>
+        <location filename="../src/systray.cpp" line="52"/>
         <source>&amp;About ...</source>
         <translation>Осы тур&amp;алы ...</translation>
     </message>
     <message>
-        <location filename="../src/systray.cpp" line="53"/>
+        <location filename="../src/systray.cpp" line="54"/>
         <source>&amp;Quit</source>
         <translation>&amp;Шығу</translation>
     </message>
     <message>
-        <location filename="../src/systray.cpp" line="60"/>
+        <location filename="../src/systray.cpp" line="61"/>
         <source>lxqt-clip - a clipboard history applet</source>
         <translation>lxqt-clip — алмасу буфері тарихының апплеті</translation>
     </message>
     <message>
-        <location filename="../src/systray.cpp" line="125"/>
+        <location filename="../src/systray.cpp" line="126"/>
         <source>Yes</source>
         <translation>Иә</translation>
     </message>
     <message>
-        <location filename="../src/systray.cpp" line="127"/>
+        <location filename="../src/systray.cpp" line="128"/>
         <source>No</source>
         <translation>Жоқ</translation>
     </message>
     <message>
-        <location filename="../src/systray.cpp" line="134"/>
+        <location filename="../src/systray.cpp" line="135"/>
         <source>About lxqt-clip</source>
         <translation>lxqt-clip туралы</translation>
     </message>
     <message>
-        <location filename="../src/systray.cpp" line="136"/>
+        <location filename="../src/systray.cpp" line="137"/>
         <source>Lightweight, clipboard history applet.&lt;p&gt;(c)&lt;ul&gt;&lt;li&gt;2010-2016&amp;nbsp;Petr&amp;nbsp;Vanek&amp;nbsp;&amp;lt;petr@yarpen.cz&amp;gt;&lt;/li&gt;&lt;li&gt;2026- LXQt team &lt;a href=&quot;https://lxqt-project.org&quot;&gt;lxqt-project.org&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;a href=&quot;https://github.com/lxqt/lxqt-clip/&quot;&gt;https://github.com/lxqt/lxqt-clip/&lt;/a&gt;&lt;p&gt;Support for global keyboard shortcut: %1</source>
         <translation>Жеңіл алмасу буфері тарихының апплеті.&lt;p&gt;(c)&lt;ul&gt;&lt;li&gt;2010-2016&amp;nbsp;Petr&amp;nbsp;Vanek&amp;nbsp;&amp;lt;petr@yarpen.cz&amp;gt;&lt;/li&gt;&lt;li&gt;2026- LXQt team &lt;a href=&quot;https://lxqt-project.org&quot;&gt;lxqt-project.org&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;a href=&quot;https://github.com/lxqt/lxqt-clip/&quot;&gt;https://github.com/lxqt/lxqt-clip/&lt;/a&gt;&lt;p&gt;Глобалды пернетақта жарлығын қолдау: %1</translation>
     </message>
     <message>
-        <location filename="../src/systray.cpp" line="160"/>
+        <location filename="../src/systray.cpp" line="161"/>
         <source>Confirm</source>
         <translation>Растау</translation>
     </message>
     <message>
-        <location filename="../src/systray.cpp" line="160"/>
+        <location filename="../src/systray.cpp" line="161"/>
         <source>Are you sure that you want to clear your clipboard history?</source>
         <translation>Алмасу буферінің тарихын тазарту керек пе?</translation>
     </message>
@@ -294,52 +294,52 @@
 <context>
     <name>QObject</name>
     <message>
-        <location filename="../src/item.cpp" line="185"/>
+        <location filename="../src/item.cpp" line="189"/>
         <source>Url: %1</source>
         <translation>Url: %1</translation>
     </message>
     <message>
-        <location filename="../src/item.cpp" line="187"/>
+        <location filename="../src/item.cpp" line="191"/>
         <source>Binary: %1</source>
         <translation>Екілік: %1</translation>
     </message>
     <message>
-        <location filename="../src/item.cpp" line="239"/>
+        <location filename="../src/item.cpp" line="243"/>
         <source>Clipboard</source>
         <translation>Алмасу буфері</translation>
     </message>
     <message>
-        <location filename="../src/item.cpp" line="242"/>
+        <location filename="../src/item.cpp" line="246"/>
         <source>Selection</source>
         <translation>Таңдау</translation>
     </message>
     <message>
-        <location filename="../src/item.cpp" line="245"/>
+        <location filename="../src/item.cpp" line="249"/>
         <source>Find Buffer</source>
         <translation>Іздеу буфері</translation>
     </message>
     <message>
-        <location filename="../src/item.cpp" line="252"/>
+        <location filename="../src/item.cpp" line="256"/>
         <source>Plain Text</source>
         <translation>Жай мәтін</translation>
     </message>
     <message>
-        <location filename="../src/item.cpp" line="255"/>
+        <location filename="../src/item.cpp" line="259"/>
         <source>Rich Text</source>
         <translation>Пішімделген мәтін</translation>
     </message>
     <message>
-        <location filename="../src/item.cpp" line="258"/>
+        <location filename="../src/item.cpp" line="262"/>
         <source>Binary Content</source>
         <translation>Екілік мазмұн</translation>
     </message>
     <message>
-        <location filename="../src/item.cpp" line="261"/>
+        <location filename="../src/item.cpp" line="265"/>
         <source>URL</source>
         <translation>URL</translation>
     </message>
     <message>
-        <location filename="../src/item.cpp" line="264"/>
+        <location filename="../src/item.cpp" line="268"/>
         <source>Sticky Item (Plain Text)</source>
         <translation>Жабысқақ элемент (жай мәтін)</translation>
     </message>

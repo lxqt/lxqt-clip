@@ -4,7 +4,7 @@
 <context>
     <name>LXQt::Model</name>
     <message>
-        <location filename="../src/model.cpp" line="205"/>
+        <location filename="../src/model.cpp" line="207"/>
         <source>Welcome to the lxqt-clip clipboard history applet</source>
         <translation>歡迎使用 lxqt-clip 剪貼簿歷史記錄小工具</translation>
     </message>
@@ -167,7 +167,7 @@
         <translation>下移(&amp;D)</translation>
     </message>
     <message>
-        <location filename="../src/preferencesdialog.cpp" line="46"/>
+        <location filename="../src/preferencesdialog.cpp" line="47"/>
         <source>On Wayland, apps can&apos;t handle global shortcuts.
  Set the shortcut in your compositor to call D-Bus instead,
  e.g.: &apos;qdbus6 org.lxqt.lxqt-clip /org/lxqt/clip show&apos;</source>
@@ -176,59 +176,59 @@
  例如： &apos;qdbus6 org.lxqt.lxqt-clip /org/lxqt/clip show&apos;</translation>
     </message>
     <message>
-        <location filename="../src/preferencesdialog.cpp" line="89"/>
+        <location filename="../src/preferencesdialog.cpp" line="91"/>
         <source>Icon selection</source>
         <translation>圖示選擇</translation>
     </message>
     <message>
-        <location filename="../src/preferencesdialog.cpp" line="90"/>
+        <location filename="../src/preferencesdialog.cpp" line="92"/>
         <source>Load icon from file...</source>
         <translation>載入圖示來自檔案...</translation>
     </message>
     <message>
-        <location filename="../src/preferencesdialog.cpp" line="91"/>
+        <location filename="../src/preferencesdialog.cpp" line="93"/>
         <source>Use default icon</source>
         <translation>使用預設圖示</translation>
     </message>
     <message>
-        <location filename="../src/preferencesdialog.cpp" line="136"/>
+        <location filename="../src/preferencesdialog.cpp" line="138"/>
         <source>Select icon file</source>
         <translation>選擇圖示檔案</translation>
     </message>
     <message>
-        <location filename="../src/preferencesdialog.cpp" line="138"/>
+        <location filename="../src/preferencesdialog.cpp" line="140"/>
         <source>Images (*.bmp *.jpg *.jpeg *.png *.svg *.tga)</source>
         <translation>圖片 (*.bmp *.jpg *.jpeg *.png *.svg *.tga)</translation>
     </message>
     <message>
-        <location filename="../src/preferencesdialog.cpp" line="142"/>
+        <location filename="../src/preferencesdialog.cpp" line="144"/>
         <source>Select icon</source>
         <translation>選擇圖示</translation>
     </message>
     <message>
-        <location filename="../src/preferencesdialog.cpp" line="143"/>
+        <location filename="../src/preferencesdialog.cpp" line="145"/>
         <source>Cancel</source>
         <translation>取消</translation>
     </message>
     <message>
-        <location filename="../src/preferencesdialog.cpp" line="145"/>
+        <location filename="../src/preferencesdialog.cpp" line="147"/>
         <source>Look in:</source>
         <extracomment>Label to describe the folder for icon file selection dialog.</extracomment>
         <translation>查探：</translation>
     </message>
     <message>
-        <location filename="../src/preferencesdialog.cpp" line="146"/>
+        <location filename="../src/preferencesdialog.cpp" line="148"/>
         <source>Icon name:</source>
         <translation>圖示名稱：</translation>
     </message>
     <message>
-        <location filename="../src/preferencesdialog.cpp" line="147"/>
+        <location filename="../src/preferencesdialog.cpp" line="149"/>
         <source>Icon type:</source>
         <translation>圖示類型：</translation>
     </message>
     <message>
-        <location filename="../src/preferencesdialog.cpp" line="162"/>
-        <location filename="../src/preferencesdialog.cpp" line="162"/>
+        <location filename="../src/preferencesdialog.cpp" line="164"/>
+        <location filename="../src/preferencesdialog.cpp" line="164"/>
         <source>Add New Sticky Item</source>
         <translation>添加新建粘貼項目</translation>
     </message>
@@ -236,57 +236,57 @@
 <context>
     <name>LXQt::Systray</name>
     <message>
-        <location filename="../src/systray.cpp" line="46"/>
+        <location filename="../src/systray.cpp" line="47"/>
         <source>C&amp;lear clipboard history</source>
         <translation>清除剪粘簿歷史記錄(&amp;C)</translation>
     </message>
     <message>
-        <location filename="../src/systray.cpp" line="48"/>
+        <location filename="../src/systray.cpp" line="49"/>
         <source>&amp;Configure...</source>
         <translation>調整設定(&amp;C)...</translation>
     </message>
     <message>
-        <location filename="../src/systray.cpp" line="51"/>
+        <location filename="../src/systray.cpp" line="52"/>
         <source>&amp;About ...</source>
         <translation>關於(&amp;A) ...</translation>
     </message>
     <message>
-        <location filename="../src/systray.cpp" line="53"/>
+        <location filename="../src/systray.cpp" line="54"/>
         <source>&amp;Quit</source>
         <translation>退出(&amp;Q)</translation>
     </message>
     <message>
-        <location filename="../src/systray.cpp" line="60"/>
+        <location filename="../src/systray.cpp" line="61"/>
         <source>lxqt-clip - a clipboard history applet</source>
         <translation>lxqt-clip - 剪貼簿歷史記錄工具</translation>
     </message>
     <message>
-        <location filename="../src/systray.cpp" line="125"/>
+        <location filename="../src/systray.cpp" line="126"/>
         <source>Yes</source>
         <translation>是</translation>
     </message>
     <message>
-        <location filename="../src/systray.cpp" line="127"/>
+        <location filename="../src/systray.cpp" line="128"/>
         <source>No</source>
         <translation>否</translation>
     </message>
     <message>
-        <location filename="../src/systray.cpp" line="134"/>
+        <location filename="../src/systray.cpp" line="135"/>
         <source>About lxqt-clip</source>
         <translation>關於 lxqt-clip</translation>
     </message>
     <message>
-        <location filename="../src/systray.cpp" line="136"/>
+        <location filename="../src/systray.cpp" line="137"/>
         <source>Lightweight, clipboard history applet.&lt;p&gt;(c)&lt;ul&gt;&lt;li&gt;2010-2016&amp;nbsp;Petr&amp;nbsp;Vanek&amp;nbsp;&amp;lt;petr@yarpen.cz&amp;gt;&lt;/li&gt;&lt;li&gt;2026- LXQt team &lt;a href=&quot;https://lxqt-project.org&quot;&gt;lxqt-project.org&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;a href=&quot;https://github.com/lxqt/lxqt-clip/&quot;&gt;https://github.com/lxqt/lxqt-clip/&lt;/a&gt;&lt;p&gt;Support for global keyboard shortcut: %1</source>
         <translation>輕量級，剪貼簿歷史記錄工具。&lt;p&gt;(c)&lt;ul&gt;&lt;li&gt;2010-2016&amp;nbsp;Petr&amp;nbsp;Vanek&amp;nbsp;&amp;lt;petr@yarpen.cz&amp;gt;&lt;/li&gt;&lt;li&gt;2026- LXQt team &lt;a href=&quot;https://lxqt-project.org&quot;&gt;lxqt-project.org&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;a href=&quot;https://github.com/lxqt/lxqt-clip/&quot;&gt;https://github.com/lxqt/lxqt-clip/&lt;/a&gt;&lt;p&gt;支援整體鍵盤快速鍵： %1</translation>
     </message>
     <message>
-        <location filename="../src/systray.cpp" line="160"/>
+        <location filename="../src/systray.cpp" line="161"/>
         <source>Confirm</source>
         <translation>確認</translation>
     </message>
     <message>
-        <location filename="../src/systray.cpp" line="160"/>
+        <location filename="../src/systray.cpp" line="161"/>
         <source>Are you sure that you want to clear your clipboard history?</source>
         <translation>確定要清除剪貼簿歷史記錄嗎？</translation>
     </message>
@@ -294,52 +294,52 @@
 <context>
     <name>QObject</name>
     <message>
-        <location filename="../src/item.cpp" line="185"/>
+        <location filename="../src/item.cpp" line="189"/>
         <source>Url: %1</source>
         <translation>Url: %1</translation>
     </message>
     <message>
-        <location filename="../src/item.cpp" line="187"/>
+        <location filename="../src/item.cpp" line="191"/>
         <source>Binary: %1</source>
         <translation>二進制： %1</translation>
     </message>
     <message>
-        <location filename="../src/item.cpp" line="239"/>
+        <location filename="../src/item.cpp" line="243"/>
         <source>Clipboard</source>
         <translation>剪貼簿</translation>
     </message>
     <message>
-        <location filename="../src/item.cpp" line="242"/>
+        <location filename="../src/item.cpp" line="246"/>
         <source>Selection</source>
         <translation>選擇區段</translation>
     </message>
     <message>
-        <location filename="../src/item.cpp" line="245"/>
+        <location filename="../src/item.cpp" line="249"/>
         <source>Find Buffer</source>
         <translation>尋找緩衝</translation>
     </message>
     <message>
-        <location filename="../src/item.cpp" line="252"/>
+        <location filename="../src/item.cpp" line="256"/>
         <source>Plain Text</source>
         <translation>純文字</translation>
     </message>
     <message>
-        <location filename="../src/item.cpp" line="255"/>
+        <location filename="../src/item.cpp" line="259"/>
         <source>Rich Text</source>
         <translation>富文字</translation>
     </message>
     <message>
-        <location filename="../src/item.cpp" line="258"/>
+        <location filename="../src/item.cpp" line="262"/>
         <source>Binary Content</source>
         <translation>二進制內容</translation>
     </message>
     <message>
-        <location filename="../src/item.cpp" line="261"/>
+        <location filename="../src/item.cpp" line="265"/>
         <source>URL</source>
         <translation>URL</translation>
     </message>
     <message>
-        <location filename="../src/item.cpp" line="264"/>
+        <location filename="../src/item.cpp" line="268"/>
         <source>Sticky Item (Plain Text)</source>
         <translation>粘貼項目 (純文字)</translation>
     </message>

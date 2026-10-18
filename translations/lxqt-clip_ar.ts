@@ -4,7 +4,7 @@
 <context>
     <name>LXQt::Model</name>
     <message>
-        <location filename="../src/model.cpp" line="205"/>
+        <location filename="../src/model.cpp" line="207"/>
         <source>Welcome to the lxqt-clip clipboard history applet</source>
         <translation>مرحبًا بك في التطبيق الصغير لسجل حافظة كليبر</translation>
     </message>
@@ -167,7 +167,7 @@
         <translation>&amp;أسفل</translation>
     </message>
     <message>
-        <location filename="../src/preferencesdialog.cpp" line="46"/>
+        <location filename="../src/preferencesdialog.cpp" line="47"/>
         <source>On Wayland, apps can&apos;t handle global shortcuts.
  Set the shortcut in your compositor to call D-Bus instead,
  e.g.: &apos;qdbus6 org.lxqt.lxqt-clip /org/lxqt/clip show&apos;</source>
@@ -178,58 +178,59 @@
 مثال: &apos;qdbus6 org.lxqt.lxqt-clip /org/lxqt/clip show&apos;</translation>
     </message>
     <message>
-        <location filename="../src/preferencesdialog.cpp" line="89"/>
+        <location filename="../src/preferencesdialog.cpp" line="91"/>
         <source>Icon selection</source>
         <translation>اختيار الايقونة</translation>
     </message>
     <message>
-        <location filename="../src/preferencesdialog.cpp" line="90"/>
+        <location filename="../src/preferencesdialog.cpp" line="92"/>
         <source>Load icon from file...</source>
         <translation>تحميل أيقونة من ملف ...</translation>
     </message>
     <message>
-        <location filename="../src/preferencesdialog.cpp" line="91"/>
+        <location filename="../src/preferencesdialog.cpp" line="93"/>
         <source>Use default icon</source>
         <translation>استخدام الايقونة الافتراضية</translation>
     </message>
     <message>
-        <location filename="../src/preferencesdialog.cpp" line="136"/>
+        <location filename="../src/preferencesdialog.cpp" line="138"/>
         <source>Select icon file</source>
         <translation>حدد ملف الايقونة</translation>
     </message>
     <message>
-        <location filename="../src/preferencesdialog.cpp" line="138"/>
+        <location filename="../src/preferencesdialog.cpp" line="140"/>
         <source>Images (*.bmp *.jpg *.jpeg *.png *.svg *.tga)</source>
         <translation>الصور (* .bmp * .jpg * .jpeg * .png * .svg * .tga)</translation>
     </message>
     <message>
-        <location filename="../src/preferencesdialog.cpp" line="142"/>
+        <location filename="../src/preferencesdialog.cpp" line="144"/>
         <source>Select icon</source>
         <translation>اختر الايقون</translation>
     </message>
     <message>
-        <location filename="../src/preferencesdialog.cpp" line="143"/>
+        <location filename="../src/preferencesdialog.cpp" line="145"/>
         <source>Cancel</source>
         <translation>إلغاء</translation>
     </message>
     <message>
-        <location filename="../src/preferencesdialog.cpp" line="145"/>
+        <location filename="../src/preferencesdialog.cpp" line="147"/>
         <source>Look in:</source>
         <extracomment>Label to describe the folder for icon file selection dialog.</extracomment>
         <translation>إنظر في:</translation>
     </message>
     <message>
-        <location filename="../src/preferencesdialog.cpp" line="146"/>
+        <location filename="../src/preferencesdialog.cpp" line="148"/>
         <source>Icon name:</source>
         <translation>اسم الايقونة:</translation>
     </message>
     <message>
-        <location filename="../src/preferencesdialog.cpp" line="147"/>
+        <location filename="../src/preferencesdialog.cpp" line="149"/>
         <source>Icon type:</source>
         <translation>نوع الايقونة:</translation>
     </message>
     <message>
-        <location filename="../src/preferencesdialog.cpp" line="162"/>
+        <location filename="../src/preferencesdialog.cpp" line="164"/>
+        <location filename="../src/preferencesdialog.cpp" line="164"/>
         <source>Add New Sticky Item</source>
         <translation>إضافة عنصر لاصق جديد</translation>
     </message>
@@ -237,57 +238,57 @@
 <context>
     <name>LXQt::Systray</name>
     <message>
-        <location filename="../src/systray.cpp" line="46"/>
+        <location filename="../src/systray.cpp" line="47"/>
         <source>C&amp;lear clipboard history</source>
         <translation>&amp;مسح محفوظات الحافظة</translation>
     </message>
     <message>
-        <location filename="../src/systray.cpp" line="48"/>
+        <location filename="../src/systray.cpp" line="49"/>
         <source>&amp;Configure...</source>
         <translation>&amp;اعدادات...</translation>
     </message>
     <message>
-        <location filename="../src/systray.cpp" line="51"/>
+        <location filename="../src/systray.cpp" line="52"/>
         <source>&amp;About ...</source>
         <translation>&amp;عن ...</translation>
     </message>
     <message>
-        <location filename="../src/systray.cpp" line="53"/>
+        <location filename="../src/systray.cpp" line="54"/>
         <source>&amp;Quit</source>
         <translation>&amp;إنهاء</translation>
     </message>
     <message>
-        <location filename="../src/systray.cpp" line="60"/>
+        <location filename="../src/systray.cpp" line="61"/>
         <source>lxqt-clip - a clipboard history applet</source>
         <translation>كليبر - برنامج صغير لتاريخ الحافظة</translation>
     </message>
     <message>
-        <location filename="../src/systray.cpp" line="125"/>
+        <location filename="../src/systray.cpp" line="126"/>
         <source>Yes</source>
         <translation>نعم</translation>
     </message>
     <message>
-        <location filename="../src/systray.cpp" line="127"/>
+        <location filename="../src/systray.cpp" line="128"/>
         <source>No</source>
         <translation>لا</translation>
     </message>
     <message>
-        <location filename="../src/systray.cpp" line="134"/>
+        <location filename="../src/systray.cpp" line="135"/>
         <source>About lxqt-clip</source>
         <translation>عن كليبر</translation>
     </message>
     <message>
-        <location filename="../src/systray.cpp" line="136"/>
+        <location filename="../src/systray.cpp" line="137"/>
         <source>Lightweight, clipboard history applet.&lt;p&gt;(c)&lt;ul&gt;&lt;li&gt;2010-2016&amp;nbsp;Petr&amp;nbsp;Vanek&amp;nbsp;&amp;lt;petr@yarpen.cz&amp;gt;&lt;/li&gt;&lt;li&gt;2026- LXQt team &lt;a href=&quot;https://lxqt-project.org&quot;&gt;lxqt-project.org&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;a href=&quot;https://github.com/lxqt/lxqt-clip/&quot;&gt;https://github.com/lxqt/lxqt-clip/&lt;/a&gt;&lt;p&gt;Support for global keyboard shortcut: %1</source>
         <translation>تطبيق خفيف الوزن لسجل الحافظة.&lt;p&gt;(c)&lt;ul&gt;&lt;li&gt;2010-2016 بيتر فانيك &lt;petr@yarpen.cz&gt;&lt;/li&gt;&lt;li&gt;2026- فريق LXQt &lt;a href=&quot;https://lxqt-project.org&quot;&gt;lxqt-project.org&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;a href=&quot;https://github.com/lxqt/lxqt-clip/&quot;&gt;https://github.com/lxqt/lxqt-clip/&lt;/a&gt;&lt;p&gt;دعم اختصار لوحة المفاتيح العام: %1</translation>
     </message>
     <message>
-        <location filename="../src/systray.cpp" line="160"/>
+        <location filename="../src/systray.cpp" line="161"/>
         <source>Confirm</source>
         <translation>تأكيد</translation>
     </message>
     <message>
-        <location filename="../src/systray.cpp" line="160"/>
+        <location filename="../src/systray.cpp" line="161"/>
         <source>Are you sure that you want to clear your clipboard history?</source>
         <translation>هل أنت متأكد أنك تريد مسح تاريخ الحافظة الخاصة بك؟</translation>
     </message>
@@ -295,52 +296,52 @@
 <context>
     <name>QObject</name>
     <message>
-        <location filename="../src/item.cpp" line="184"/>
+        <location filename="../src/item.cpp" line="189"/>
         <source>Url: %1</source>
         <translation>رابط:%1</translation>
     </message>
     <message>
-        <location filename="../src/item.cpp" line="186"/>
+        <location filename="../src/item.cpp" line="191"/>
         <source>Binary: %1</source>
         <translation>ثنائي: %1</translation>
     </message>
     <message>
-        <location filename="../src/item.cpp" line="238"/>
+        <location filename="../src/item.cpp" line="243"/>
         <source>Clipboard</source>
         <translation>الحافظة</translation>
     </message>
     <message>
-        <location filename="../src/item.cpp" line="241"/>
+        <location filename="../src/item.cpp" line="246"/>
         <source>Selection</source>
         <translation>الاختيار</translation>
     </message>
     <message>
-        <location filename="../src/item.cpp" line="244"/>
+        <location filename="../src/item.cpp" line="249"/>
         <source>Find Buffer</source>
         <translation>مخزن البحث</translation>
     </message>
     <message>
-        <location filename="../src/item.cpp" line="251"/>
+        <location filename="../src/item.cpp" line="256"/>
         <source>Plain Text</source>
         <translation>نص عادي</translation>
     </message>
     <message>
-        <location filename="../src/item.cpp" line="254"/>
+        <location filename="../src/item.cpp" line="259"/>
         <source>Rich Text</source>
         <translation>النص المتناسق</translation>
     </message>
     <message>
-        <location filename="../src/item.cpp" line="257"/>
+        <location filename="../src/item.cpp" line="262"/>
         <source>Binary Content</source>
         <translation>محتوى ثنائي</translation>
     </message>
     <message>
-        <location filename="../src/item.cpp" line="260"/>
+        <location filename="../src/item.cpp" line="265"/>
         <source>URL</source>
         <translation>الرابط</translation>
     </message>
     <message>
-        <location filename="../src/item.cpp" line="263"/>
+        <location filename="../src/item.cpp" line="268"/>
         <source>Sticky Item (Plain Text)</source>
         <translation>عنصر اللاصق (نص عادي)</translation>
     </message>
