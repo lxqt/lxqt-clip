@@ -133,12 +133,12 @@ void Model::clipboard_changed(QClipboard::Mode mode)
         // See Item constructor: On X11 clipboard content is owned by the
         //    application, so naturally closing the application drops
         //    clipboard content. In this case the latest item should be set again.
-        for (QList<Item>::const_iterator i = m_dynamic.begin(), i_e = m_dynamic.end(); i_e != i; ++i)
+        for (QList<Item>::const_iterator i = m_dynamic.cbegin(), i_e = m_dynamic.cend(); i_e != i; ++i)
         {
             if (i->clipBoardMode() == item.clipBoardMode())
             {
                 i->toClipboard(Item::ToCurrent);
-                m_currentIndex = index(m_sticky.count() + (i - m_dynamic.begin()));
+                m_currentIndex = index(m_sticky.count() + (i - m_dynamic.cbegin()));
                 break;
             }
         }
