@@ -66,7 +66,7 @@ Item::Item(QClipboard::Mode mode)
     //  workadound until someone fixes this in gimp -> just read/store only the image/bmp
     //  and don't care about other bmps
     const bool has_bmp = mimeData->hasFormat(QStringLiteral("image/bmp"));
-    const QRegularExpression re_bmp(QStringLiteral("^image/.+-bmp$"));
+    static const QRegularExpression re_bmp(u"^image/.+-bmp$"_s);
     const auto formats = mimeData->formats();
     for (const QString &format : formats)
     {
@@ -102,6 +102,7 @@ Item::Item(QClipboard::Mode mode)
         const auto urls = mimeData->urls();
         for (const QUrl &i : urls)
             s += i.toString() + u'\n';
+
         m_display = s;
         m_contentType = Item::Url;
     }
