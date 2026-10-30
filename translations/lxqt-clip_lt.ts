@@ -84,7 +84,7 @@
     <message>
         <location filename="../src/preferencesdialog.ui" line="153"/>
         <source>Use clipboard extensions (Selection/FindBuffer) when it&apos;s supported</source>
-        <translation type="unfinished"></translation>
+        <translation>Naudoti iškarpinės plėtinius (Žymėjimas/FindBuffer), kai jie palaikomi</translation>
     </message>
     <message>
         <location filename="../src/preferencesdialog.ui" line="164"/>
