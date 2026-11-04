@@ -23,9 +23,7 @@ with this program; if not, write to the Free Software Foundation, Inc.,
 #include <QSystemTrayIcon>
 
 class QMenuView;
-#ifndef NO_QXT
 class QxtGlobalShortcut;
-#endif
 
 namespace LXQt {
 class Model;
@@ -40,10 +38,8 @@ public:
 private:
     Model *m_model;
     QMenu *m_contextMenu;
-#ifndef NO_QXT
     QMenuView *m_shortcutMenu;
     QxtGlobalShortcut *m_shortcut;
-#endif
 
 public slots:
     void shortcut_activated();

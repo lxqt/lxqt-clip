@@ -35,9 +35,7 @@ namespace LXQt {
 
 Systray::Systray(QObject *parent)
     : QSystemTrayIcon(parent)
-#ifndef NO_QXT
       , m_shortcutMenu(0)
-#endif
 {
     setIcon(QIcon(Preferences::Instance()->getPathToIcon()));
 
@@ -55,7 +53,6 @@ Systray::Systray(QObject *parent)
             , qApp, &QCoreApplication::quit);
     setContextMenu(m_contextMenu);
 
-#ifndef NO_QXT
     m_shortcutMenu = new QMenuView();
     m_shortcutMenu->setModel(m_model);
     m_shortcutMenu->setWindowTitle(tr("lxqt-clip - a clipboard history applet"));
@@ -71,9 +68,6 @@ Systray::Systray(QObject *parent)
     m_shortcut = new QxtGlobalShortcut(this);
     connect(m_shortcut, SIGNAL(activated()), this, SLOT(shortcut_activated()));
     m_shortcut->setShortcut(Preferences::Instance()->shortcut());
-#else
-    qWarning() << "Global keyboard shortcut is not compiled in.";
-#endif
 
     connect(this, SIGNAL(activated(QSystemTrayIcon::ActivationReason)),
             this, SLOT(systray_activated(QSystemTrayIcon::ActivationReason)));
@@ -81,17 +75,14 @@ Systray::Systray(QObject *parent)
 
 Systray::~Systray()
 {
-#ifndef NO_QXT
     m_contextMenu->deleteLater();
     if (m_shortcutMenu)
         m_shortcutMenu->deleteLater();
-#endif
     m_model->deleteLater();
 }
 
 void Systray::shortcut_activated()
 {
-#ifndef NO_QXT
     if (m_shortcutMenu->isVisible())
         m_shortcutMenu->hide();
     else
@@ -101,7 +92,6 @@ void Systray::shortcut_activated()
         m_shortcutMenu->activateWindow();
         m_shortcutMenu->raise();
     }
-#endif
 }
 
 void Systray::editPreferences()
@@ -110,9 +100,7 @@ void Systray::editPreferences()
     if (!d.exec())
         return;
 
-#ifndef NO_QXT
     m_shortcut->setShortcut(Preferences::Instance()->shortcut());
-#endif
     m_model->resetPreferences();
 
     // Set new icon.
@@ -122,11 +110,7 @@ void Systray::editPreferences()
 
 void Systray::showAbout()
 {
-#ifndef NO_QXT
     QString globalKeySupport = tr("Yes");
-#else
-    QString globalKeySupport = tr("No");
-#endif
 
     QMessageBox msgBox;
     //msgBox.setMinimumWidth(600);
