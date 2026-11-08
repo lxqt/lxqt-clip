@@ -56,10 +56,6 @@ PreferencesDialog::PreferencesDialog(QWidget *parent) :
     synchronizeHistory->setChecked(s->synchronizeHistory());
     confirmOnClear->setChecked(s->confirmOnClear());
 
-#ifndef ENABLE_NETWORK_CLIPBOARD_SHARING
-    toolBox->setItemEnabled(2, false);
-#endif
-
     const auto items = Preferences::Instance()->getStickyItems();
     for (const Item &item : items)
     {
